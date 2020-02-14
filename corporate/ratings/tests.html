@@ -1,0 +1,532 @@
+<html lang="ru"><head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Рейтинги - тесты</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../../style/style.css">
+    <link rel="stylesheet" href="../../style/roman.css">
+    <link rel="stylesheet" href="../../style/i-style/style.css">
+    <link rel="stylesheet" href="../../style/media.css">
+    <!-- Styles -->
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+
+</head>
+<body>
+<div id="background" class="bg-blue"></div>
+<div id="papa">
+    <header id="header">
+        <div class="logo">
+            <a href="../../courses.html"><img src="../../img/logo.png" alt=""></a>
+            <div id="menu-3-lines" class="menu-absolute">
+                <div class="line top-line"></div>
+                <div class="line mid-line"></div>
+                <div class="line bot-line"></div>
+            </div>
+        </div>
+        <div class="right-block flex a-c">
+            <nav class="header-navigation" id="left-menu">
+                <ul class="menu">
+                    <li><a class="active-menu menu-item" href="">Обучение</a></li>
+                    <li><a class="menu-item" href="">Консалтинг</a></li>
+                    <li><a class="menu-item" href="">О нас</a></li>
+                    <li><a class="menu-item" href="">Контакты</a></li>
+                </ul>
+            </nav>
+            <div id="header-bell" class="bell p-r">
+                <div class="bell-notifications">3</div>
+                <a href="../../notifications.html"><i class="bell-img i-bell"></i></a>
+            </div>
+        </div>
+    </header>
+    <aside id="left-side-bar">
+        <div id="mobile-menu">
+        </div>
+        <div class="top-pearson-info flex j-c a-c f-d-c m-a mt-40">
+            <div class="pearson-photo">
+                <img src="../../img/corp/avatar.png" alt="">
+            </div>
+            <div class="pearson-name">
+                Протасова Александра
+            </div>
+        </div>
+        <nav id="pearson-nav">
+            <ul>
+                <li>
+                    <a href="general.html">
+                        <img src="../../img/corp/icons/ratings.png" alt="icon" class="icon-li">
+                        <span class="active-menu">Рейтинги</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../constructor/courses.html">
+                        <img src="../../img/corp/icons/settings.png" alt="icon" class="icon-li">
+                        <span>Конструктор</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../../img/corp/icons/team.png" alt="icon" class="icon-li">
+                        <span>Корпоративное обучение</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../courses.html">
+                        <img src="../../img/icon/book.png" alt="icon" class="icon-li">
+                        <span>Мое обучение</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../vacancies/vacancies.html">
+                        <img src="../../img/corp/icons/vacancies.png" alt="icon" class="icon-li">
+                        <span>Вакансии</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../payment-rent.html">
+                        <img src="../../img/icon/money.png" alt="icon" class="icon-li">
+                        <span>Оплата</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../faq.html">
+                        <img src="../../img/icon/info.png" alt="icon" class="icon-li">
+                        <span>Помощь</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../profile/data.html">
+                        <img src="../../img/icon/user.png" alt="icon" class="icon-li">
+                        <span>Профиль</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../communication/students.html">
+                        <img src="../../img/corp/icons/discussion.png" alt="icon" class="icon-li">
+                        <span>Общение</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main id="main">
+
+        <!-- Top Buttons Container Start -->
+        <div class="top-buttons-wrappper flex f-w">
+            <a href="general.html" class="a-btn box-shadow">
+                Общие
+            </a>
+            <a href="region.html" class="a-btn box-shadow">
+                Регион
+            </a>
+            <a href="tests.html" class="a-btn blue-gradient-background box-shadow">
+                Тесты
+            </a>
+            <a href="courses.html" class="a-btn box-shadow">
+                Курсы
+            </a>
+            <a href="staff.html" class="a-btn box-shadow">
+                Сотрудники
+            </a>
+        </div>
+        <!--  Top Buttons Container End  -->
+
+        <!--  Filters start  -->
+        <div class="filters-wrapper flex f-w test-members-designate-sort">
+            <div class="filter cust-select-wrap custom-select-filter">
+                <select>
+                    <option value="0">Период</option>
+                    <option value="1">Квартал 1</option>
+                    <option value="2">Квартал 2</option>
+                    <option value="3">Квартал 3</option>
+                    <option value="4">Квартал 4</option>
+                </select>
+            </div>
+            <div class="filter cust-select-wrap custom-select-filter">
+                <select>
+                    <option value="0">Регион</option>
+                    <option value="1">Регион 1</option>
+                    <option value="2">Регион 2</option>
+                    <option value="3">Регион 3</option>
+                </select>
+            </div>
+            <div class="filter cust-select-wrap custom-select-filter">
+                <select>
+                    <option value="0">Локация</option>
+                    <option value="1">Локация 1</option>
+                    <option value="2">Локация 2</option>
+                </select>
+            </div>
+            <div class="filter cust-select-wrap custom-select-filter">
+                <select>
+                    <option value="0">Курс</option>
+                    <option value="1">Курс 1</option>
+                    <option value="2">Курс 2</option>
+                </select>
+            </div>
+
+        </div>
+        <!--  Filters end  -->
+
+        <div class="content-container">
+
+            <div class="table-wrap">
+                <div class="custom-table done-test ratings-courses-table">
+                    <div class="custom-table__header flex j-s-b">
+                        <div class="custom-table__col">Тесты</div>
+                        <div class="custom-table__col"></div>
+                        <div class="custom-table__col">Дата старта</div>
+                        <div class="custom-table__col">Кому назначен</div>
+                        <div class="custom-table__col">Прогресс</div>
+                        <div class="custom-table__col">Пройден</div>
+                        <div class="custom-table__col">Не пройден</div>
+                        <div class="custom-table__col">Статус</div>
+                    </div>
+                    <div class="custom-table__body">
+                        <div class="custom-table__row flex j-s-b">
+                            <div class="custom-table__cell"><a href="#done-test01" class="done-test__name done-test__profile">Как повысить лояльность персонала?</a></div>
+                            <div class="custom-table__cell">
+                                <a href="#"><img src="../../img/corp/icons/pencil.png" /></a>
+                            </div>
+                            <div class="custom-table__cell">01.02.2019</div>
+                            <div class="custom-table__cell">
+                                <div class="cust-select-wrap">
+                                    <select>
+                                        <option value="0">3</option>
+                                        <option value="1">Студент 1</option>
+                                        <option value="2">Студент 2</option>
+                                        <option value="3">Студент 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="custom-table__cell"><span class="test-result">97</span>%<span class="result-dot green"></span></div>
+                            <div class="custom-table__cell">
+                                <div class="cust-select-wrap">
+                                    <select>
+                                        <option value="0">3</option>
+                                        <option value="1">Студент 1</option>
+                                        <option value="2">Студент 2</option>
+                                        <option value="3">Студент 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="custom-table__cell">
+                                <div class="cust-select-wrap">
+                                    <select>
+                                        <option value="0">3</option>
+                                        <option value="1">Студент 1</option>
+                                        <option value="2">Студент 2</option>
+                                        <option value="3">Студент 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="custom-table__cell">Активен</div>
+                        </div>
+                        <div class="custom-table__row flex j-s-b">
+                            <div class="custom-table__cell"><a href="#done-test02" class="done-test__name done-test__profile">Инструменты оценки сервиса</a></div>
+                            <div class="custom-table__cell">
+                                <a href="#"><img src="../../img/corp/icons/pencil.png" /></a>
+                            </div>
+                            <div class="custom-table__cell">01.02.2019</div>
+                            <div class="custom-table__cell">
+                                <div class="cust-select-wrap">
+                                    <select>
+                                        <option value="0">3</option>
+                                        <option value="1">Студент 1</option>
+                                        <option value="2">Студент 2</option>
+                                        <option value="3">Студент 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="custom-table__cell"><span class="test-result">75</span>%<span class="result-dot yellow"></span></div>
+                            <div class="custom-table__cell">
+                                <div class="cust-select-wrap">
+                                    <select>
+                                        <option value="0">3</option>
+                                        <option value="1">Студент 1</option>
+                                        <option value="2">Студент 2</option>
+                                        <option value="3">Студент 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="custom-table__cell">
+                                <div class="cust-select-wrap">
+                                    <select>
+                                        <option value="0">3</option>
+                                        <option value="1">Студент 1</option>
+                                        <option value="2">Студент 2</option>
+                                        <option value="3">Студент 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="custom-table__cell">Завершен</div>
+                        </div>
+                        <div class="custom-table__row flex j-s-b">
+                            <div class="custom-table__cell"><a href="#done-test03" class="done-test__name done-test__profile">Управление HR процессами</a></div>
+                            <div class="custom-table__cell">
+                                <a href="#"><img src="../../img/corp/icons/pencil.png" /></a>
+                            </div>
+                            <div class="custom-table__cell">01.02.2019</div>
+                            <div class="custom-table__cell">
+                                <div class="cust-select-wrap">
+                                    <select>
+                                        <option value="0">3</option>
+                                        <option value="1">Студент 1</option>
+                                        <option value="2">Студент 2</option>
+                                        <option value="3">Студент 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="custom-table__cell"><span class="test-result">37</span>%<span class="result-dot red"></span></div>
+                            <div class="custom-table__cell">
+                                <div class="cust-select-wrap">
+                                    <select>
+                                        <option value="0">3</option>
+                                        <option value="1">Студент 1</option>
+                                        <option value="2">Студент 2</option>
+                                        <option value="3">Студент 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="custom-table__cell">
+                                <div class="cust-select-wrap">
+                                    <select>
+                                        <option value="0">3</option>
+                                        <option value="1">Студент 1</option>
+                                        <option value="2">Студент 2</option>
+                                        <option value="3">Студент 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="custom-table__cell">Завершен</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-wrap test-details-wrap">
+                <div class="custom-table ratings-courses-details-table">
+                    <div class="custom-table__header flex j-s-b">
+                        <div class="custom-table__col">ФИО</div>
+                        <div class="custom-table__col">Регион</div>
+                        <div class="custom-table__col">Локация</div>
+                        <div class="custom-table__col">Прогресс</div>
+                        <div class="custom-table__col">Домашнее задание</div>
+                        <div class="custom-table__col">Результат теста</div>
+                        <div class="custom-table__col">Дата начала обучения</div>
+                        <div class="custom-table__col">Дата активности</div>
+                        <div class="custom-table__col">Статус</div>
+                    </div>
+                    <div class="custom-table__body">
+                        <div class="custom-table__row flex j-s-b">
+                            <div class="custom-table__cell">Вередница Вита Игоревна</div>
+                            <div class="custom-table__cell">Москва</div>
+                            <div class="custom-table__cell">Театральный пр-д, 5/1</div>
+                            <div class="custom-table__cell">95%<span class="result-dot green"></span></div>
+                            <div class="custom-table__cell">5/5</div>
+                            <div class="custom-table__cell">78/100<span class="result-dot green"></span></div>
+                            <div class="custom-table__cell">01.02.2019</div>
+                            <div class="custom-table__cell">01.02.2019</div>
+                            <div class="custom-table__cell">Пройден<span class="result-dot green"></span></div>
+                        </div>
+                        <div class="custom-table__row flex j-s-b">
+                            <div class="custom-table__cell">Вертяков Валентин Владимирович</div>
+                            <div class="custom-table__cell">Москва</div>
+                            <div class="custom-table__cell">Театральный пр-д, 5/1</div>
+                            <div class="custom-table__cell">75%<span class="result-dot yellow"></span></div>
+                            <div class="custom-table__cell">4/5</div>
+                            <div class="custom-table__cell">68/100<span class="result-dot yellow"></span></div>
+                            <div class="custom-table__cell">01.02.2019</div>
+                            <div class="custom-table__cell">01.02.2019</div>
+                            <div class="custom-table__cell">В процессе</div>
+                        </div>
+                        <div class="custom-table__row flex j-s-b">
+                            <div class="custom-table__cell">Ветер Иван Анатольевич</div>
+                            <div class="custom-table__cell">Москва</div>
+                            <div class="custom-table__cell">Театральный пр-д, 5/1</div>
+                            <div class="custom-table__cell">37%<span class="result-dot red"></span></div>
+                            <div class="custom-table__cell">2/5</div>
+                            <div class="custom-table__cell">45/100<span class="result-dot red"></span></div>
+                            <div class="custom-table__cell">01.02.2019</div>
+                            <div class="custom-table__cell">01.02.2019</div>
+                            <div class="custom-table__cell">Не пройден<span class="result-dot red"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-wrap">
+                <div class="custom-table done-test ratings-courses-table">
+                    <div class="custom-table__header flex j-s-b">
+                        <div class="custom-table__col">Тесты</div>
+                        <div class="custom-table__col"></div>
+                        <div class="custom-table__col">Дата старта</div>
+                        <div class="custom-table__col">Кому назначен</div>
+                        <div class="custom-table__col">Прогресс</div>
+                        <div class="custom-table__col">Пройден</div>
+                        <div class="custom-table__col">Не пройден</div>
+                        <div class="custom-table__col">Статус</div>
+                    </div>
+                    <div class="custom-table__body">
+                        <div class="custom-table__row flex j-s-b">
+                            <div class="custom-table__cell"><a href="#done-test01" class="done-test__name done-test__profile">Как повысить лояльность персонала?</a></div>
+                            <div class="custom-table__cell">
+                                <a href="#"><img src="../../img/corp/icons/pencil.png" /></a>
+                            </div>
+                            <div class="custom-table__cell">01.02.2019</div>
+                            <div class="custom-table__cell">
+                                <div class="cust-select-wrap">
+                                    <select>
+                                        <option value="0">3</option>
+                                        <option value="1">Студент 1</option>
+                                        <option value="2">Студент 2</option>
+                                        <option value="3">Студент 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="custom-table__cell"><span class="test-result">97</span>%<span class="result-dot green"></span></div>
+                            <div class="custom-table__cell">
+                                <div class="cust-select-wrap">
+                                    <select>
+                                        <option value="0">3</option>
+                                        <option value="1">Студент 1</option>
+                                        <option value="2">Студент 2</option>
+                                        <option value="3">Студент 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="custom-table__cell">
+                                <div class="cust-select-wrap">
+                                    <select>
+                                        <option value="0">3</option>
+                                        <option value="1">Студент 1</option>
+                                        <option value="2">Студент 2</option>
+                                        <option value="3">Студент 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="custom-table__cell">Активен</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!--            <div class="table-wrap test-details-wrap" id="done-test02">-->
+<!--                <div class="custom-table test-details">-->
+<!--                    <div class="custom-table__header flex j-s-b">-->
+<!--                        <div class="custom-table__col">Вопрос 2</div>-->
+<!--                        <div class="custom-table__col">Средний бал 2</div>-->
+<!--                        <div class="custom-table__col">Ответы 2</div>-->
+<!--                    </div>-->
+<!--                    <div class="custom-table__body">-->
+<!--                        <div class="custom-table__row flex j-s-b">-->
+<!--                            <div class="custom-table__cell"><a href="#" class="test-details__name">1/5. Метод Mystery Shopping это:</a> <span class="result-dot"></span></div>-->
+<!--                            <div class="custom-table__cell">95%</div>-->
+<!--                            <div class="custom-table__cell test-answer">-->
+<!--                                <div class="answer-content">-->
+<!--                                    <div class="list">метод изучения аномальных явлений</div>-->
+<!--                                    <div class="list">метод сбора информации о конкретных случаях</div>-->
+<!--                                    <div class="list">метод оценки рынка ценных бумаг</div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="custom-table__row flex j-s-b">-->
+<!--                            <div class="custom-table__cell"><a href="#" class="test-details__name">2/5. Можно ли выполнять отраслевые оценки Тайному Покупателю? </a> <span class="result-dot"></span></div>-->
+<!--                            <div class="custom-table__cell">69%</div>-->
+<!--                            <div class="custom-table__cell test-answer">-->
+<!--                                <div class="answer-content">-->
+<!--                                    <div class="list">метод изучения аномальных явлений</div>-->
+<!--                                    <div class="list">метод сбора информации о конкретных случаях</div>-->
+<!--                                    <div class="list">метод оценки рынка ценных бумаг</div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="custom-table__row flex j-s-b">-->
+<!--                            <div class="custom-table__cell"><a href="#" class="test-details__name active">3/5. Перед выполнением визита ТП должен четко знать: </a> <span class="result-dot"></span></div>-->
+<!--                            <div class="custom-table__cell">32%</div>-->
+<!--                            <div class="custom-table__cell test-answer">-->
+<!--                                <div class="answer-content">-->
+<!--                                    <div class="list">метод изучения аномальных явлений</div>-->
+<!--                                    <div class="list">метод сбора информации о конкретных случаях</div>-->
+<!--                                    <div class="list">метод оценки рынка ценных бумаг</div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <div class="table-wrap test-details-wrap" id="done-test03">-->
+<!--                <div class="custom-table test-details">-->
+<!--                    <div class="custom-table__header flex j-s-b">-->
+<!--                        <div class="custom-table__col">Вопрос 3</div>-->
+<!--                        <div class="custom-table__col">Средний бал 3</div>-->
+<!--                        <div class="custom-table__col">Ответы 3</div>-->
+<!--                    </div>-->
+<!--                    <div class="custom-table__body">-->
+<!--                        <div class="custom-table__row flex j-s-b">-->
+<!--                            <div class="custom-table__cell"><a href="#" class="test-details__name">1/5. Метод Mystery Shopping это:</a> <span class="result-dot"></span></div>-->
+<!--                            <div class="custom-table__cell">95%</div>-->
+<!--                            <div class="custom-table__cell test-answer">-->
+<!--                                <div class="answer-content">-->
+<!--                                    <div class="list">метод изучения аномальных явлений</div>-->
+<!--                                    <div class="list">метод сбора информации о конкретных случаях</div>-->
+<!--                                    <div class="list">метод оценки рынка ценных бумаг</div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="custom-table__row flex j-s-b">-->
+<!--                            <div class="custom-table__cell"><a href="#" class="test-details__name">2/5. Можно ли выполнять отраслевые оценки Тайному Покупателю? </a> <span class="result-dot"></span></div>-->
+<!--                            <div class="custom-table__cell">69%</div>-->
+<!--                            <div class="custom-table__cell test-answer">-->
+<!--                                <div class="answer-content">-->
+<!--                                    <div class="list">метод изучения аномальных явлений</div>-->
+<!--                                    <div class="list">метод сбора информации о конкретных случаях</div>-->
+<!--                                    <div class="list">метод оценки рынка ценных бумаг</div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="custom-table__row flex j-s-b">-->
+<!--                            <div class="custom-table__cell"><a href="#" class="test-details__name active">3/5. Перед выполнением визита ТП должен четко знать: </a> <span class="result-dot"></span></div>-->
+<!--                            <div class="custom-table__cell">32%</div>-->
+<!--                            <div class="custom-table__cell test-answer">-->
+<!--                                <div class="answer-content">-->
+<!--                                    <div class="list">метод изучения аномальных явлений</div>-->
+<!--                                    <div class="list">метод сбора информации о конкретных случаях</div>-->
+<!--                                    <div class="list">метод оценки рынка ценных бумаг</div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+
+
+
+        </div>
+
+
+    </main>
+</div>
+
+<script src="../../script/libs/jquery.custom-select.js"></script>
+<script src="../../script/inner.js"></script>
+<script src="../../script/resp-menu.js"></script>
+<script src="../../script/common.js"></script>
+
+<script>
+    jQuery(function ($) {
+        $(document).ready(function () {
+            $('.select-search select').customSelect({
+                search: true
+            });
+            $('.cust-select-wrap select').customSelect();
+        });
+    });
+</script>
+
+
+</body>
+</html>

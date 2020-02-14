@@ -1,0 +1,60 @@
+/*the container must be positioned relative:*/
+.custom-select-wrapper {
+    position: relative;
+    font-family: Arial;
+}
+.custom-select-wrapper select {
+    display: none; /*hide original SELECT element:*/
+}
+.select-selected {
+    background-color: #fff;
+    line-height: 7px;
+}
+/*style the arrow inside the select element:*/
+.select-selected:after {
+    transition: 0.3s;
+    position: absolute;
+    display: inline-block;
+    content: "";
+    top: 10px;
+    right: 5px;
+    width: 11px;
+    height: 7px;
+    background: url("../../img/selectarrow.png");
+    background-size: 11px !important;
+    background-repeat: no-repeat;
+}
+.select-selected.select-arrow-active:after {
+    transform-origin: center center;
+    transform: rotate(180deg);
+}
+.select-items div,.select-selected {
+    color: #000000;
+    padding: 10px 23px;
+    cursor: pointer;
+    user-select: none;
+}
+.select-items {
+    background-color: #ffffff;
+    top: -43%;
+    z-index: 99;
+    border: solid 1.5px #76ecfa !important;
+    border-radius: 10px;
+    position: absolute;
+    left: -10px;
+    width: 105%;
+}
+.select-hide {
+    display: none;
+}
+.select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/*Additional style*/
+.select-blue-border{
+    border: 1.5px solid #63deee;
+    padding: 8px;
+    border-radius: 37px;
+    width: 366px;
+}

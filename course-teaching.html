@@ -1,0 +1,1026 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Курс-обучение</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="style/libs/test-select.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/i-style/style.css">
+    <link rel="stylesheet" href="style/media.css">
+
+    <!-- Styles -->
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+
+</head>
+<body>
+<div class="test-result-overlay" onclick="window.removeEventListener('beforeunload', beforeLoad); window.location.href = window.location.href.split('?')[0]">
+    <div class="test-result-popup">
+        <div class="close" onclick="window.removeEventListener('beforeunload', beforeLoad); window.location.href = window.location.href.split('?')[0]" >+</div>
+        <div class="result-information">
+            <p>Поздравляем!</p>
+            <p>Ваш результат теста - <span>100</span> б,</p>
+            <p>что составляет <span>100</span>%</p>
+        </div>
+        <div class="chare-buttons-wrapper">
+            <p class="share-buttons-title">Поделиться результатами </p>
+            <div class="share-buttons">
+                <!--<p class="share_social bold">Поделиться вакансией</p>-->
+                <a class="share-btn-vk" href="https://vk.com/share.php?url=[LINK]" target="_blank" onclick="return Share.me(this);">
+                    <div class="vk share-block">
+                        <img class="soc-icon-size" src="img/social_icon/vk.png" alt="instagram">
+                    </div>
+                </a>
+                <a href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Ffiddle.jshell.net%2F_display%2F&text=https://www.ukr.net/" target="_blank" onclick="return Share.me(this)">
+                    <div class="twitter share-block">
+                        <img class="soc-icon-size" src="img/social_icon/twitter.png" alt="instagram">
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank" onclick="return Share.me(this);">
+                    <div class="google share-block">
+                        <img class="soc-icon-size" src="img/social_icon/facebook.png" alt="instagram">
+                    </div>
+                </a>
+                <a href="tg://msg_url?url=https://www.google.com.mx/">
+                    <div class="telegram share-block">
+                        <img class="soc-icon-size" src="img/social_icon/telegram.png" alt="telegram">
+                    </div>
+                </a>
+                <a class="share-btn-in" href="viber://forward?text=<Your Text>">
+                    <!--<a href="viber://pa?chatURI=[public account URI]&text=[message text]" target="_blank" onclick="return Share.me(this);">-->
+                    <!--<a href="viber://pa?chatURI=http://www.example.com">-->
+                    <div class="viber share-block">
+                        <img class="soc-icon-size" src="img/social_icon/viber.png" alt="viber">
+                    </div>
+                </a>
+                <!--<a href="whatsapp://send?text={url}">-->
+
+                <a href="whatsapp://send?text=https://www.google.com.mx/" data-action="share/whatsapp/share" >
+                    <div class="whatsapp share-block">
+                        <img class="soc-icon-size" src="img/social_icon/whatsapp.png" alt="instagram">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="error-message-overlay">
+    <div class="error-message-popup">
+        <div class="close-message">+</div>
+        <div class="message-text">
+            <p>Пожалуйста, прикрепите файл!</p>
+        </div>
+    </div>
+</div>
+<div class="success-message-overlay">
+    <div class="attachedFile-success-message-popup">
+        <div class="attachedFileSuccessMessage">
+            <p class="successMessageTitle">Благодарим за выполнение домашнего задания!</p>
+            <div class="add-info-wrapper">
+                <p class="mt-15 add-info">Проверка домашнего задания занимает от 3 до 7 дней. </p>
+                <p class="add-info">О результатах Вы будете проинформированы в уведомлении</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--<div class="exitblock">-->
+    <!--<div class="fon"></div>-->
+    <!--<div class="modaltext">-->
+        <!--Закрыть страницу? Если Вы закроете страницу в процессе прохождения теста – Ваш результат будет засчитан как негативный.-->
+    <!--</div>-->
+    <!--<div class="closeblock">+</div>-->
+<!--</div>-->
+<div class="message-overlay">
+    <div class="message-popup">
+        <div class="closeMessage">+</div>
+        <div class="message-text">
+            <p>Благодарим за Ваше мнение! Результат опроса будет учтен в рейтинге спикера!</p>
+        </div>
+    </div>
+</div>
+<div id="background" class="bg-blue"></div>
+<div id="papa">
+    <header id="header">
+        <div class="logo">
+            <a href="courses.html"><img src="img/logo.png" alt=""></a>
+            <div id="menu-3-lines" class="menu-absolute">
+                <div class="line top-line"></div>
+                <div class="line mid-line"></div>
+                <div class="line bot-line"></div>
+            </div>
+        </div>
+        <div class="right-block flex a-c">
+            <nav class="header-navigation" id="left-menu">
+                <ul class="menu">
+                    <li><a class="active-menu menu-item" href="">Обучение</a></li>
+                    <li><a class="menu-item" href="">Консалтинг</a></li>
+                    <li><a class="menu-item" href="">О нас</a></li>
+                    <li><a class="menu-item" href="">Контакты</a></li>
+                </ul>
+            </nav>
+            <div id="header-bell" class="bell p-r">
+                <div class="bell-notifications">3</div>
+                <a href="notifications.html"><i class="bell-img i-bell"></i></a>
+            </div>
+        </div>
+    </header>
+    <aside id="left-side-bar">
+        <div id="mobile-menu">
+        </div>
+        <div class="top-pearson-info flex j-c a-c f-d-c m-a mt-40">
+            <div class="pearson-photo">
+                <img src="img/pearson/cover.jpg" alt="">
+            </div>
+            <div class="pearson-name">
+                Варфоломей Книжный
+            </div>
+        </div>
+        <nav id="pearson-nav">
+            <ul>
+                <li>
+                    <a href="courses.html">
+                        <img src="img/icon/book.png" alt="icon" class="icon-li">
+                        <span class="active-menu">Мое обучение</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="pending-peyment.html">
+                        <img src="img/icon/money.png" alt="icon" class="icon-li">
+                        <span>Оплата</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="faq.html">
+                        <img src="img/icon/info.png" alt="icon" class="icon-li">
+                        <span>Помощь</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="profile.html">
+                        <img src="img/icon/user.png" alt="icon" class="icon-li">
+                        <span>Профиль</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main id="main">
+        <!-- Top Buttons Container Start -->
+        <div class="top-buttons-wrappper flex f-w">
+            <a href="" class="a-btn box-shadow  blue-gradient-background">
+                Курсы
+            </a>
+            <a href="webinars.html" class="a-btn box-shadow">
+                Вебинары
+            </a>
+            <a href="tests.html" class="a-btn box-shadow">
+                Тесты/ДЗ
+            </a>
+            <a href="bookmarks.html" class="a-btn box-shadow">
+                Закладки
+            </a>
+            <a href="archive.html" class="a-btn box-shadow ">
+                Архив
+            </a>
+        </div>
+        <!--  Top Buttons Container End  -->
+        <div class="vacancy-wrapper">
+            <ul class="vacancy_list">
+                <li class="vacancy_item"><a class="vacancy_item_link" href="courses.html">Все курсы &nbsp; / &nbsp;  UI/UX design</a></li>
+            </ul>
+        </div>
+        <section class="question-to-speaker">
+            <div class="question-to-speaker_container">
+                <div class="question-to-speaker_left-side">
+                    <div class="lesson-description">
+                        <h2 class="lesson-description_title">UI/UX design</h2>
+                        <p class="mt-15">Какие составляющие сервиса приносят прибыль?</p>
+                        <p class="mt-15">Как привлечь внимание персонала к сервису?</p>
+                        <p class="mt-15">Как сделать стандарты живыми? Стоит ли бросать все силы на WOW сервис?</p>
+                        <p class="mt-15">Все это Вы узнаете на простом курсе вебинаров «Easy service»</p>
+                        <p class="mt-20">26 апреля Центр Сервис Менеджмента запустил курс вебинаров, в котором
+                            мы собрали реальные кейсы и живые примеры, объединили работающие
+                            рекомендации и простые ответы на сложные вопросы.</p>
+                    </div>
+                 <div class="progress-wrapper">
+                     <div class="gray-bg">
+                         <div class="blue-gradient-bg">
+
+                         </div>
+                     </div>
+                 </div>
+                    <div class="progress-count">
+                        <span>4/5</span>
+                    </div>
+                    <div class="lesson-details-wrapper">
+                       <ul class="details-list">
+                           <li class="details-list-item puzzle">4 блока</li>
+                           <li class="details-list-item camera">11 занятий</li>
+                           <li class="details-list-item clock">5 часов 55 минут</li>
+                       </ul>
+                    </div>
+                </div>
+                <div class="question-to-speaker_right-side">
+                    <h3 class="question-to-speaker-title">ЗАДАТЬ ВОПРОС СПИКЕРУ</h3>
+                    <div class="speaker-chat">
+                        <div class="speaker-avatar-wrapper">
+                            <a href="speaker.html"><div class="speaker-avatar">
+
+                            </div></a>
+                            <p class="speaker-name bold">Елена</p>
+                            <p class="speaker-name bold">Цысарь</p>
+                        </div>
+                        <div class="messages-wrapper">
+                            <div class="user-message">
+                                <span class="user-message-text bold" >Елена, добрый день!  Скажите, пожалуйста, будет ли  продолжение</span>
+                                <i class="send-time">12:35</i>
+                            </div>
+                            <div class="speaker-message">
+                                <span class="speaker-message-text bold" >Здравствуйте! Да, вторая часть курса запланирована  на март</span>
+                                <i class="send-time">12:35</i>
+                            </div>
+                            <div class="user-message">
+                                <span class="user-message-text bold" >Елена, добрый день!  Скажите, пожалуйста, будет ли  продолжение</span>
+                                <i class="send-time">12:35</i>
+                            </div>
+                        </div>
+                        <div class="message-text-field-wrapper">
+                            <textarea class="message-text-field" type="text" placeholder="Задать вопрос спикеру"></textarea>
+                            <i class="send-massage-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="lesson-home_work">
+            <h3 class="title">СОДЕРЖАНИЕ КУРСА</h3>
+            <div class="contents_paragraphs">
+                <div class="paragraph-wrapp">
+                <div class="spoiler-container">
+                    <input type="checkbox" id="spoiler-1-1">
+                    <label for="spoiler-1-1" class="flex j-s-b">
+                        <span class="paragraph-point bold700"><span class="point_big_number">1.</span> Три секрета управлений персоналом с пошаговой инструкцией;</span>
+                        <div class="point">
+                            <span class="time-course-check-mark bold700">1:55:00 мин</span></p>
+                        </div>
+                    </label>
+                    <div class="spoiler">
+                <ul class="contents_paragraphs_list">
+                    <li class="contents_paragraphs_item">
+                        <input type="checkbox" id="spoiler-1-2">
+                        <label for="spoiler-1-2">Как проводить вервисную беседу с сотрудником; <span class="time-course-check-mark">25:00 мин</span></label>
+                        <div class="sub-spoiler">
+                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, blanditiis dolorum earum error eveniet in incidunt ipsa ipsum nostrum, nulla odio officiis quaerat quidem ratione recusandae sed suscipit veritatis voluptatum?</span>
+                        </div>
+                    </li>
+                    <li class="contents_paragraphs_item">
+                        <input type="checkbox" id="spoiler-1-3">
+                        <label for="spoiler-1-3"> Как проводить собрание по сервису;<span class="time-course-check-mark">37:00 мин</span></label>
+                        <div class="sub-spoiler">
+                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, blanditiis dolorum earum error eveniet in incidunt ipsa ipsum nostrum, nulla odio officiis quaerat quidem ratione recusandae sed suscipit veritatis voluptatum?</span>
+                        </div>
+                    </li>
+                    <li class="contents_paragraphs_item">
+                        <input type="checkbox" id="spoiler-1-4">
+                        <label for="spoiler-1-4"> Как ставить цели по сервису и достигать их;<span class="time-course-check-mark">45:05 мин</span></label>
+                        <div class="sub-spoiler">
+                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, blanditiis dolorum earum error eveniet in incidunt ipsa ipsum nostrum, nulla odio officiis quaerat quidem ratione recusandae sed suscipit veritatis voluptatum?</span>
+                        </div>
+                    </li>
+                </ul>
+                    </div>
+                </div>
+                </div>
+                <div class="paragraph-wrapp">
+                    <div class="spoiler-container">
+                        <input type="checkbox" id="spoiler-2-1">
+                        <label for="spoiler-2-1"><span class="paragraph-point bold700"><span class="point_big_number">2.</span> Эффективные решения и «must be» атрибуты по роботе с персоналом;</span>
+                            <div class="point">
+                                <span class="time-course-check-mark bold700">1:55:00 мин</span></p>
+                            </div>
+                        </label>
+                        <div class="spoiler">
+                            <ul class="contents_paragraphs_list">
+                                <li class="contents_paragraphs_item">
+                                    <input type="checkbox" id="spoiler-2-2">
+                                    <label for="spoiler-2-2">Как проводить презентации и обучение стандартам; <span class="time-course-check-mark">25:00 мин</span></label>
+                                    <div class="sub-spoiler">
+                                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, blanditiis dolorum earum error eveniet in incidunt ipsa ipsum nostrum, nulla odio officiis quaerat quidem ratione recusandae sed suscipit veritatis voluptatum?</span>
+                                    </div>
+                                </li>
+                                <li class="contents_paragraphs_item">
+                                    <input type="checkbox" id="spoiler-2-3">
+                                    <label for="spoiler-2-3"> Как проводить собрание по сервису;<span class="time-course-check-mark">37:00 мин</span></label>
+                                    <div class="sub-spoiler">
+                                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, blanditiis dolorum earum error eveniet in incidunt ipsa ipsum nostrum, nulla odio officiis quaerat quidem ratione recusandae sed suscipit veritatis voluptatum?</span>
+                                    </div>
+                                </li>
+                                <li class="contents_paragraphs_item">
+                                    <input type="checkbox" id="spoiler-2-4">
+                                    <label for="spoiler-2-4"> Как ставить цели по сервису и достигать их;<span class="time-course-check-mark">45:05 мин</span></label>
+                                    <div class="sub-spoiler">
+                                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, blanditiis dolorum earum error eveniet in incidunt ipsa ipsum nostrum, nulla odio officiis quaerat quidem ratione recusandae sed suscipit veritatis voluptatum?</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="paragraph-wrapp">
+                    <div class="spoiler-container">
+                        <input type="checkbox" id="spoiler-3-1">
+                        <label for="spoiler-3-1"><span class="paragraph-point bold700"><span class="point_big_number">3.</span>Живый практические примеры;</span>
+                            <div class="point">
+                                <span class="time-course-check-mark bold700">1:55:00 мин</span></p>
+                            </div>
+                        </label>
+                        <div class="spoiler">
+                            <ul class="contents_paragraphs_list">
+                                <li class="contents_paragraphs_item">
+                                    <input type="checkbox" id="spoiler-3-2">
+                                    <label for="spoiler-3-2">5 главных стандартов обслуживания; <span class="time-course-check-mark">45:00 мин</span></label>
+                                    <div class="sub-spoiler">
+                                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, blanditiis dolorum earum error eveniet in incidunt ipsa ipsum nostrum, nulla odio officiis quaerat quidem ratione recusandae sed suscipit veritatis voluptatum?</span>
+                                    </div>
+                                </li>
+                                <li class="contents_paragraphs_item">
+                                    <input type="checkbox" id="spoiler-3-3">
+                                    <label for="spoiler-3-3"> Практические советы «Как определить »лицо» сервиса и увидеть сервис глазами потребителя?»;<span class="time-course-check-mark">35:00 мин</span></label>
+                                    <div class="sub-spoiler">
+                                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, blanditiis dolorum earum error eveniet in incidunt ipsa ipsum nostrum, nulla odio officiis quaerat quidem ratione recusandae sed suscipit veritatis voluptatum?</span>
+                                    </div>
+                                </li>
+                                <li class="contents_paragraphs_item">
+                                    <input type="checkbox" id="spoiler-3-4">
+                                    <label for="spoiler-3-4">Ответ на вопрос «Действительно ли сервис приносит выгоды и какие именно?»;<span class="time-course-check-mark">37:00 мин</span></label>
+                                    <div class="sub-spoiler">
+                                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, blanditiis dolorum earum error eveniet in incidunt ipsa ipsum nostrum, nulla odio officiis quaerat quidem ratione recusandae sed suscipit veritatis voluptatum?</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="paragraph-wrapp">
+                    <div class="spoiler-container">
+                        <input type="checkbox" id="spoiler-4-1">
+                        <label for="spoiler-4-1"><span class="paragraph-point bold700"><span class="point_big_number">4.</span>Простые советы для повышения лояльности сотрудников;</span>
+                            <div class="point">
+                                <span class="time-course-check-mark bold700">1:55:00 мин</span></p>
+                            </div>
+                        </label>
+                        <div class="spoiler">
+                            <ul class="contents_paragraphs_list">
+                                <li class="contents_paragraphs_item">
+                                    <input type="checkbox" id="spoiler-4-2">
+                                    <label for="spoiler-4-2">Лучший метод создания Стандартов; <span class="time-course-check-mark">55:00 мин</span></label>
+                                    <div class="sub-spoiler">
+                                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, blanditiis dolorum earum error eveniet in incidunt ipsa ipsum nostrum, nulla odio officiis quaerat quidem ratione recusandae sed suscipit veritatis voluptatum?</span>
+                                    </div>
+                                </li>
+                                <li class="contents_paragraphs_item">
+                                    <input type="checkbox" id="spoiler-4-4">
+                                    <label for="spoiler-4-4">Секреты и советы создания стандартов;<span class="time-course-check-mark">35:00 мин</span></label>
+                                    <div class="sub-spoiler">
+                                        <div class="lesson-home_work-description">
+                                            <p><span class="attention">Центр</span> ответственности – это фундамент, ось, на которой держатся все процессы по сервис менеджменту в организации.
+                                                Центр ответственности должен быть многоликим: он представлен законодательной и исполнительной веткой власти. Сервисные
+                                                законодатели – это департаменты персонала, маркетинга и управления бизнесом (операционный), или отдельный специалист.
+                                                Они отвечают за создание стандартов, их контроль, связь с клиентом и сотрудником и др. Но сервисный президент,
+                                                исполнительная власть – это ТОП менеджер (ставит цели и мотивирует) и его «наместник на местах», руководитель локации,
+                                                без которого все послания сверху останутся на бумаге.
+                                            </p>
+                                            <ul class="conditions-list">
+                                                <li class="conditions-list_item black-point">Базовые атрибуты сервиса в розничных локациях</li>
+                                                <li class="conditions-list_item black-point"> Качество товара или услуги, ассортимент</li>
+                                                <li class="conditions-list_item black-point">Работа и поведение персонала</li>
+                                                <li class="conditions-list_item black-point">Скорость обслуживания (время обслуживания, наличие очереди и др.)</li>
+                                                <li class="conditions-list_item black-point">Чистота помещения и опрятность сотрудников</li>
+                                                <li class="conditions-list_item black-point">Акции и программы лояльности</li>
+                                                <li class="conditions-list_item black-point">Наличие дополнительных услуг</li>
+                                            </ul>
+                                            <div class="home-work-materials">
+                                                <div class="lesson-video">
+                                                    <iframe width="100%" height="400" src="https://www.youtube.com/embed/s_uyfdZvhos" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                                                    </iframe>
+                                                </div>
+                                                <p class="lesson-materials-title bold700 book">
+                                                    Материалы к занятию
+                                                </p>
+                                                <a class="materials-file" href="#">Презентация «5 главных стандартов»</a>
+                                                <p class="lesson-materials-title mt-30 bold700">
+                                                    Рекомендовано к изучению
+                                                </p>
+                                                <p><a class="materials-file" href="#">Статья Елены Цысарь «Как компании заполучить»</a></p>
+                                                <p><a class="materials-file" href="#">Книга Дэвида Аллена «Как привести дела в порядок»</a></p>
+                                                <p><a class="materials-file" href="#">Чек-лист по выполнению стандартов</a></p>
+                                                <div class="lesson-home_work">
+                                                    <p class="lesson-materials-title note">
+                                                        Домашнее задание
+                                                        <span class="float-right hw_date">Крайний срок подачи 13.05.2019</span>
+                                                    </p>
+                                                    <p> Комплексная оценка и регулярный контроль сервиса – обязательное условие. То, что не измеряется – не улучшается.
+                                                        При оценке сервиса необходимо использовать комплекс количественных и качественных исследований.</p>
+                                                    <p class="mt-20">Также важно – работать над интегральным (комплексным) показателем по сервису, учитывающим несколько инструментов
+                                                        замера. Интегральный показатель целесообразно сопоставлять с маркетинговыми, финансовыми, HR ключевыми
+                                                        показателями (KPI), для оценки эффективности инвестиций в сервис.</p>
+                                                    <p class="lesson-materials-title mt-30">
+                                                        Сдать домашнее задание
+                                                    </p>
+                                                </div>
+                                                <div class="upload_file_main-container">
+                                                    <form id="attachedFile" action="">
+                                                        <div class="upload_file_container">
+                                                            <input type="file" id="upload" class="hide inputfile">
+                                                            <label for="upload" class="upload-icon"><span id="fileName" class="file-name"></span><img src="img/icon/upload.png" class="upload-arrow" alt=""></label>
+                                                        </div>
+                                                        <div class="comment-wrapper">
+                                                            <textarea class="hw-comment"  placeholder="Комментарий к ДЗ"></textarea>
+                                                        </div>
+                                                        <div class="send-btn-container">
+                                                            <button class="send-btn box-shadow">Отправить</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="paragraph-wrapp">
+                    <div class="spoiler-container">
+                        <input type="checkbox" id="spoiler-5-1">
+                        <label for="spoiler-5-1"><span class="paragraph-point bold700 locked"><span class="point_big_number">5.</span>Список действий по преодоление сопротивления персонала;</span>
+                            <div class="point hide">
+                                <span class="time-course-check-mark bold700">1:55:00 мин</span></p>
+                            </div>
+                        </label>
+                        <div class="spoiler hide">
+                            <ul class="contents_paragraphs_list">
+                                <li class="contents_paragraphs_item">
+                                    <input type="checkbox" id="spoiler-5-2">
+                                    <label for="spoiler-5-2">5 главных стандартов обслуживания; <span class="time-course-check-mark">45:00 мин</span></label>
+                                    <div class="sub-spoiler">
+                                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, blanditiis dolorum earum error eveniet in incidunt ipsa ipsum nostrum, nulla odio officiis quaerat quidem ratione recusandae sed suscipit veritatis voluptatum?</span>
+                                    </div>
+                                </li>
+                                <li class="contents_paragraphs_item">
+                                    <input type="checkbox" id="spoiler-5-3">
+                                    <label for="spoiler-5-3"> Практические советы «Как определить »лицо» сервиса и увидеть сервис глазами потребителя?»;<span class="time-course-check-mark">35:00 мин</span></label>
+                                    <div class="sub-spoiler">
+                                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, blanditiis dolorum earum error eveniet in incidunt ipsa ipsum nostrum, nulla odio officiis quaerat quidem ratione recusandae sed suscipit veritatis voluptatum?</span>
+                                    </div>
+                                </li>
+                                <li class="contents_paragraphs_item">
+                                    <input type="checkbox" id="spoiler-5-4">
+                                    <label for="spoiler-5-4">Ответ на вопрос «Действительно ли сервис приносит выгоды и какие именно?»;<span class="time-course-check-mark">37:00 мин</span></label>
+                                    <div class="sub-spoiler">
+                                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, blanditiis dolorum earum error eveniet in incidunt ipsa ipsum nostrum, nulla odio officiis quaerat quidem ratione recusandae sed suscipit veritatis voluptatum?</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="contents_paragraphs locked mt-20">-->
+                <!--<p class="point"><span class="point_big_number">5.</span> Список действий по преодоление сопротивления персонала;</p>-->
+            <!--</div>-->
+            <div class="share-buttons-wrapper">
+                <div class="share-buttons">
+                    <p class="share_social bold">Поделиться курсом</p>
+                    <a class="share-btn-vk" href="https://vk.com/share.php?url=[LINK]" target="_blank" onclick="return Share.me(this);">
+                        <div class="vk share-block">
+                            <img class="soc-icon-size" src="img/social_icon/vk.png" alt="instagram">
+                        </div>
+                    </a>
+                    <a href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Ffiddle.jshell.net%2F_display%2F&text=https://www.ukr.net/" target="_blank" onclick="return Share.me(this)">
+                        <div class="twitter share-block">
+                            <img class="soc-icon-size" src="img/social_icon/twitter.png" alt="instagram">
+                        </div>
+                    </a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank" onclick="return Share.me(this);">
+                        <div class="google share-block">
+                            <img class="soc-icon-size" src="img/social_icon/facebook.png" alt="instagram">
+                        </div>
+                    </a>
+                    <a href="tg://msg_url?url=https://www.google.com.mx/">
+                        <div class="telegram share-block">
+                            <img class="soc-icon-size" src="img/social_icon/telegram.png" alt="telegram">
+                        </div>
+                    </a>
+                    <a class="share-btn-in" href="viber://forward?text=<Your Text>">
+                        <!--<a href="viber://pa?chatURI=[public account URI]&text=[message text]" target="_blank" onclick="return Share.me(this);">-->
+                        <!--<a href="viber://pa?chatURI=http://www.example.com">-->
+                        <div class="viber share-block">
+                            <img class="soc-icon-size" src="img/social_icon/viber.png" alt="viber">
+                        </div>
+                    </a>
+                    <!--<a href="whatsapp://send?text={url}">-->
+
+                    <a href="whatsapp://send?text=https://www.google.com.mx/" data-action="share/whatsapp/share" >
+                        <div class="whatsapp share-block">
+                            <img class="soc-icon-size" src="img/social_icon/whatsapp.png" alt="instagram">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <div class="test-main-title">
+            <h3 id="do_test">ПРОЙТИ ТЕСТ ПО КУРСУ</h3>
+        </div>
+        <section class="main-test hide">
+            <div id="timer"></div>
+            <div class="main-test_container" id="section-by-section">
+                <div class="main-test_questions-wrapper">
+                    <h3 class="main-test_title">тест по курсу</h3>
+                    <div class="main-test_question-block">
+                        <form action="#done-test" id="form-test">
+                            <p class="chapter">Раздел 1 "Название..."</p>
+                            <div class="main-test_question-wrapper">
+                                <p class="main-test_question-text">
+                                    <span class="main-test_question-big-number">1</span>/5 <span class="pl-20">Клиентский опыт (Customer Experience) - это ...</span>
+                                </p>
+                                <label class="radio_container">
+                                    <input type="radio" name="optradio1" class="radio__option">
+                                    <span class="answer">Опыт работы тайным покупателем</span>
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="radio_container">
+                                    <input type="radio" name="optradio1" class="radio__option">
+                                    <span class="answer">Экспертный опыт клиента в различных областях бизнеса</span>
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="radio_container">
+                                    <input type="radio" name="optradio1" class="radio__option">
+                                    <span class="answer">Весь комплекс взаимодействия клиента и бренда/бизнеса (состоит из пути клиента, локации, окружения)</span>
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="radio_container">
+                                    <input type="radio" name="optradio1" class="radio__option">
+                                    <span class="answer">Жизненный опыт клиента</span>
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="main-test_question-block">
+                        <div class="main-test_question-wrapper">
+                            <p class="main-test_question-text">
+                                <span class="main-test_question-big-number">2</span>/5 <span class="pl-20">Клиентский опыт (Customer Experience) - это ...</span>
+                            </p>
+                            <label class="radio_container">
+                                <input type="radio" name="optradio2" class="radio__option">
+                                <span class="answer">Опыт работы тайным покупателем</span>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="radio_container">
+                                <input type="radio" name="optradio2" class="radio__option">
+                                <span class="answer">Экспертный опыт клиента в различных областях бизнеса</span>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="radio_container">
+                                <input type="radio" name="optradio2" class="radio__option">
+                                <span class="answer">Весь комплекс взаимодействия клиента и бренда/бизнеса (состоит из пути клиента, локации, окружения)</span>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="radio_container">
+                                <input type="radio" name="optradio2" class="radio__option">
+                                <span class="answer">Жизненный опыт клиента</span>
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="main-test_btn-wrapper">
+                        <button class="main-test_btn next-question">Далее</button>
+                    </div>
+                </div>
+                <div class="main-test_questions-wrapper">
+                    <div class="main-test_question-block">
+                        <p class="chapter">Раздел 2 "Название..."</p>
+                        <div class="main-test_question-wrapper">
+                            <p class="main-test_question-text">
+                                <span class="main-test_question-big-number">3</span>/5 <span class="pl-20">Клиентский опыт (Customer Experience) - это ...</span>
+                            </p>
+                            <label class="radio_container">
+                                <input type="radio" name="optradio3" class="radio__option">
+                                <span class="answer">Опыт работы тайным покупателем</span>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="radio_container">
+                                <input type="radio" name="optradio3" class="radio__option">
+                                <span class="answer">Экспертный опыт клиента в различных областях бизнеса</span>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="radio_container">
+                                <input type="radio" name="optradio3" class="radio__option">
+                                <span class="answer">Весь комплекс взаимодействия клиента и бренда/бизнеса (состоит из пути клиента, локации, окружения)</span>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="radio_container">
+                                <input type="radio" name="optradio3" class="radio__option">
+                                <span class="answer">Жизненный опыт клиента</span>
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="main-test_question-block">
+                        <div class="main-test_question-wrapper">
+                            <p class="main-test_question-text">
+                                <span class="main-test_question-big-number">4</span>/5 <span class="pl-20">Клиентский опыт (Customer Experience) - это ...</span>
+                            </p>
+                            <label class="radio_container">
+                                <input type="radio" name="optradio4" class="radio__option">
+                                <span class="answer">Опыт работы тайным покупателем</span>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="radio_container">
+                                <input type="radio" name="optradio4" class="radio__option">
+                                <span class="answer">Экспертный опыт клиента в различных областях бизнеса</span>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="radio_container">
+                                <input type="radio" name="optradio4" class="radio__option">
+                                <span class="answer">Весь комплекс взаимодействия клиента и бренда/бизнеса (состоит из пути клиента, локации, окружения)</span>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="radio_container">
+                                <input type="radio" name="optradio4" class="radio__option">
+                                <span class="answer">Жизненный опыт клиента</span>
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="main-test_btn-wrapper">
+                        <button class="main-test_btn previous-question">Назад</button>
+                        <button class="main-test_btn next-question">Далее</button>
+                    </div>
+                </div>
+                <div class="main-test_questions-wrapper">
+                    <div class="main-test_question-block">
+                        <p class="chapter">Раздел 3 "Название..."</p>
+                        <div class="main-test_question-wrapper">
+                            <p class="main-test_question-text">
+                                <span class="main-test_question-big-number">5</span>/5 <span class="pl-20">Клиентский опыт (Customer Experience) - это ...</span>
+                            </p>
+                            <label class="radio_container">
+                                <input type="radio" name="optradio5" class="radio__option">
+                                <span class="answer">Опыт работы тайным покупателем</span>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="radio_container">
+                                <input type="radio" name="optradio5" class="radio__option">
+                                <span class="answer">Экспертный опыт клиента в различных областях бизнеса</span>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="radio_container">
+                                <input type="radio" name="optradio5" class="radio__option">
+                                <span class="answer">Весь комплекс взаимодействия клиента и бренда/бизнеса (состоит из пути клиента, локации, окружения)</span>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="radio_container">
+                                <input type="radio" name="optradio5" class="radio__option">
+                                <span class="answer">Жизненный опыт клиента</span>
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="main-test_btn-wrapper">
+                            <button class="main-test_btn previous-question">Назад</button>
+                            <button class="main-test_btn send-question_btn">Отправить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="impression">
+            <h3 class="title">ПОДЕЛИТЕСЬ ВПЕЧАТЛЕНИЯМИ О СПИКЕРЕ</h3>
+            <div class="impression-points-wrapper">
+                <form action="" method="post" id="impression-form">
+                <div class="impression-range">
+                    <p class="point">
+                        <span class="point_big_number">1</span>
+                        <span class="point_small_number">/6</span>
+                        <span class="point_question_text">Оцените полезность курса для себя</span>
+                    </p>
+                </div>
+                        <div class="range-container">
+                            <div class="range_1-10">
+                                <input data-reqired type="radio" id="q-1-0" name="q-1-1" value="1">
+                                <label for="q-1-0" class="btn btn-1">
+                                    <div class="range-number">0</div>
+                                </label>
+
+                                <input data-reqired type="radio" id="q-1-1" name="q-1-1" value="1">
+                                <label for="q-1-1" class="btn btn-1">
+                                    <div class="range-number">1</div>
+                                </label>
+
+                                <input data-reqired type="radio" id="q-1-2" name="q-1-1" value="1">
+                                <label for="q-1-2" class="btn btn-1">
+                                    <div class="range-number">2</div>
+                                </label>
+
+                                <input data-reqired type="radio" id="q-1-3" name="q-1-1" value="1">
+                                <label for="q-1-3" class="btn btn-1">
+                                    <div class="range-number">3</div>
+                                </label>
+
+                                <input data-reqired type="radio" id="q-1-4" name="q-1-1" value="1">
+                                <label for="q-1-4" class="btn btn-1">
+                                    <div class="range-number">4</div>
+                                </label>
+
+                                <input data-reqired type="radio" id="q-1-5" name="q-1-1" value="1">
+                                <label for="q-1-5" class="btn btn-1">
+                                    <div class="range-number">5</div>
+                                </label>
+
+                                <input data-reqired type="radio" id="q-1-6" name="q-1-1" value="1">
+                                <label for="q-1-6" class="btn btn-1">
+                                    <div class="range-number">6</div>
+                                </label>
+
+                                <input data-reqired type="radio" id="q-1-7" name="q-1-1" value="1">
+                                <label for="q-1-7" class="btn btn-1">
+                                    <div class="range-number">7</div>
+                                </label>
+
+                                <input data-reqired type="radio" id="q-1-8" name="q-1-1" value="1">
+                                <label for="q-1-8" class="btn btn-1">
+                                    <div class="range-number">8</div>
+                                </label>
+
+                                <input data-reqired type="radio" id="q-1-9" name="q-1-1" value="1">
+                                <label for="q-1-9" class="btn btn-1">
+                                    <div class="range-number">9</div>
+                                </label>
+                            </div>
+                            <div class="range-description">
+                                <p class="pl-44">Вообще не полезен</p>
+                                <p class="max-point">Максимально полезен</p>
+                            </div>
+                            <div class="error-block">
+                                <p class="error">Выберите ответ</p>
+                            </div>
+                        </div>
+
+                    <div class="impression-range">
+                        <p class="point">
+                            <span class="point_big_number">2</span>
+                            <span class="point_small_number">/6</span>
+                            <span class="point_question_text">Какой урок был наиболее актуальным для Вас? (выбор из списка представленных уроков)</span>
+                        </p>
+                    </div>
+                    <div class="select-container">
+                    <div class="filters-wrapper flex f-w">
+                        <div class="filter custom-select-filter">
+                            <div class="select-wrapper">
+                                <select id="quali">
+                                    <option value="0" selected="selected">Пусто</option>
+                                    <option value="1">Лучший метод создания стандартов;</option>
+                                    <option value="2">Пункт 2</option>
+                                    <option value="3">Пункт 3</option>
+                                    <option value="4">Пункт 4</option>
+                                    <option value="4">Пункт 5</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                        <p class="title-for-required">Выберите ответ</p>
+                    </div>
+                    <div class="impression-range">
+                        <p class="point">
+                            <span class="point_big_number">3</span>
+                            <span class="point_small_number">/6</span>
+                            <span class="point_question_text">Чего Вам не хватило в курсе?</span>
+                        </p>
+                    </div>
+                    <div class="impression-comment">
+                        <textarea type="text" class="speaker-impression-comment"></textarea>
+                    </div>
+                    <div class="impression-range">
+                        <p class="point">
+                            <span class="point_big_number">4</span>
+                            <span class="point_small_number">/6</span>
+                            <span class="point_question_text">Оцените, пожалуйста, работу спикера </span>
+                        </p>
+                    </div>
+                   <div class="range-container">
+                       <div class="range_1-10">
+                           <input data-reqired type="radio" id="q-2-0" name="q-2-1" value="1">
+                           <label for="q-2-0" class="btn btn-1">
+                               <div class="range-number">0</div>
+                           </label>
+
+                           <input data-reqired type="radio" id="q-2-1" name="q-2-1" value="1">
+                           <label for="q-2-1" class="btn btn-1">
+                               <div class="range-number">1</div>
+                           </label>
+
+                           <input data-reqired type="radio" id="q-2-2" name="q-2-1" value="1">
+                           <label for="q-2-2" class="btn btn-1">
+                               <div class="range-number">2</div>
+                           </label>
+
+                           <input data-reqired type="radio" id="q-2-3" name="q-2-1" value="1">
+                           <label for="q-2-3" class="btn btn-1">
+                               <div class="range-number">3</div>
+                           </label>
+
+                           <input data-reqired type="radio" id="q-2-4" name="q-2-1" value="1">
+                           <label for="q-2-4" class="btn btn-1">
+                               <div class="range-number">4</div>
+                           </label>
+
+                           <input data-reqired type="radio" id="q-2-5" name="q-2-1" value="1">
+                           <label for="q-2-5" class="btn btn-1">
+                               <div class="range-number">5</div>
+                           </label>
+
+                           <input data-reqired type="radio" id="q-2-6" name="q-2-1" value="1">
+                           <label for="q-2-6" class="btn btn-1">
+                               <div class="range-number">6</div>
+                           </label>
+
+                           <input data-reqired type="radio" id="q-2-7" name="q-2-1" value="1">
+                           <label for="q-2-7" class="btn btn-1">
+                               <div class="range-number">7</div>
+                           </label>
+
+                           <input data-reqired type="radio" id="q-2-8" name="q-2-1" value="1">
+                           <label for="q-2-8" class="btn btn-1">
+                               <div class="range-number">8</div>
+                           </label>
+
+                           <input data-reqired type="radio" id="q-2-9" name="q-2-1" value="1">
+                           <label for="q-2-9" class="btn btn-1">
+                               <div class="range-number">9</div>
+                           </label>
+                       </div>
+                       <div class="range-description">
+                           <p class="pl-44">Вообще не понравилось</p>
+                           <p>Очень понравилось</p>
+                       </div>
+                       <div class="error-block">
+                           <p class="error">Выберите ответ</p>
+                       </div>
+                   </div>
+                    <div class="impression-range">
+                        <p class="point">
+                            <span class="point_big_number">5</span>
+                            <span class="point_small_number">/6</span>
+                            <span class="point_question_text">Оцените, пожалуйста, насколько доступно была изложена информация</span>
+                        </p>
+                    </div>
+                    <div class="range-container">
+                        <div class="range_1-10">
+                            <input data-reqired type="radio" id="q-3-0" name="q-3-1" value="1">
+                            <label for="q-3-0" class="btn btn-1">
+                                <div class="range-number">0</div>
+                            </label>
+
+                            <input data-reqired type="radio" id="q-3-1" name="q-3-1" value="1">
+                            <label for="q-3-1" class="btn btn-1">
+                                <div class="range-number">1</div>
+                            </label>
+
+                            <input data-reqired type="radio" id="q-3-2" name="q-3-1" value="1">
+                            <label for="q-3-2" class="btn btn-1">
+                                <div class="range-number">2</div>
+                            </label>
+
+                            <input data-reqired type="radio" id="q-3-3" name="q-3-1" value="1">
+                            <label for="q-3-3" class="btn btn-1">
+                                <div class="range-number">3</div>
+                            </label>
+
+                            <input data-reqired type="radio" id="q-3-4" name="q-3-1" value="1">
+                            <label for="q-3-4" class="btn btn-1">
+                                <div class="range-number">4</div>
+                            </label>
+
+                            <input data-reqired type="radio" id="q-3-5" name="q-3-1" value="1">
+                            <label for="q-3-5" class="btn btn-1">
+                                <div class="range-number">5</div>
+                            </label>
+
+                            <input data-reqired type="radio" id="q-3-6" name="q-3-1" value="1">
+                            <label for="q-3-6" class="btn btn-1">
+                                <div class="range-number">6</div>
+                            </label>
+
+                            <input data-reqired type="radio" id="q-3-7" name="q-3-1" value="1">
+                            <label for="q-3-7" class="btn btn-1">
+                                <div class="range-number">7</div>
+                            </label>
+
+                            <input data-reqired type="radio" id="q-3-8" name="q-3-1" value="1">
+                            <label for="q-3-8" class="btn btn-1">
+                                <div class="range-number">8</div>
+                            </label>
+
+                            <input data-reqired type="radio" id="q-3-9" name="q-3-1" value="1">
+                            <label for="q-3-9" class="btn btn-1">
+                                <div class="range-number">9</div>
+                            </label>
+                        </div>
+                        <div class="range-description">
+                            <p class="pl-44">Вообще не доступно</p>
+                            <p>Очень доступно</p>
+                        </div>
+                        <div class="error-block">
+                            <p class="error">Выберите ответ</p>
+                        </div>
+                    </div>
+                    <div class="impression-range">
+                        <p class="point">
+                            <span class="point_big_number">6</span>
+                            <span class="point_small_number">/6</span>
+                            <span class="point_question_text">Насколько вероятно, что Вы порекомендуете сотрудничество с данным спикером Вашим друзьям и коллегам</span>
+                        </p>
+                    </div>
+                  <div class="range-container">
+                      <div class="range_1-10">
+                          <input data-reqired type="radio" id="q-4-0" name="q-4-1" value="1">
+                          <label for="q-4-0" class="btn btn-1">
+                              <div class="range-number">0</div>
+                          </label>
+
+                          <input data-reqired type="radio" id="q-4-1" name="q-4-1" value="1">
+                          <label for="q-4-1" class="btn btn-1">
+                              <div class="range-number">1</div>
+                          </label>
+
+                          <input data-reqired type="radio" id="q-4-2" name="q-4-1" value="1">
+                          <label for="q-4-2" class="btn btn-1">
+                              <div class="range-number">2</div>
+                          </label>
+
+                          <input data-reqired type="radio" id="q-4-3" name="q-4-1" value="1">
+                          <label for="q-4-3" class="btn btn-1">
+                              <div class="range-number">3</div>
+                          </label>
+
+                          <input data-reqired type="radio" id="q-4-4" name="q-4-1" value="1">
+                          <label for="q-4-4" class="btn btn-1">
+                              <div class="range-number">4</div>
+                          </label>
+
+                          <input data-reqired type="radio" id="q-4-5" name="q-4-1" value="1">
+                          <label for="q-4-5" class="btn btn-1">
+                              <div class="range-number">5</div>
+                          </label>
+
+                          <input data-reqired type="radio" id="q-4-6" name="q-4-1" value="1">
+                          <label for="q-4-6" class="btn btn-1">
+                              <div class="range-number">6</div>
+                          </label>
+
+                          <input data-reqired type="radio" id="q-4-7" name="q-4-1" value="1">
+                          <label for="q-4-7" class="btn btn-1">
+                              <div class="range-number">7</div>
+                          </label>
+
+                          <input data-reqired type="radio" id="q-4-8" name="q-4-1" value="1">
+                          <label for="q-4-8" class="btn btn-1">
+                              <div class="range-number">8</div>
+                          </label>
+
+                          <input data-reqired type="radio" id="q-4-9" name="q-4-1" value="1">
+                          <label for="q-4-9" class="btn btn-1">
+                              <div class="range-number">9</div>
+                          </label>
+                      </div>
+                      <div class="range-description">
+                          <p class="pl-44">Точно не порекомендую</p>
+                          <p>Точно порекомендую</p>
+                      </div>
+                      <div class="error-block">
+                          <p class="error">Выберите ответ</p>
+                      </div>
+                  </div>
+                    <div class="send-impression-btn-container">
+                        <button class="send-impression-btn box-shadow" type="submit">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</div>
+<script src="script/libs/timer.js"></script>
+<script src="script/do-test.js"></script>
+<script src="script/confirm.js"></script>
+<script src="script/inner.js"></script>
+<script src="script/resp-menu.js"></script>
+<script src="script/libs/upload.js"></script>
+<script src="script/testCustomSelect.js"></script>
+<script src="script/validBigRadio.js"></script>
+<script src="script/share-popup.js"></script>
+<script src="script/courseTeachingAttachedFileValidation.js"></script>
+</body>
+</html>

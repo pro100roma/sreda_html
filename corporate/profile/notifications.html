@@ -1,0 +1,559 @@
+<html lang="ru"><head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Профиль - уведомления</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../../style/style.css">
+    <link rel="stylesheet" href="../../style/roman.css">
+    <link rel="stylesheet" href="../../style/i-style/style.css">
+    <link rel="stylesheet" href="../../style/media.css">
+    <!-- Styles -->
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+
+</head>
+<body>
+<div id="background" class="bg-blue"></div>
+<div id="papa">
+    <header id="header">
+        <div class="logo">
+            <a href="../../courses.html"><img src="../../img/logo.png" alt=""></a>
+            <div id="menu-3-lines" class="menu-absolute">
+                <div class="line top-line"></div>
+                <div class="line mid-line"></div>
+                <div class="line bot-line"></div>
+            </div>
+        </div>
+        <div class="right-block flex a-c">
+            <nav class="header-navigation" id="left-menu">
+                <ul class="menu">
+                    <li><a class="active-menu menu-item" href="">Обучение</a></li>
+                    <li><a class="menu-item" href="">Консалтинг</a></li>
+                    <li><a class="menu-item" href="">О нас</a></li>
+                    <li><a class="menu-item" href="">Контакты</a></li>
+                </ul>
+            </nav>
+            <div id="header-bell" class="bell p-r">
+                <div class="bell-notifications">3</div>
+                <a href="../../notifications.html"><i class="bell-img i-bell"></i></a>
+            </div>
+        </div>
+    </header>
+    <aside id="left-side-bar">
+        <div id="mobile-menu">
+        </div>
+        <div class="top-pearson-info flex j-c a-c f-d-c m-a mt-40">
+            <div class="pearson-photo">
+                <img src="../../img/corp/avatar.png" alt="">
+            </div>
+            <div class="pearson-name">
+                Протасова Александра
+            </div>
+        </div>
+        <nav id="pearson-nav">
+            <ul>
+                <li>
+                    <a href="../ratings/general.html">
+                        <img src="../../img/corp/icons/ratings.png" alt="icon" class="icon-li">
+                        <span>Рейтинги</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../constructor/courses.html">
+                        <img src="../../img/corp/icons/settings.png" alt="icon" class="icon-li">
+                        <span>Конструктор</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../../img/corp/icons/team.png" alt="icon" class="icon-li">
+                        <span>Корпоративное обучение</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../courses.html">
+                        <img src="../../img/icon/book.png" alt="icon" class="icon-li">
+                        <span>Мое обучение</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../vacancies/vacancies.html">
+                        <img src="../../img/corp/icons/vacancies.png" alt="icon" class="icon-li">
+                        <span>Вакансии</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../payment-rent.html">
+                        <img src="../../img/icon/money.png" alt="icon" class="icon-li">
+                        <span>Оплата</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../faq.html">
+                        <img src="../../img/icon/info.png" alt="icon" class="icon-li">
+                        <span>Помощь</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="data.html">
+                        <img src="../../img/icon/user.png" alt="icon" class="icon-li">
+                        <span class="active-menu">Профиль</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../communication/students.html">
+                        <img src="../../img/corp/icons/discussion.png" alt="icon" class="icon-li">
+                        <span>Общение</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main id="main">
+
+        <!-- Top Buttons Container Start -->
+        <div class="top-buttons-wrappper flex f-w">
+            <a href="data.html" class="a-btn box-shadow">
+                Данные
+            </a>
+            <a href="../../certifications.html" class="a-btn box-shadow">
+                Сертификаты
+            </a>
+            <a href="../../employment.html" class="a-btn box-shadow">
+                Трудоустройство
+            </a>
+            <a href="staff.html" class="a-btn box-shadow">
+                Сотрудники
+            </a>
+            <a href="notifications.html" class="a-btn blue-gradient-background box-shadow">
+                Уведомления
+            </a>
+        </div>
+        <!--  Top Buttons Container End  -->
+
+        <!--  Filters start  -->
+        <div class="filters-wrapper flex f-w test-members-designate-sort">
+            <div class="filter cust-select-wrap custom-select-filter">
+                <label class="test-radio">
+                    <input type="checkbox" name="test-sort" />
+                    <div class="test-radio__answer"><span class="answer">По тесту</span></div>
+                </label>
+            </div>
+            <div class="filter cust-select-wrap custom-select-filter">
+                <label class="test-radio">
+                    <input type="checkbox" name="course-sort" />
+                    <div class="test-radio__answer"><span class="answer">По курсу</span></div>
+                </label>
+            </div>
+            <div class="filter cust-select-wrap custom-select-filter">
+                <label class="test-radio">
+                    <input type="checkbox" name="period-sort" />
+                    <div class="test-radio__answer"><span class="answer">По периоду</span></div>
+                </label>
+            </div>
+
+        </div>
+        <!--  Filters end  -->
+
+        <div class="content-container">
+            <div class="vac-question">
+                <h4>Вы получили вопрос к курсу/вебинару/уроку… </h4>
+                <p>Добрый день, подскажите, пожалуйста будет ли в содержании курса информация о...</p>
+                <div class="vac-question__name">
+                    <p>Марина Полевая,</p>
+                    <p>студентка</p>
+                </div>
+                <div class="vac-question__form">
+                    <form>
+                        <p>Ваш ответ:</p>
+                        <div class="input-group">
+                            <textarea class="has-error"></textarea>
+                            <p class="alert-error">Заполните, пожалуйста, поле</p>
+                        </div>
+                        <input type="submit" value="Отправить" class="blue-gradient-background box-shadow" />
+                    </form>
+                </div>
+            </div>
+
+            <div class="user-vacancies-wrap">
+                <h4>3 пользователя отправили ДЗ к уроку… </h4>
+                <form>
+                    <div class="user-vacancies notification-hw custom-table">
+                        <div class="user-vacancies__header">
+                            <div class="user-vacancies__header-col">
+                                ФИО
+                            </div>
+                            <div class="user-vacancies__header-col">
+                                Результат
+                            </div>
+                        </div>
+
+                        <div class="user-vacancies__block">
+                            <div class="user-vacancies__row">
+                                <div class="user-vacancies__row_left"><a href="#" class="user-vacancies__name">Вертяков Валентин Владимирович</a></div>
+                                <div class="user-vacancies__row_center"><a href="#">Принято</a></div>
+                                <div class="user-vacancies__row_right"><a href="#">Скачать PDF</a></div>
+                            </div>
+                            <div class="user-vacancies__row-content">
+                                <p>Ваша обратная связь:</p>
+                                <div class="input-group">
+                                    <textarea class="has-error"></textarea>
+                                    <p class="alert-error">Заполните, пожалуйста, поле</p>
+                                </div>
+                                <div class="hw-approve">
+                                    <a href="#" class="box-shadow btn-main">Зачтено</a>
+                                    <a href="#" class="box-shadow btn-main">Не зачтено</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user-vacancies__block">
+                            <div class="user-vacancies__row">
+                                <div class="user-vacancies__row_left"><a href="#" class="user-vacancies__name">Ветер Иван Анатольевич</a></div>
+                                <div class="user-vacancies__row_center"><a href="#">Не принято</a></div>
+                                <div class="user-vacancies__row_right"><a href="#">Скачать PDF</a></div>
+                            </div>
+                            <div class="user-vacancies__row-content">
+                                <p>Ваша обратная связь:</p>
+                                <div class="input-group">
+                                    <textarea class="has-error"></textarea>
+                                    <p class="alert-error">Заполните, пожалуйста, поле</p>
+                                </div>
+                                <div class="hw-approve">
+                                    <a href="#" class="box-shadow btn-main">Зачтено</a>
+                                    <a href="#" class="box-shadow btn-main">Не зачтено</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <input type="submit" value="Отправить" class="blue-gradient-background box-shadow" />
+                </form>
+            </div>
+
+            <h4>5 пользователей прошли тест к курсу...</h4>
+            <div class="table-wrap">
+                <div class="custom-table done-test done-test-notifications">
+                    <div class="custom-table__header flex j-s-b">
+                        <div class="custom-table__col">ФИО</div>
+                        <div class="custom-table__col">Регион</div>
+                        <div class="custom-table__col">Локация</div>
+                        <div class="custom-table__col">Дата прохождения</div>
+                        <div class="custom-table__col">Использовано попыток</div>
+                        <div class="custom-table__col">Результат</div>
+                        <div class="custom-table__col">Статус</div>
+                    </div>
+                    <div class="custom-table__body">
+                        <div class="custom-table__row flex j-s-b">
+                            <div class="custom-table__cell"><a href="#done-test01" class="done-test__name done-test__profile">Вередница Вита Игоревна</a><a href="../vacancies/candidate.html" class="popup-profile-link">Перейти на страницу пользователя</a></div>
+                            <div class="custom-table__cell">Регион</div>
+                            <div class="custom-table__cell">Театральный пр-д, 5/1</div>
+                            <div class="custom-table__cell">01.02.2019</div>
+                            <div class="custom-table__cell">2/4</div>
+                            <div class="custom-table__cell"><span class="test-result">97</span>%<span class="result-dot green"></span></div>
+                            <div class="custom-table__cell">Пройден</div>
+                        </div>
+                        <div class="custom-table__row flex j-s-b">
+                            <div class="custom-table__cell"><a href="#done-test02" class="done-test__name done-test__profile">Вередница Вита Игоревна</a><a href="../vacancies/candidate.html" class="popup-profile-link">Перейти на страницу пользователя</a></div>
+                            <div class="custom-table__cell">Регион</div>
+                            <div class="custom-table__cell">Театральный пр-д, 5/1</div>
+                            <div class="custom-table__cell">01.02.2019</div>
+                            <div class="custom-table__cell">1/2</div>
+                            <div class="custom-table__cell"><span class="test-result">75</span>%<span class="result-dot yellow"></span></div>
+                            <div class="custom-table__cell">Пройден</div>
+                        </div>
+                        <div class="custom-table__row flex j-s-b">
+                            <div class="custom-table__cell"><a href="#done-test03" class="done-test__name done-test__profile">Вертяков Валентин Владимирович</a><a href="../vacancies/candidate.html" class="popup-profile-link">Перейти на страницу пользователя</a></div>
+                            <div class="custom-table__cell">Регион</div>
+                            <div class="custom-table__cell">Театральный пр-д, 5/1</div>
+                            <div class="custom-table__cell">01.02.2019</div>
+                            <div class="custom-table__cell">1/3</div>
+                            <div class="custom-table__cell"><span class="test-result">37</span>%<span class="result-dot red"></span></div>
+                            <div class="custom-table__cell">Не пройден</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-wrap test-details-wrap" id="done-test01">
+                <div class="custom-table test-details">
+                    <div class="custom-table__header flex j-s-b">
+                        <div class="custom-table__col">Вопрос</div>
+                        <div class="custom-table__col">Средний бал</div>
+                        <div class="custom-table__col">Ответы</div>
+                    </div>
+                    <div class="custom-table__body">
+                        <div class="custom-table__row flex j-s-b">
+                            <div class="custom-table__cell"><a href="#" class="test-details__name">1/5. Метод Mystery Shopping это:</a> <span class="result-dot green"></span></div>
+                            <div class="custom-table__cell">95%</div>
+                            <div class="custom-table__cell test-answer">
+                                <div class="answer-content">
+                                    <label class="test-radio">
+                                        <input type="radio" name="test01" />
+                                        <div class="test-radio__answer"><span class="answer">метод изучения аномальных явлений</span><span class="scores">0</span></div>
+                                    </label>
+                                    <label class="test-radio">
+                                        <input type="radio" name="test01" />
+                                        <div class="test-radio__answer"><span class="answer">метод сбора информации о конкретных случаях</span><span class="scores">100</span></div>
+                                    </label>
+                                    <label class="test-radio">
+                                        <input type="radio" name="test01" />
+                                        <div class="test-radio__answer"><span class="answer">метод оценки рынка ценных бумаг</span><span class="scores">0</span></div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-table__row flex j-s-b">
+                            <div class="custom-table__cell"><a href="#" class="test-details__name">2/5. Можно ли выполнять отраслевые оценки Тайному Покупателю? </a> <span class="result-dot yellow"></span></div>
+                            <div class="custom-table__cell">69%</div>
+                            <div class="custom-table__cell test-answer">
+                                <div class="answer-content">
+                                    <label class="test-radio">
+                                        <input type="radio" name="test02" />
+                                        <div class="test-radio__answer"><span class="answer">метод изучения аномальных явлений</span><span class="scores">0</span></div>
+                                    </label>
+                                    <label class="test-radio">
+                                        <input type="radio" name="test02" />
+                                        <div class="test-radio__answer"><span class="answer">метод сбора информации о конкретных случаях</span><span class="scores">100</span></div>
+                                    </label>
+                                    <label class="test-radio">
+                                        <input type="radio" name="test02" />
+                                        <div class="test-radio__answer"><span class="answer">метод оценки рынка ценных бумаг</span><span class="scores">0</span></div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-table__row flex j-s-b">
+                            <div class="custom-table__cell"><a href="#" class="test-details__name">3/5. Перед выполнением визита ТП должен четко знать: </a> <span class="result-dot red"></span></div>
+                            <div class="custom-table__cell">32%</div>
+                            <div class="custom-table__cell test-answer">
+                                <div class="answer-content">
+                                    <label class="test-radio">
+                                        <input type="radio" name="test03" />
+                                        <div class="test-radio__answer"><span class="answer">метод изучения аномальных явлений</span><span class="scores">0</span></div>
+                                    </label>
+                                    <label class="test-radio">
+                                        <input type="radio" name="test03" />
+                                        <div class="test-radio__answer"><span class="answer">метод сбора информации о конкретных случаях</span><span class="scores">100</span></div>
+                                    </label>
+                                    <label class="test-radio">
+                                        <input type="radio" name="test03" />
+                                        <div class="test-radio__answer"><span class="answer">метод оценки рынка ценных бумаг</span><span class="scores">0</span></div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!--            <div class="table-wrap test-details-wrap" id="done-test02">-->
+<!--                <div class="custom-table test-details">-->
+<!--                    <div class="custom-table__header flex j-s-b">-->
+<!--                        <div class="custom-table__col">Вопрос 2</div>-->
+<!--                        <div class="custom-table__col">Средний бал 2</div>-->
+<!--                        <div class="custom-table__col">Ответы 2</div>-->
+<!--                    </div>-->
+<!--                    <div class="custom-table__body">-->
+<!--                        <div class="custom-table__row flex j-s-b">-->
+<!--                            <div class="custom-table__cell"><a href="#" class="test-details__name">1/5. Метод Mystery Shopping это:</a> <span class="result-dot"></span></div>-->
+<!--                            <div class="custom-table__cell">95%</div>-->
+<!--                            <div class="custom-table__cell test-answer">-->
+<!--                                <div class="answer-content">-->
+<!--                                    <div class="list">метод изучения аномальных явлений</div>-->
+<!--                                    <div class="list">метод сбора информации о конкретных случаях</div>-->
+<!--                                    <div class="list">метод оценки рынка ценных бумаг</div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="custom-table__row flex j-s-b">-->
+<!--                            <div class="custom-table__cell"><a href="#" class="test-details__name">2/5. Можно ли выполнять отраслевые оценки Тайному Покупателю? </a> <span class="result-dot"></span></div>-->
+<!--                            <div class="custom-table__cell">69%</div>-->
+<!--                            <div class="custom-table__cell test-answer">-->
+<!--                                <div class="answer-content">-->
+<!--                                    <div class="list">метод изучения аномальных явлений</div>-->
+<!--                                    <div class="list">метод сбора информации о конкретных случаях</div>-->
+<!--                                    <div class="list">метод оценки рынка ценных бумаг</div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="custom-table__row flex j-s-b">-->
+<!--                            <div class="custom-table__cell"><a href="#" class="test-details__name active">3/5. Перед выполнением визита ТП должен четко знать: </a> <span class="result-dot"></span></div>-->
+<!--                            <div class="custom-table__cell">32%</div>-->
+<!--                            <div class="custom-table__cell test-answer">-->
+<!--                                <div class="answer-content">-->
+<!--                                    <div class="list">метод изучения аномальных явлений</div>-->
+<!--                                    <div class="list">метод сбора информации о конкретных случаях</div>-->
+<!--                                    <div class="list">метод оценки рынка ценных бумаг</div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <div class="table-wrap test-details-wrap" id="done-test03">-->
+<!--                <div class="custom-table test-details">-->
+<!--                    <div class="custom-table__header flex j-s-b">-->
+<!--                        <div class="custom-table__col">Вопрос 3</div>-->
+<!--                        <div class="custom-table__col">Средний бал 3</div>-->
+<!--                        <div class="custom-table__col">Ответы 3</div>-->
+<!--                    </div>-->
+<!--                    <div class="custom-table__body">-->
+<!--                        <div class="custom-table__row flex j-s-b">-->
+<!--                            <div class="custom-table__cell"><a href="#" class="test-details__name">1/5. Метод Mystery Shopping это:</a> <span class="result-dot"></span></div>-->
+<!--                            <div class="custom-table__cell">95%</div>-->
+<!--                            <div class="custom-table__cell test-answer">-->
+<!--                                <div class="answer-content">-->
+<!--                                    <div class="list">метод изучения аномальных явлений</div>-->
+<!--                                    <div class="list">метод сбора информации о конкретных случаях</div>-->
+<!--                                    <div class="list">метод оценки рынка ценных бумаг</div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="custom-table__row flex j-s-b">-->
+<!--                            <div class="custom-table__cell"><a href="#" class="test-details__name">2/5. Можно ли выполнять отраслевые оценки Тайному Покупателю? </a> <span class="result-dot"></span></div>-->
+<!--                            <div class="custom-table__cell">69%</div>-->
+<!--                            <div class="custom-table__cell test-answer">-->
+<!--                                <div class="answer-content">-->
+<!--                                    <div class="list">метод изучения аномальных явлений</div>-->
+<!--                                    <div class="list">метод сбора информации о конкретных случаях</div>-->
+<!--                                    <div class="list">метод оценки рынка ценных бумаг</div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="custom-table__row flex j-s-b">-->
+<!--                            <div class="custom-table__cell"><a href="#" class="test-details__name active">3/5. Перед выполнением визита ТП должен четко знать: </a> <span class="result-dot"></span></div>-->
+<!--                            <div class="custom-table__cell">32%</div>-->
+<!--                            <div class="custom-table__cell test-answer">-->
+<!--                                <div class="answer-content">-->
+<!--                                    <div class="list">метод изучения аномальных явлений</div>-->
+<!--                                    <div class="list">метод сбора информации о конкретных случаях</div>-->
+<!--                                    <div class="list">метод оценки рынка ценных бумаг</div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+
+            <h4>Светлана Кирпикова запросила повторную попытку для теста «…(название теста)»</h4>
+            <div class="table-wrap">
+                <div class="custom-table done-test done-test-notifications">
+                    <div class="custom-table__header flex j-s-b">
+                        <div class="custom-table__col">ФИО</div>
+                        <div class="custom-table__col">Регион</div>
+                        <div class="custom-table__col">Локация</div>
+                        <div class="custom-table__col">Дата прохождения</div>
+                        <div class="custom-table__col">Использовано попыток</div>
+                        <div class="custom-table__col">Результат</div>
+                        <div class="custom-table__col">Статус</div>
+                    </div>
+                    <div class="custom-table__body">
+                        <div class="custom-table__row flex j-s-b">
+                            <div class="custom-table__cell"><a href="#done-test01" class="done-test__name done-test__profile">Светлана Кирпикова Игоревна</a><a href="../vacancies/candidate.html" class="popup-profile-link">Перейти на страницу пользователя</a></div>
+                            <div class="custom-table__cell">Москва</div>
+                            <div class="custom-table__cell">Театральный пр-д, 5/1</div>
+                            <div class="custom-table__cell">01.02.2019</div>
+                            <div class="custom-table__cell">2/2</div>
+                            <div class="custom-table__cell"><span class="test-result">31</span>%<span class="result-dot green"></span></div>
+                            <div class="custom-table__cell">Не пройден</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-wrap test-details-wrap" id="">
+                <div class="custom-table test-details">
+                    <div class="custom-table__header flex j-s-b">
+                        <div class="custom-table__col">Вопрос</div>
+                        <div class="custom-table__col">Средний бал</div>
+                        <div class="custom-table__col">Ответы</div>
+                    </div>
+                    <div class="custom-table__body">
+                        <div class="custom-table__row flex j-s-b">
+                            <div class="custom-table__cell"><a href="#" class="test-details__name">1/5. Метод Mystery Shopping это:</a> <span class="result-dot green"></span></div>
+                            <div class="custom-table__cell">95%</div>
+                            <div class="custom-table__cell test-answer">
+                                <div class="answer-content">
+                                    <label class="test-radio">
+                                        <input type="radio" name="test04" />
+                                        <div class="test-radio__answer"><span class="answer">метод изучения аномальных явлений</span><span class="scores">0</span></div>
+                                    </label>
+                                    <label class="test-radio">
+                                        <input type="radio" name="test04" />
+                                        <div class="test-radio__answer"><span class="answer">метод сбора информации о конкретных случаях</span><span class="scores">100</span></div>
+                                    </label>
+                                    <label class="test-radio">
+                                        <input type="radio" name="test04" />
+                                        <div class="test-radio__answer"><span class="answer">метод оценки рынка ценных бумаг</span><span class="scores">0</span></div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-table__row flex j-s-b">
+                            <div class="custom-table__cell"><a href="#" class="test-details__name">2/5. Можно ли выполнять отраслевые оценки Тайному Покупателю? </a> <span class="result-dot yellow"></span></div>
+                            <div class="custom-table__cell">69%</div>
+                            <div class="custom-table__cell test-answer">
+                                <div class="answer-content">
+                                    <label class="test-radio">
+                                        <input type="radio" name="test05" />
+                                        <div class="test-radio__answer"><span class="answer">метод изучения аномальных явлений</span><span class="scores">0</span></div>
+                                    </label>
+                                    <label class="test-radio">
+                                        <input type="radio" name="test05" />
+                                        <div class="test-radio__answer"><span class="answer">метод сбора информации о конкретных случаях</span><span class="scores">100</span></div>
+                                    </label>
+                                    <label class="test-radio">
+                                        <input type="radio" name="test05" />
+                                        <div class="test-radio__answer"><span class="answer">метод оценки рынка ценных бумаг</span><span class="scores">0</span></div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-table__row flex j-s-b">
+                            <div class="custom-table__cell"><a href="#" class="test-details__name">3/5. Перед выполнением визита ТП должен четко знать: </a> <span class="result-dot red"></span></div>
+                            <div class="custom-table__cell">32%</div>
+                            <div class="custom-table__cell test-answer">
+                                <div class="answer-content">
+                                    <label class="test-radio">
+                                        <input type="radio" name="test06" />
+                                        <div class="test-radio__answer"><span class="answer">метод изучения аномальных явлений</span><span class="scores">0</span></div>
+                                    </label>
+                                    <label class="test-radio">
+                                        <input type="radio" name="test06" />
+                                        <div class="test-radio__answer"><span class="answer">метод сбора информации о конкретных случаях</span><span class="scores">100</span></div>
+                                    </label>
+                                    <label class="test-radio">
+                                        <input type="radio" name="test06" />
+                                        <div class="test-radio__answer"><span class="answer">метод оценки рынка ценных бумаг</span><span class="scores">0</span></div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hw-approve">
+                    <a href="#" class="box-shadow btn-main">Назначить пересдачу</a>
+                    <a href="#" class="box-shadow btn-main">Не назначать пересдачу</a>
+                </div>
+            </div>
+
+            <p class="well-done-row test">Тест …<span>(название теста)</span> пройден всеми сотрудниками</p>
+            <p class="well-done-row course">Курс …(название теста) пройден всеми сотрудниками</p>
+
+        </div>
+
+
+    </main>
+</div>
+
+<script src="../../script/libs/customSelect.js"></script>
+<script src="../../script/inner.js"></script>
+<script src="../../script/resp-menu.js"></script>
+<script src="../../script/common.js"></script>
+
+
+</body>
+</html>

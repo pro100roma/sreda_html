@@ -1,0 +1,246 @@
+<html lang="ru"><head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Оплата - аренда кабинета</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../style/libs/jquery.timepicker.min.css">
+    <link rel="stylesheet" href="../style/libs/datepicker.min.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/roman.css">
+    <link rel="stylesheet" href="../style/i-style/style.css">
+    <link rel="stylesheet" href="../style/media.css">
+    <!-- Styles -->
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+
+</head>
+<body>
+<div id="background" class="bg-blue"></div>
+<div id="papa">
+    <header id="header">
+        <div class="logo">
+            <a href="../courses.html"><img src="../img/logo.png" alt=""></a>
+            <div id="menu-3-lines" class="menu-absolute">
+                <div class="line top-line"></div>
+                <div class="line mid-line"></div>
+                <div class="line bot-line"></div>
+            </div>
+        </div>
+        <div class="right-block flex a-c">
+            <nav class="header-navigation" id="left-menu">
+                <ul class="menu">
+                    <li><a class="active-menu menu-item" href="">Обучение</a></li>
+                    <li><a class="menu-item" href="">Консалтинг</a></li>
+                    <li><a class="menu-item" href="">О нас</a></li>
+                    <li><a class="menu-item" href="">Контакты</a></li>
+                </ul>
+            </nav>
+            <div id="header-bell" class="bell p-r">
+                <div class="bell-notifications">3</div>
+                <a href="../notifications.html"><i class="bell-img i-bell"></i></a>
+            </div>
+        </div>
+    </header>
+    <aside id="left-side-bar">
+        <div id="mobile-menu">
+        </div>
+        <div class="top-pearson-info flex j-c a-c f-d-c m-a mt-40">
+            <div class="pearson-photo">
+                <img src="../img/corp/avatar.png" alt="">
+            </div>
+            <div class="pearson-name">
+                Протасова Александра
+            </div>
+        </div>
+        <nav id="pearson-nav">
+            <ul>
+                <li>
+                    <a href="ratings/general.html">
+                        <img src="../img/corp/icons/ratings.png" alt="icon" class="icon-li">
+                        <span>Рейтинги</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="constructor/courses.html">
+                        <img src="../img/corp/icons/settings.png" alt="icon" class="icon-li">
+                        <span>Конструктор</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../img/corp/icons/team.png" alt="icon" class="icon-li">
+                        <span>Корпоративное обучение</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../courses.html">
+                        <img src="../img/icon/book.png" alt="icon" class="icon-li">
+                        <span>Мое обучение</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="vacancies/vacancies.html">
+                        <img src="../img/corp/icons/vacancies.png" alt="icon" class="icon-li">
+                        <span>Вакансии</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="payment-rent.html">
+                        <img src="../img/icon/money.png" alt="icon" class="icon-li">
+                        <span class="active-menu">Оплата</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../faq.html">
+                        <img src="../img/icon/info.png" alt="icon" class="icon-li">
+                        <span>Помощь</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="profile/data.html">
+                        <img src="../img/icon/user.png" alt="icon" class="icon-li">
+                        <span>Профиль</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="communication/students.html">
+                        <img src="../img/corp/icons/discussion.png" alt="icon" class="icon-li">
+                        <span>Общение</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main id="main">
+
+        <!-- Top Buttons Container Start -->
+        <div class="top-buttons-wrappper flex f-w">
+            <a href="../pending-peyment.html" class="a-btn box-shadow">
+                Ожидающие оплаты
+            </a>
+            <a href="communication/students.html" class="a-btn blue-gradient-background box-shadow">
+                Аренда кабинета
+            </a>
+            <a href="../pay-history.html" class="a-btn box-shadow">
+                История оплат
+            </a>
+            <a href="../referral-program.html" class="a-btn box-shadow">
+                Реферальная программа
+            </a>
+        </div>
+        <!--  Top Buttons Container End  -->
+
+
+        <div class="content-container">
+            <div class="ui-ux_design-content payment-rent-content">
+                <a href="#" class="circle-add">+</a>
+                <form class="rent-payment">
+                    <div class="design-content__row">Срок аренды
+                        <select>
+                            <option value="0">1 месяц</option>
+                            <option value="1">2 месяца</option>
+                            <option value="2">6 месяцев</option>
+                        </select>
+                    </div>
+                    <div class="design-content__row">Количество сотрудников
+                        <select>
+                            <option value="0">Меньше 10</option>
+                            <option value="1">10 - 49</option>
+                            <option value="2">50 - 499</option>
+                            <option value="2">500 - 999</option>
+                            <option value="2">1000 и более</option>
+                        </select>
+                    </div>
+                    <div class="design-content__row flex">
+                        <div class="design-content__cell webinar-date">
+                            Дата активации:
+                            <span id="rent-date01"><input type="text" value="06.02.2020" /></span> c <span id="rent-time01"><input type="text" value="12:00am" /></span></span>
+                        </div>
+                    </div>
+                    <div class="design-content__row flex">
+                        <div class="design-content__cell webinar-date">
+                            Доступ открыт до: <input type="text" value="06.03.2020" disabled />
+                        </div>
+                    </div>
+                    <div class="design-content__row flex">
+                        <div class="design-content__cell webinar-date">
+                            Сумма: <span class="rent-amount">1500</span> <span class="rent-currency">$</span>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <input type="submit" class="blue-gradient-background box-shadow btn-main" value="Оплатить" disabled />
+                    </div>
+                </form>
+
+                <form class="rent-payment">
+                    <div class="design-content__row">Срок аренды
+                        <select>
+                            <option value="0">1 месяц</option>
+                            <option value="1">2 месяца</option>
+                            <option value="2">6 месяцев</option>
+                        </select>
+                    </div>
+                    <div class="design-content__row">Количество сотрудников
+                        <select>
+                            <option value="0">Меньше 10</option>
+                            <option value="1">10 - 49</option>
+                            <option value="2">50 - 499</option>
+                            <option value="2">500 - 999</option>
+                            <option value="2">1000 и более</option>
+                        </select>
+                    </div>
+                    <div class="design-content__row flex">
+                        <div class="design-content__cell webinar-date">
+                            Дата активации:
+                            <span id="rent-date02"><input type="text" value="06.02.2020" /></span> c <span id="rent-time02"><input type="text" value="12:00am" /></span></span>
+                        </div>
+                    </div>
+                    <div class="design-content__row flex">
+                        <div class="design-content__cell webinar-date">
+                            Доступ открыт до: <input type="text" value="06.03.2020" disabled />
+                        </div>
+                    </div>
+                    <div class="design-content__row flex">
+                        <div class="design-content__cell webinar-date">
+                            Сумма: <span class="rent-amount">1500</span> <span class="rent-currency">$</span>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <input type="submit" class="blue-gradient-background box-shadow btn-main" value="Оплатить" />
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </main>
+</div>
+
+<script src="../script/libs/customSelect.js"></script>
+<script src="../script/libs/jquery.custom-select.js"></script>
+<script src="../script/libs/jquery.timepicker.min.js"></script>
+<script src="../script/libs/datepicker.min.js"></script>
+<script src="../script/inner.js"></script>
+<script src="../script/resp-menu.js"></script>
+<script src="../script/common.js"></script>
+
+<script>
+    jQuery(function ($) {
+        $(document).ready(function () {
+            $('.select-search select').customSelect({
+                search: true
+            });
+            $('.ui-ux_design-content select').customSelect();
+            $('.cust-select-wrap select').customSelect();
+            $('#rent-date01 input, #rent-date02 input').datepicker();
+            $('#rent-time01 input, #rent-time02 input').timepicker({
+                'showDuration': true,
+            });
+        });
+    });
+</script>
+
+
+</body>
+</html>

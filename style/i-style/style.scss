@@ -1,0 +1,148 @@
+// variable
+$font: 'Helvetica';
+
+.i-top-text-wrp {
+  .i-question-title {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+.field-wrapper:nth-child(n+3) {
+  padding-top: 50px;
+}
+.field-wrapper.txt-wrapper {
+  input {
+    width:290px;
+    background: none;
+    font-size: 14px;
+    line-height: 30px;
+    border: none;
+    border-bottom: 2px solid #e9c6b3;
+    outline: none;
+    transition: 0.3s;
+    color: #ffffff;
+  }
+  input:focus::placeholder {
+    color: rgba(0,0,0,0);
+  }
+  input.errored {
+    border-bottom: 1px solid red;
+  }
+  input.errored::placeholder {
+    color: red;
+  }
+}
+.field-wrapper.checkbox-txt-form {
+  max-width: 290px;
+  margin: auto;
+
+  input[type="checkbox"]{
+    display: none;
+  }
+  label {
+    color: #000000;
+    line-height: 18px;
+    font-size: 18px;
+
+    .cust-checkbox {
+      display: inline-block;
+      margin-right: 10px;
+      background: url('../../img/checkboxUn.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 35px;
+      height: 36px;
+      position: relative;
+    }
+    .check-txt {
+      width: calc( 100% - 45px);
+      line-height: 18px;
+      font-size: 16px;
+    }
+  }
+  input[type="checkbox"]:checked + label{
+
+    .cust-checkbox:before {
+      content: "";
+      background: url('../../img/checkboxSheck.svg');
+      background-repeat: no-repeat;
+      position: absolute;
+      left: 10px;
+      top: 1px;
+      display: inline-block;
+      width: 28px;
+      height: 40px;
+      font-size: 31px;
+      color: #ffffff;
+    }
+  }
+}
+.field-wrapper.checkbox-txt-form.errored {
+
+  label {
+    color: red;
+    line-height: 18px;
+    font-size: 18px;
+  }
+}
+#phone-top-paragraf {
+  color: #ffffff;
+  margin: 0;
+  width: 290px;
+  position: relative;
+}
+#phone {
+  padding-left: 30px;
+  font-size: 13px;
+}
+#phone-top-paragraf .number-prefix{
+  position: absolute;
+  z-index: 999999;
+  left: 0;
+  font-size: 13px;
+  top: calc( 100% + 9px );
+}
+.lg-container{
+ position: relative;
+  .lg-drop-down {
+    position: absolute;
+    left: 143px;
+    top: 0;
+
+    .ru{
+    }
+    .ua{
+    }
+  }
+}
+
+// btn
+.i-btn-next {
+  line-height: 40px;
+  font-size: 19px;
+  border-radius: 20px;
+  border: solid 1px #ffffff;
+  padding: 0 20px;
+  background: rgba(0,0,0,0);
+  text-transform: uppercase;
+  outline: none;
+  transition: 0.3s;
+}
+.i-btn-next:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+
+// global style
+input {
+  font-family: $font;
+}
+
+:focus::placeholder {
+  color: rgba(0,0,0,0);
+}
+
+.stels {
+  display: none;
+}

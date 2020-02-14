@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bdfbc37b-6471-488a-85d6-5e912404deaa" name="Default" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1943" />
+    <option name="y" value="70" />
+    <option name="width" value="1936" />
+    <option name="height" value="882" />
+  </component>
+  <component name="ProjectId" id="1WqM5Sxix5VZwZjKloMLZbIZIxi" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bdfbc37b-6471-488a-85d6-5e912404deaa" name="Default" comment="" />
+      <created>1579076466567</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579076466567</updated>
+      <workItem from="1579076467771" duration="48000" />
+      <workItem from="1579872498411" duration="21638000" />
+      <workItem from="1580202822268" duration="13597000" />
+      <workItem from="1580286338093" duration="11270000" />
+      <workItem from="1580372361628" duration="13051000" />
+      <workItem from="1580399467655" duration="3977000" />
+      <workItem from="1580470867546" duration="18540000" />
+      <workItem from="1580737212864" duration="7524000" />
+      <workItem from="1580747907273" duration="1447000" />
+      <workItem from="1580805327231" duration="7491000" />
+      <workItem from="1580821121649" duration="14182000" />
+      <workItem from="1580911787307" duration="8665000" />
+      <workItem from="1580993524966" duration="20440000" />
+      <workItem from="1581338591332" duration="17158000" />
+      <workItem from="1581431836820" duration="9726000" />
+      <workItem from="1581513017177" duration="31554000" />
+      <workItem from="1581614124600" duration="15191000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="334" y="210" key="EditFileWatcherDialog" timestamp="1579872900603">
+      <screen x="0" y="23" width="1440" height="804" />
+    </state>
+    <state x="334" y="210" key="EditFileWatcherDialog/0.23.1440.804@0.23.1440.804" timestamp="1579872900603" />
+    <state x="229" y="64" key="SettingsEditor" timestamp="1579872904265">
+      <screen x="0" y="23" width="1440" height="804" />
+    </state>
+    <state x="229" y="64" key="SettingsEditor/0.23.1440.804@0.23.1440.804" timestamp="1579872904265" />
+    <state width="600" height="424" key="javadoc.popup" timestamp="1580295286270">
+      <screen x="0" y="23" width="1440" height="801" />
+    </state>
+    <state width="600" height="424" key="javadoc.popup/0.23.1440.801@0.23.1440.801" timestamp="1580295286270" />
+    <state x="385" y="194" width="670" height="675" key="run.anything.popup" timestamp="1580742512263">
+      <screen x="0" y="23" width="1440" height="806" />
+    </state>
+    <state x="385" y="192" key="run.anything.popup/0.23.1440.798@0.23.1440.798" timestamp="1580380201369" />
+    <state x="385" y="194" width="670" height="675" key="run.anything.popup/0.23.1440.806@0.23.1440.806" timestamp="1580742512263" />
+    <state x="385" y="77" width="670" height="676" key="search.everywhere.popup" timestamp="1581515389080">
+      <screen x="0" y="23" width="1440" height="801" />
+    </state>
+    <state x="385" y="77" width="670" height="676" key="search.everywhere.popup/0.23.1440.801@0.23.1440.801" timestamp="1581515389080" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/script/inner.js</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

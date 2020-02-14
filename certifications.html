@@ -1,0 +1,545 @@
+<html lang="ru"><head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Сертификаты</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/i-style/style.css">
+    <link rel="stylesheet" href="style/media.css">
+    <!-- Styles -->
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+
+</head>
+<body>
+<div class="cert-bg">
+    <div class="certificate">
+        <div class="top-line">
+            <div class="close"></div>
+        </div>
+        <img class="cert-img" src="img/cert.png" alt="">
+        <div class="bottom-line">
+            <div class="cert-share-buttons">
+                <!--<p class="share_social bold">Поделиться вакансией</p>-->
+                <a class="share-btn-vk" href="https://vk.com/share.php?url=[LINK]" target="_blank" onclick="return Share.me(this);">
+                    <div class="vk share-block">
+                        <img class="soc-icon-size" src="img/social_icon/vk.png" alt="instagram">
+                    </div>
+                </a>
+                <a href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Ffiddle.jshell.net%2F_display%2F&text=https://www.ukr.net/" target="_blank" onclick="return Share.me(this)">
+                    <div class="twitter share-block">
+                        <img class="soc-icon-size" src="img/social_icon/twitter.png" alt="instagram">
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank" onclick="return Share.me(this);">
+                    <div class="google share-block">
+                        <img class="soc-icon-size" src="img/social_icon/facebook.png" alt="instagram">
+                    </div>
+                </a>
+                <a href="tg://msg_url?url=https://www.google.com.mx/">
+                    <div class="telegram share-block">
+                        <img class="soc-icon-size" src="img/social_icon/telegram.png" alt="telegram">
+                    </div>
+                </a>
+                <a class="share-btn-in" href="viber://forward?text=<Your Text>">
+                    <!--<a href="viber://pa?chatURI=[public account URI]&text=[message text]" target="_blank" onclick="return Share.me(this);">-->
+                    <!--<a href="viber://pa?chatURI=http://www.example.com">-->
+                    <div class="viber share-block">
+                        <img class="soc-icon-size" src="img/social_icon/viber.png" alt="viber">
+                    </div>
+                </a>
+                <!--<a href="whatsapp://send?text={url}">-->
+
+                <a href="whatsapp://send?text=https://www.google.com.mx/" data-action="share/whatsapp/share" >
+                    <div class="whatsapp share-block">
+                        <img class="soc-icon-size" src="img/social_icon/whatsapp.png" alt="instagram">
+                    </div>
+                </a>
+            </div>
+            <duv class="options">
+                <i class="print">
+                    <a onclick="PrintElem('print')" href="#"><img id="print" class="print-icon" src="img/icon/print.png" alt="print screen"></a>
+                </i>
+                <a href="img/cert.png" class="download" download="Certificate-png">
+                    <img class="download-icon" src="img/icon/png-file-format-symbol.png" alt="in-png">
+                </a>
+                <a href="img/Дипломы_final.pdf" class="download" download="Certificate-pdf">
+                    <img class="download-icon" src="img/icon/pdf-file-format-symbol.png" alt="in-pdf">
+                </a>
+            </duv>
+        </div>
+    </div>
+</div>
+<div id="background" class="bg-blue"></div>
+<div id="papa">
+    <header id="header">
+        <div class="logo">
+            <a href="courses.html"><img src="img/logo.png" alt=""></a>
+            <div id="menu-3-lines" class="menu-absolute">
+                <div class="line top-line"></div>
+                <div class="line mid-line"></div>
+                <div class="line bot-line"></div>
+            </div>
+        </div>
+        <div class="right-block flex a-c">
+            <nav class="header-navigation" id="left-menu">
+                <ul class="menu">
+                    <li><a class="active-menu menu-item" href="">Обучение</a></li>
+                    <li><a class="menu-item" href="">Консалтинг</a></li>
+                    <li><a class="menu-item" href="">О нас</a></li>
+                    <li><a class="menu-item" href="">Контакты</a></li>
+                </ul>
+            </nav>
+            <div id="header-bell" class="bell p-r">
+                <div class="bell-notifications">3</div>
+                <a href="notifications.html"><i class="bell-img i-bell"></i></a>
+            </div>
+        </div>
+    </header>
+    <aside id="left-side-bar">
+        <div id="mobile-menu">
+        </div>
+        <div class="top-pearson-info flex j-c a-c f-d-c m-a mt-40">
+            <div class="pearson-photo">
+                <img src="img/pearson/cover.jpg" alt="">
+            </div>
+            <div class="pearson-name">
+                Варфоломей Книжный
+            </div>
+        </div>
+        <nav id="pearson-nav">
+            <ul>
+                <li>
+                    <a href="courses.html">
+                        <img src="img/icon/book.png" alt="icon" class="icon-li">
+                        <span>Мое обучение</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="pending-peyment.html">
+                        <img src="img/icon/money.png" alt="icon" class="icon-li">
+                        <span>Оплата</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="faq.html">
+                        <img src="img/icon/info.png" alt="icon" class="icon-li">
+                        <span>Помощь</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="profile.html">
+                        <img src="img/icon/user.png" alt="icon" class="icon-li">
+                        <span class="active-menu">Профиль</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main id="main">
+
+        <!-- Top Buttons Container Start -->
+        <div class="top-buttons-wrappper flex f-w">
+            <a href="profile.html" class="a-btn box-shadow">
+                Данные
+            </a>
+            <a href="certifications.html" class="a-btn box-shadow blue-gradient-background">
+                Сертификаты
+            </a>
+            <a href="employment.html" class="a-btn box-shadow">
+                Трудоустройство
+            </a>
+            <a href="notifications.html" class="a-btn box-shadow">
+                Уведомления
+            </a>
+        </div>
+        <!--  Top Buttons Container End  -->
+
+        <!-- card-container Start -->
+        <div class="card-container flex f-w">
+
+            <!-- Card Text Start -->
+            <div class="card box-shadow flex f-d-c j-s-b">
+                <div class="card-header flex j-e">
+                    <div class="status">&nbsp</div>
+                </div>
+                <div class="card-title flex j-s-b">
+
+                    <div class="card-title-name">UI/UX design</div>
+                    <div class="card-title-tools">
+                        <i class="unlocked"></i>
+                    </div>
+                </div>
+                <div class="card-body" onClick="return true" style="background: url(img/cards/ui-ux-bg.png); background-size: cover;">
+                    <div class="card-data-main-container mobile-position">
+                        <div class="card-data-wrapper">
+                            <div class="data-name">
+                                <p class="card-data-item">Поделиться результатом</p>
+                            </div>
+                        </div>
+                        <div class="card-data-wrapper">
+                            <div class="card-share-buttons">
+                                <!--<p class="share_social bold">Поделиться вакансией</p>-->
+                                <a class="share-btn-vk" href="https://vk.com/share.php?url=[LINK]" target="_blank" onclick="return Share.me(this);">
+                                    <div class="vk share-block">
+                                        <img class="soc-icon-size" src="img/social_icon/vk.png" alt="instagram">
+                                    </div>
+                                </a>
+                                <a href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Ffiddle.jshell.net%2F_display%2F&text=https://www.ukr.net/" target="_blank" onclick="return Share.me(this)">
+                                    <div class="twitter share-block">
+                                        <img class="soc-icon-size" src="img/social_icon/twitter.png" alt="instagram">
+                                    </div>
+                                </a>
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank" onclick="return Share.me(this);">
+                                    <div class="google share-block">
+                                        <img class="soc-icon-size" src="img/social_icon/facebook.png" alt="instagram">
+                                    </div>
+                                </a>
+                                <a href="tg://msg_url?url=https://www.google.com.mx/">
+                                    <div class="telegram share-block">
+                                        <img class="soc-icon-size" src="img/social_icon/telegram.png" alt="telegram">
+                                    </div>
+                                </a>
+                                <a class="share-btn-in" href="viber://forward?text=<Your Text>">
+                                    <!--<a href="viber://pa?chatURI=[public account URI]&text=[message text]" target="_blank" onclick="return Share.me(this);">-->
+                                    <!--<a href="viber://pa?chatURI=http://www.example.com">-->
+                                    <div class="viber share-block">
+                                        <img class="soc-icon-size" src="img/social_icon/viber.png" alt="viber">
+                                    </div>
+                                </a>
+                                <!--<a href="whatsapp://send?text={url}">-->
+
+                                <a href="whatsapp://send?text=https://www.google.com.mx/" data-action="share/whatsapp/share" >
+                                    <div class="whatsapp share-block">
+                                        <img class="soc-icon-size" src="img/social_icon/whatsapp.png" alt="instagram">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-progres-info flex j-s-b">
+                    </div>
+                </div>
+                <div class="card-loader">
+                </div>
+                <div class="card-bottom flex j-s-b">
+                    <a href="" class="btn more-detail show-cert">
+                        Открыть
+                    </a>
+                    <div class="download-certificate flex j-s-b">
+                        <a href="img/cert.png" class="download" download="Certificate-png"><img class="download-icon" src="img/icon/png-file-format-symbol.png" alt="in-png"></a>
+                        <a href="img/Дипломы_final.pdf" class="download" download="Certificate-pdf"><img class="download-icon" src="img/icon/pdf-file-format-symbol.png" alt="in-pdf"></a>
+                    </div>
+                </div>
+            </div>
+            <!--  Card Text End  -->
+
+            <!-- Card Img Start -->
+            <div class="card box-shadow flex f-d-c j-s-b">
+                <div class="card-header flex j-e">
+                    <div class="status">&nbsp</div>
+                </div>
+                <div class="card-title flex j-s-b">
+                    <div class="card-title-name">Особенности работы <br>
+                        с тайными покупателми</div>
+                    <div class="card-title-tools">
+                        <i class="unlocked"></i>
+                    </div>
+                </div>
+                <div class="card-body" onClick="return true" style="background: url(img/cards/1.png); background-size: cover;">
+                    <div class="card-data-main-container mobile-position">
+                        <div class="card-data-wrapper">
+                            <div class="data-name">
+                                <p class="card-data-item">Поделиться результатом</p>
+                            </div>
+
+                        </div>
+                        <div class="card-data-wrapper">
+                            <div class="card-share-buttons">
+                                <!--<p class="share_social bold">Поделиться вакансией</p>-->
+                                <a class="share-btn-vk" href="https://vk.com/share.php?url=[LINK]" target="_blank" onclick="return Share.me(this);">
+                                    <div class="vk share-block">
+                                        <img class="soc-icon-size" src="img/social_icon/vk.png" alt="instagram">
+                                    </div>
+                                </a>
+                                <a href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Ffiddle.jshell.net%2F_display%2F&text=https://www.ukr.net/" target="_blank" onclick="return Share.me(this)">
+                                    <div class="twitter share-block">
+                                        <img class="soc-icon-size" src="img/social_icon/twitter.png" alt="instagram">
+                                    </div>
+                                </a>
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank" onclick="return Share.me(this);">
+                                    <div class="google share-block">
+                                        <img class="soc-icon-size" src="img/social_icon/facebook.png" alt="instagram">
+                                    </div>
+                                </a>
+                                <a href="tg://msg_url?url=https://www.google.com.mx/">
+                                    <div class="telegram share-block">
+                                        <img class="soc-icon-size" src="img/social_icon/telegram.png" alt="telegram">
+                                    </div>
+                                </a>
+                                <a class="share-btn-in" href="viber://forward?text=<Your Text>">
+                                    <!--<a href="viber://pa?chatURI=[public account URI]&text=[message text]" target="_blank" onclick="return Share.me(this);">-->
+                                    <!--<a href="viber://pa?chatURI=http://www.example.com">-->
+                                    <div class="viber share-block">
+                                        <img class="soc-icon-size" src="img/social_icon/viber.png" alt="viber">
+                                    </div>
+                                </a>
+                                <!--<a href="whatsapp://send?text={url}">-->
+
+                                <a href="whatsapp://send?text=https://www.google.com.mx/" data-action="share/whatsapp/share" >
+                                    <div class="whatsapp share-block">
+                                        <img class="soc-icon-size" src="img/social_icon/whatsapp.png" alt="instagram">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-loader">
+                </div>
+                <div class="card-bottom flex j-s-b">
+                    <a href="" class="btn more-detail show-cert">
+                        Открыть
+                    </a>
+                    <div class="download-certificate flex j-s-b">
+                        <a href="img/cert.png" class="download" download="Certificate-png"><img class="download-icon" src="img/icon/png-file-format-symbol.png" alt="in-png"></a>
+                        <a href="img/Дипломы_final.pdf" class="download" download="Certificate-pdf"><img class="download-icon" src="img/icon/pdf-file-format-symbol.png" alt="in-pdf"></a>
+                    </div>
+                </div>
+            </div>
+            <!--  Card Img End  -->
+
+            <!-- Card Img Start -->
+            <div class="card box-shadow flex f-d-c j-s-b">
+                <div class="card-header flex j-e">
+                    <div class="status">&nbsp</div>
+                </div>
+                <div class="card-title flex j-s-b">
+                    <div class="card-title-name">Тайм-менеджмент</div>
+                    <div class="card-title-tools">
+                        <i class="unlocked"></i>
+                    </div>
+                </div>
+                <div class="card-body" onClick="return true" style="background: url(img/cards/2.png); background-size: cover;">
+                    <div class="card-data-main-container">
+                        <p class="theme">Вы можете получить сертификат после проверки курсовой работы</p>
+                        <div class="card-data-wrapper">
+                            <div class="data-name">
+                                <p class="card-data-item bold700">Дедлайн </p>
+                            </div>
+                            <div class="data-result">
+                                <p class="bold700">10.02</p>
+                            </div>
+                        </div>
+                        <div class="card-data-wrapper">
+                            <div class="data-name">
+                                <p class="card-data-item">Сдача:</p>
+                            </div>
+                            <div class="data-result accepted2 tooltip">
+                                <div class="tooltip-text hide">
+                                    <i>
+                                        Если обратной связи нет, не волнуйтесь.
+                                        Проверка Вашей заявки по вакансии
+                                        занимает от 3 до 7 дней. О результатах
+                                        Вы будете проинформированы
+                                        в уведомлении
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-data-wrapper">
+                            <div class="data-name">
+                                <p class="card-data-item">Обратная связь*</p>
+                            </div>
+                            <div class="data-result update tooltip">
+                                <div class="tooltip-text">
+                                    <i>
+                                        Если обратной связи нет, не волнуйтесь.
+                                        Проверка Вашей заявки по вакансии
+                                        занимает от 3 до 7 дней. О результатах
+                                        Вы будете проинформированы
+                                        в уведомлении
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-progres-info flex j-s-b">
+                    </div>
+                </div>
+                <div class="card-loader">
+                </div>
+                <div class="card-bottom flex j-s-b">
+                    <a href="" class="btn more-detail">
+                        Подробнее
+                    </a>
+                    <a href="course-work.html" class="by-course-btn">Сдать работу</a>
+                </div>
+            </div>
+            <!--  Card Img End  -->
+
+            <!-- Card Text Start -->
+            <div class="card box-shadow flex f-d-c j-s-b">
+                <div class="card-header flex j-e">
+                    <div class="status">&nbsp</div>
+                </div>
+                <div class="card-title flex j-s-b">
+                    <div class="card-title-name">Как заработать больше?</div>
+                    <div class="card-title-tools">
+                        <i class="unlocked"></i>
+                    </div>
+                </div>
+                <div class="card-body" onClick="return true" style="background: url(img/cards/earn-more.png);">
+                    <div class="card-data-main-container">
+                        <p class="theme">Вы можете получить сертификат после проверки курсовой работы</p>
+                        <div class="card-data-wrapper">
+                            <div class="data-name">
+                                <p class="card-data-item bold700">Дедлайн </p>
+                            </div>
+                            <div class="data-result">
+                                <p class="bold700">10.02</p>
+                            </div>
+                        </div>
+                        <div class="card-data-wrapper">
+                            <div class="data-name">
+                                <p class="card-data-item">Сдача:</p>
+                            </div>
+                            <div class="data-result accepted2 tooltip">
+                                <div class="tooltip-text hide">
+                                    <i>
+                                        Если обратной связи нет, не волнуйтесь.
+                                        Проверка Вашей заявки по вакансии
+                                        занимает от 3 до 7 дней. О результатах
+                                        Вы будете проинформированы
+                                        в уведомлении
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-data-wrapper">
+                            <div class="data-name">
+                                <p class="card-data-item">Обратная связь*</p>
+                            </div>
+                            <div class="data-result accepted2 tooltip">
+                                <div class="tooltip-text hide">
+                                    <i>
+                                        Если обратной связи нет, не волнуйтесь.
+                                        Проверка Вашей заявки по вакансии
+                                        занимает от 3 до 7 дней. О результатах
+                                        Вы будете проинформированы
+                                        в уведомлении
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-progres-info flex j-s-b">
+                    </div>
+                </div>
+                <div class="card-loader">
+                </div>
+                <div class="card-bottom flex j-s-b">
+                    <a href="" class="btn more-detail">
+                        Подробнее
+                    </a>
+                    <a href="course-work.html" class="by-course-btn">Сдать работу</a>
+                </div>
+            </div>
+            <!--  Card Text End  -->
+
+            <!-- Card Text Start -->
+            <div class="card box-shadow flex f-d-c j-s-b">
+                <div class="card-header flex j-e">
+                    <div class="status">&nbsp</div>
+                </div>
+                <div class="card-title flex j-s-b">
+                    <div class="card-title-name">Как стать BIG BOSS?</div>
+                    <div class="card-title-tools">
+                        <i class="icon-locked"></i>
+                    </div>
+                </div>
+                <div class="card-body" onClick="return true" style="background: url(img/cards/big-boss.png)">
+                    <div class="card-data-main-container">
+                        <div class="card-data-wrapper">
+                            <div class="data-name">
+                                <p class="card-data-item">По условиям даного курса, сертификат
+                                    предоставляется на платной основе</p>
+                            </div>
+                        </div>
+                        <div class="card-data-wrapper">
+                            <div class="course-price">
+                                <p class="bold700">Стоимось сертификата: 10$</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-progres-info flex j-s-b">
+                        <div class="price"></div>
+                        <div class="progress"></div>
+                    </div>
+                </div>
+                <div class="card-loader">
+                </div>
+                <div class="card-bottom flex j-s-b">
+                    <a href="" class="btn more-detail">
+                        Подробнее
+                    </a>
+                    <a href="pending-peyment.html" class="by-course-btn">Купить</a>
+                </div>
+            </div>
+            <!--  Card Text End  -->
+
+            <!-- Card Text Start -->
+            <div class="card box-shadow flex f-d-c j-s-b">
+                <div class="card-header flex j-e">
+                    <div class="status">&nbsp</div>
+                </div>
+                <div class="card-title flex j-s-b">
+                    <div class="card-title-name">Как сделать клиента счастливым?</div>
+                    <div class="card-title-tools">
+                        <i class="icon-locked"></i>
+                    </div>
+                </div>
+                <div class="card-body" onClick="return true" style="background: url(img/cards/analytic.png); background-size: cover;">
+                    <div class="card-data-main-container">
+                        <div class="card-data-wrapper">
+                            <div class="data-name">
+                                <p class="card-data-item">Вы можете получить сертификат после
+                                    сдачи тестирования по результатам
+                                    обучения</p>
+                            </div>
+                        </div>
+                        <div class="card-data-wrapper">
+                            <div class="course-price">
+                                <p class="bold700">БЕСПЛАТНО</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-progres-info flex j-s-b">
+                    </div>
+                </div>
+                <div class="card-loader">
+                </div>
+                <div class="card-bottom flex j-s-b">
+                    <a href="" class="btn more-detail">
+                        Подробнее
+                    </a>
+                    <a href="home-work-test.html" class="by-course-btn">Пройти тест</a>
+                </div>
+            </div>
+            <!--  Card Text End  -->
+
+        </div>
+        <!--  card-container End  -->
+    </main>
+</div>
+
+<script src="script/libs/customSelect.js"></script>
+<script src="script/inner.js"></script>
+<script src="script/resp-menu.js"></script>
+<script src="script/show-certificate.js"></script>
+<script src="script/share-popup.js"></script>
+<script src="script/print.js"></script>
+</body>
+</html>

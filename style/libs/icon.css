@@ -1,0 +1,33 @@
+i.like {
+    display: inline-block;
+    width: 18px;
+    height: 16px;
+    background: url('../../img/icon/like.png');
+    background-size: 18px;
+}
+i.unlike {
+    display: inline-block;
+    width: 18px;
+    height: 17px;
+    background: url('../../img/icon/unlike.png');
+    background-size: 18px;
+}
+.i-bell {
+    display: inline-block;
+    width: 22px;
+    height: 26px;
+    -webkit-mask-image: url("../../img/icon/belll.png");
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-image: url("../../img/icon/belll.png");
+    mask-repeat: no-repeat;
+    background-color: #000000;
+    /*mask: url(../../img/icon/alarm-4.svg);*/
+}
+.i-vk{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: url('../../img/social_icon/vk.png');
+    background-size: 25px;
+}

@@ -1,0 +1,2 @@
+var menuHTML = document.getElementById('left-menu').innerHTML +  document.getElementById('header-bell').innerHTML;
+if(document.getElementById('mobile-menu')) {document.getElementById('mobile-menu').innerHTML = menuHTML;}

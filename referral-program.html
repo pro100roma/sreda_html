@@ -1,0 +1,332 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Реферальная программа</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/i-style/style.css">
+    <link rel="stylesheet" href="style/media.css">
+    <link rel="stylesheet" href="style/libs/slider.css">
+    <link rel="stylesheet" href="style/libs/owl.carousel.min.css">
+    <!-- Styles -->
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+
+</head>
+<body>
+<div id="background" class="bg-blue"></div>
+<div id="papa">
+    <header id="header">
+        <div class="logo">
+            <a href="courses.html"><img src="img/logo.png" alt=""></a>
+            <div id="menu-3-lines" class="menu-absolute">
+                <div class="line top-line"></div>
+                <div class="line mid-line"></div>
+                <div class="line bot-line"></div>
+            </div>
+        </div>
+        <div class="right-block flex a-c">
+            <nav class="header-navigation" id="left-menu">
+                <ul class="menu">
+                    <li>
+                        <a class="active-menu menu-item" href="">Обучение</a>
+                    </li>
+                    <li><a class="menu-item" href="">Консалтинг</a></li>
+                    <li><a class="menu-item" href="">О нас</a></li>
+                    <li><a class="menu-item" href="">Контакты</a></li>
+                </ul>
+            </nav>
+            <div id="header-bell" class="bell p-r">
+                <div class="bell-notifications">3</div>
+                <a href="notifications.html"><i class="bell-img i-bell"></i></a>
+            </div>
+        </div>
+    </header>
+    <aside id="left-side-bar">
+        <div id="mobile-menu">
+        </div>
+        <div class="top-pearson-info flex j-c a-c f-d-c m-a mt-40">
+            <div class="pearson-photo">
+                <img src="img/pearson/cover.jpg" alt="">
+            </div>
+            <div class="pearson-name">
+                Варфоломей Книжный
+            </div>
+        </div>
+        <nav id="pearson-nav">
+            <ul>
+                <li>
+                    <a href="courses.html">
+                        <img src="img/icon/book.png" alt="icon" class="icon-li">
+                        <span>Мое обучение</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="pending-peyment.html">
+                        <img src="img/icon/money.png" alt="icon" class="icon-li">
+                        <span class="active-menu">Оплата</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="faq.html">
+                        <img src="img/icon/info.png" alt="icon" class="icon-li">
+                        <span>Помощь</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="profile.html">
+                        <img src="img/icon/user.png" alt="icon" class="icon-li">
+                        <span>Профиль</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main id="main">
+
+        <!-- Top Buttons Container Start -->
+        <div class="top-buttons-wrappper flex f-w">
+            <a href="pending-peyment.html" class="pay-history-btn box-shadow">
+                Ожидающие оплаты
+            </a>
+            <a href="pay-history.html" class="pay-history-btn box-shadow">
+                История оплат
+            </a>
+            <a href="referral-program.html" class="pay-history-btn box-shadow blue-gradient-background">
+                Реферальная программа
+            </a>
+        </div>
+        <!--  Top Buttons Container End  -->
+        <section class="discount">
+            <h3 class="title">ПОДАРИ 5% СКИДКУ СЕБЕ И ДРУГУ!</h3>
+            <div class="discount-item-wrapper">
+                <div class="discount-item">
+                    <div class="discount-icons">
+                        <img class="discount-icons-size" src="img/icon/friends.png" alt="">
+                    </div>
+                    <p class="dote-line">Найди друга, который ранее  не был зарегистрирован  на платформе «Sreda.com.ru»*</p>
+                </div>
+                <div class="discount-item">
+                    <div class="discount-icons">
+                        <img class="discount-icons-size" src="img/icon/link.png" alt="">
+                    </div>
+                    <p class="flag-line">Отправь другу ссылку на регистрацию
+                        (не забудь сказать про скидку 5%)</p>
+                </div>
+                <div class="discount-item">
+                    <div class="discount-icons">
+                        <img class="discount-icons-size" src="img/icon/percentage.png" alt="">
+                    </div>
+                        <p>Получите 5 % скидку
+                           на оплату курсов **</p>
+                </div>
+            </div>
+            <div class="link-btn-wrapper">
+                <a class="link-btn" href="#">Сгенерировать ссылку</a>
+            </div>
+            <div class="link-container">
+                 <div class="link-field" type="text">
+                     <i class="copy-link" onclick="copyElementText('heading')" onmouseout="outFunc()"></i>
+                     <span class="generated-link" id="heading">https://www.google.com</span>
+                     <div class="informMessage">
+                         <i>Ваша ссылка скопирована в буфер обмена</i>
+                     </div>
+                 </div>
+            </div>
+        </section>
+        <div class="chare-buttons-wrapper mt-20">
+            <div class="share-buttons">
+                <!--<p class="share_social bold">Поделиться вакансией</p>-->
+                <a class="share-btn-vk" href="https://vk.com/share.php?url=[LINK]" target="_blank" onclick="return Share.me(this);">
+                    <div class="vk share-block">
+                        <img class="soc-icon-size" src="img/social_icon/vk.png" alt="instagram">
+                    </div>
+                </a>
+                <a href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Ffiddle.jshell.net%2F_display%2F&text=https://www.ukr.net/" target="_blank" onclick="return Share.me(this)">
+                    <div class="twitter share-block">
+                        <img class="soc-icon-size" src="img/social_icon/twitter.png" alt="instagram">
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank" onclick="return Share.me(this);">
+                    <div class="google share-block">
+                        <img class="soc-icon-size" src="img/social_icon/facebook.png" alt="instagram">
+                    </div>
+                </a>
+                <a href="tg://msg_url?url=https://www.google.com.mx/">
+                    <div class="telegram share-block">
+                        <img class="soc-icon-size" src="img/social_icon/telegram.png" alt="telegram">
+                    </div>
+                </a>
+                <a class="share-btn-in" href="viber://forward?text=<Your Text>">
+                    <!--<a href="viber://pa?chatURI=[public account URI]&text=[message text]" target="_blank" onclick="return Share.me(this);">-->
+                    <!--<a href="viber://pa?chatURI=http://www.example.com">-->
+                    <div class="viber share-block">
+                        <img class="soc-icon-size" src="img/social_icon/viber.png" alt="viber">
+                    </div>
+                </a>
+                <!--<a href="whatsapp://send?text={url}">-->
+
+                <a href="whatsapp://send?text=https://www.google.com.mx/" data-action="share/whatsapp/share" >
+                    <div class="whatsapp share-block">
+                        <img class="soc-icon-size" src="img/social_icon/whatsapp.png" alt="instagram">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <section class="discount-conditions">
+            <p>* Скидка будет начислена при условиях:</p>
+            <ul class="discount-conditions_list">
+                <li class="discount-conditions_item">Регистрации привлеченного пользователя на портале </li>
+                <li class="discount-conditions_item">Заполнения всех полей в профиле</li>
+                <li class="discount-conditions_item">Прохождения теста на определение зон роста </li>
+                <li class="discount-conditions_item">Начала обучения на одном из курсов</li>
+            </ul>
+            <p>** Скидка 5% предоставляется на определенное число курсов и действует в течении 6-ти месяцев с момента начисления.</p>
+        </section>
+        <section class="my-discount">
+            <div class="go-to-course-wrapper">
+                <a href="courses.html" class="go-to-course-btn">Перейти к списку курсов</a>
+            </div>
+            <div class="my-discount_count">
+                <p class="my-discount_count_subtitle">МОЯ СКИДКА</p>
+                <p class="my-discount_count_number">10%</p>
+            </div>
+            <div class="use-discount-wrapper">
+                <a href="courses.html" class="use-discount-btn">Использовать скидку</a>
+            </div>
+        </section>
+        <section class="attracted-users">
+            <h3 class="title">ПРИВЛЕЧЕННЫЕ ПОЛЬЗОВАТЕЛИ</h3>
+            <div class="attracted-users_table_wrapper">
+                <table class="attracted-users_table">
+                    <thead class="attracted-users_table_header">
+                    <tr>
+                        <td class="attracted-users_table_header-item first-row">
+                            Дата <br> регистрации
+                        </td>
+                        <td class="attracted-users_table_header-item first-row">
+                            Имя <br> пользователя
+                        </td>
+                        <td class="attracted-users_table_header-item first-row">
+                            Регистрация
+                        </td>
+                        <td class="attracted-users_table_header-item first-row">
+                            Профиль
+                        </td>
+                        <td class="attracted-users_table_header-item first-row">
+                            Тест
+                        </td>
+                        <td class="attracted-users_table_header-item first-row">
+                            Обучение
+                        </td>
+                        <td class="attracted-users_table_header-item first-row">
+                            Статус
+                        </td>
+                    </tr>
+                    </thead>
+                    <tbody class="attracted-users_table_body">
+                    <tr>
+                        <td class="attracted-users_table_item">
+                            11.01.2019
+                        </td>
+                        <td class="attracted-users_table_item">
+                            Белан О.
+                        </td>
+                        <td class="attracted-users_table_item">
+                            <img class="status-icon" src="img/icon/check-mark.png" alt="">
+                        </td>
+                        <td class="attracted-users_table_item">
+                            <img class="status-icon" src="img/icon/check-mark.png" alt="">
+                        </td>
+                        <td class="attracted-users_table_item">
+                            <img class="status-icon" src="img/icon/check-mark.png" alt="">
+                        </td>
+                        <td class="attracted-users_table_item">
+                            <img class="status-icon" src="img/icon/check-mark.png" alt="">
+                        </td>
+                        <td class="attracted-users_table_item">
+                            <p>Скидка <br> <span class="bold">использована</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="attracted-users_table_item">
+                            11.01.2019
+                        </td>
+                        <td class="attracted-users_table_item">
+                            Протасов Т.
+                        </td>
+                        <td class="attracted-users_table_item">
+                            <img class="status-icon" src="img/icon/check-mark.png" alt="">
+                        </td>
+                        <td class="attracted-users_table_item">
+                            <img class="status-icon" src="img/icon/check-mark.png" alt="">
+                        </td>
+                        <td class="attracted-users_table_item">
+                            <img class="status-icon" src="img/icon/x.png" alt="">
+                        </td>
+                        <td class="attracted-users_table_item">
+                            <img class="status-icon" src="img/icon/x.png" alt="">
+                        </td>
+                        <td class="attracted-users_table_item">
+                            <p>Скидка <br> <span class="bold">не начислена</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="attracted-users_table_item">
+                            11.01.2019
+                        </td>
+                        <td class="attracted-users_table_item">
+                            Астафьев Н.
+                        </td>
+                        <td class="attracted-users_table_item">
+                            <img class="status-icon" src="img/icon/check-mark.png" alt="">
+                        </td>
+                        <td class="attracted-users_table_item">
+                            <img class="status-icon" src="img/icon/check-mark.png" alt="">
+                        </td>
+                        <td class="attracted-users_table_item">
+                            <img class="status-icon" src="img/icon/check-mark.png" alt="">
+                        </td>
+                        <td class="attracted-users_table_item">
+                            <img class="status-icon" src="img/icon/check-mark.png" alt="">
+                        </td>
+                        <td class="attracted-users_table_item">
+                            <p>Скидка <br> <span class="bold">начислена</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="attracted-users_table_item">
+                            11.01.2019
+                        </td>
+                        <td class="attracted-users_table_item">
+                            Кравец М.
+                        </td>
+                        <td class="attracted-users_table_item">
+                            <img class="status-icon" src="img/icon/check-mark.png" alt="">
+                        </td>
+                        <td class="attracted-users_table_item">
+                            <img class="status-icon" src="img/icon/check-mark.png" alt="">
+                        </td>
+                        <td class="attracted-users_table_item">
+                            <img class="status-icon" src="img/icon/check-mark.png" alt="">
+                        </td>
+                        <td class="attracted-users_table_item">
+                            <img class="status-icon" src="img/icon/check-mark.png" alt="">
+                        </td>
+                        <td class="attracted-users_table_item">
+                            <p>Скидка <br> <span class="bold">использована</span></p>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+     </main>
+   </div>
+<script src="script/inner.js"></script>
+<script src="script/resp-menu.js"></script>
+<script src="script/share-popup.js"></script>
+<script src="script/copy-link.js"></script>
+</body>

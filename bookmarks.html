@@ -1,0 +1,372 @@
+<html lang="ru"><head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Закладки</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/i-style/style.css">
+    <link rel="stylesheet" href="style/media.css">
+    <!-- Styles -->
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+
+</head>
+<body>
+<div id="background" class="bg-blue"></div>
+<div id="papa">
+    <header id="header">
+        <div class="logo">
+            <a href="courses.html"><img src="img/logo.png" alt=""></a>
+            <div id="menu-3-lines" class="menu-absolute">
+                <div class="line top-line"></div>
+                <div class="line mid-line"></div>
+                <div class="line bot-line"></div>
+            </div>
+        </div>
+        <div class="right-block flex a-c">
+            <nav class="header-navigation" id="left-menu">
+                <ul class="menu">
+                    <li><a class="active-menu menu-item" href="">Обучение</a></li>
+                    <li><a class="menu-item" href="">Консалтинг</a></li>
+                    <li><a class="menu-item" href="">О нас</a></li>
+                    <li><a class="menu-item" href="">Контакты</a></li>
+                </ul>
+            </nav>
+            <div id="header-bell" class="bell p-r">
+                <div class="bell-notifications">3</div>
+                <a href="notifications.html"><i class="bell-img i-bell"></i></a>
+            </div>
+        </div>
+    </header>
+    <aside id="left-side-bar">
+        <div id="mobile-menu">
+        </div>
+        <div class="top-pearson-info flex j-c a-c f-d-c m-a mt-40">
+            <div class="pearson-photo">
+                <img src="img/pearson/cover.jpg" alt="">
+            </div>
+            <div class="pearson-name">
+                Варфоломей Книжный
+            </div>
+        </div>
+        <nav id="pearson-nav">
+            <ul>
+                <li>
+                    <a href="courses.html">
+                        <img src="img/icon/book.png" alt="icon" class="icon-li">
+                        <span class="active-menu">Мое обучение</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="pending-peyment.html">
+                        <img src="img/icon/money.png" alt="icon" class="icon-li">
+                        <span>Оплата</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="faq.html">
+                        <img src="img/icon/info.png" alt="icon" class="icon-li">
+                        <span>Помощь</span>
+                    </a>
+                 </li>
+                <li>
+                    <a href="profile.html">
+                        <img src="img/icon/user.png" alt="icon" class="icon-li">
+                        <span>Профиль</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main id="main">
+
+        <!-- Top Buttons Container Start -->
+        <div class="top-buttons-wrappper flex f-w">
+            <a href="courses.html" class="a-btn box-shadow">
+                Курсы
+            </a>
+            <a href="webinars.html" class="a-btn box-shadow">
+                Вебинары
+            </a>
+            <a href="tests.html" class="a-btn box-shadow">
+                Тесты/ДЗ
+            </a>
+            <a href="bookmarks.html" class="a-btn box-shadow blue-gradient-background">
+                Закладки
+            </a>
+            <a href="archive.html" class="a-btn box-shadow">
+                Архив
+            </a>
+        </div>
+        <!--  Top Buttons Container End  -->
+
+
+        <div class="top-subtitle">
+            <ul class="top-subtitle_list">
+                <li class="top-subtitle_list_item">Курсы</li>
+                <li class="top-subtitle_list_item">Вебинары</li>
+                <li class="top-subtitle_list_item">Спикеры</li>
+            </ul>
+        </div>
+        <div class="mobile-title">
+            <p class="title">Курсы</p>
+        </div>
+        <!-- card-container Start -->
+        <div class="card-container flex f-w">
+            <!-- Card Text Start -->
+            <div class="card box-shadow flex f-d-c j-s-b order1">
+                <div class="card-header flex j-e">
+                    <div class="status red-gradient-background">БЕСПЛАТНО</div>
+                </div>
+                <div class="card-title flex j-s-b">
+                    <div class="card-title-name">UI/UX design</div>
+                    <div class="card-title-tools">
+                        <input type="checkbox" class="like-check-input" id="like-it">
+                        <label class="like-reverse" for="like-it"></label>
+                    </div>
+                </div>
+                <div class="card-body" onClick="return true" style="background: url(img/cards/unsplash.png); background-size: cover;">
+                    <p>
+                        Ukraine needs to develop a critical mass
+                        of professional managers to create and
+                        implement the state’s strategic documents
+                        in the security and defense sector, including
+                        the National Security Strategy and the
+                        Strategic Defense Bulletin.
+                    </p>
+                    <div class="card-progres-info flex j-s-b">
+                        <div class="price"><span class="hide-price-progress">БЕСПЛАТНО</span></div>
+                        <div class="progress"><span class="hide-price-progress">4/5</span></div>
+                    </div>
+                </div>
+                <div class="card-loader">
+                    <div class="loader-bg">
+                        <div class="progress blue-gradient-background" style="width: calc( 100% * ( 4 / 5 ) )"></div>
+                    </div>
+                </div>
+                <div class="card-bottom flex j-s-b">
+                        <a href="course.html" class="btn more-detail">
+                            Подробнее
+                        </a>
+                        <a href="course-teaching.html" class="btn blue-gradient-background box-shadow go-to-course">
+                            Пройти курс
+                        </a>
+                    </div>
+            </div>
+            <!--  Card Text End  -->
+            <div class="mobile-title order3">
+                <p class="title">Вебинары</p>
+            </div>
+            <!-- Card Img Start -->
+            <div class="card box-shadow flex f-d-c j-s-b order3">
+                <div class="card-header flex j-e">
+                    <div class="status">&nbsp</div>
+                </div>
+                <div class="card-title flex j-s-b">
+                    <div class="card-title-name">Особенности работы с тайными покупателями</div>
+                    <div class="card-title-tools">
+                        <input type="checkbox" class="like-check-input" id="like-it1">
+                        <label class="like-reverse" for="like-it1"></label>
+                    </div>
+                </div>
+                <div class="card-body" onClick="return true" style="background: url(img/cards/unsplash.png); background-size: cover;">
+                          <p class="">
+                              Ukraine needs to develop a critical mass of professional managers to create and implement the state’s strategic documents in the security and defense sector, including the National Security Strategy and the Strategic Defense Bulletin.
+                          </p>
+                </div>
+                <div class="card-loader">
+                    <div class="loader-bg">
+                        <div class="progress blue-gradient-background"></div>
+                    </div>
+                </div>
+                <div class="card-bottom flex j-s-b">
+                    <a href="webinar.html" class="btn more-detail">
+                        Подробнее
+                    </a>
+                    <a href="webinar-info.html" class="btn blue-gradient-background box-shadow go-to-course-again">
+                        Пройти вебинар
+                    </a>
+                </div>
+            </div>
+            <!--  Card Img End  -->
+            <div class="mobile-title order5">
+                <p class="title">Спикеры</p>
+            </div>
+            <!-- Card Img Start -->
+            <div class="card box-shadow flex f-d-c j-s-b order5">
+                <div class="card-header flex j-e">
+                    <div class="status pink-gradient-background">РЕКОМЕНДУЕМ</div>
+                </div>
+                <div class="card-title flex j-s-b">
+                    <div class="card-title-name">Елена Цысарь</div>
+                    <div class="card-title-tools">
+                        <input type="checkbox" class="like-check-input" id="like-it2">
+                        <label class="like-reverse" for="like-it2"></label>
+                    </div>
+                </div>
+                <div class="card-body" onClick="return true" style="background: url(img/cards/3.png); background-size: cover;">
+                    <p>
+                        Ukraine needs to develop a critical mass
+                        of professional managers to create and
+                        implement the state’s strategic documents
+                        in the security and defense sector, including
+                        the National Security Strategy and the
+                        Strategic Defense Bulletin.
+                    </p>
+                </div>
+                <div class="card-loader">
+                    <div class="">
+                        <div class="" style="width: calc( 100% * ( 7/11 ) )"></div>
+                    </div>
+                </div>
+                <div class="card-bottom flex j-s-b">
+                    <a href="speaker.html" class="btn more-detail">
+                        Подробнее
+                    </a>
+                    <a href="speaker-courses.html" class="btn blue-gradient-background box-shadow go-to-course-again-long">
+                        Перейти к курсам
+                    </a>
+                </div>
+            </div>
+            <!--  Card Img End  -->
+
+            <!-- Card Text Start -->
+            <div class="card box-shadow flex f-d-c j-s-b order2">
+                <div class="card-header flex j-e">
+                    <div class="status">&nbsp</div>
+                </div>
+                <div class="card-title flex j-s-b">
+                    <div class="card-title-name">Как зарабатывать больше?</div>
+                    <div class="card-title-tools">
+                        <input type="checkbox" class="like-check-input" id="like-it3">
+                        <label class="like-reverse" for="like-it3"></label>
+                    </div>
+                </div>
+                <div class="card-body" onClick="return true" style="background: url(img/cards/earn-more.png)">
+                    <p>
+                        Ukraine needs to develop a critical mass
+                        of professional managers to create and
+                        implement the state’s strategic documents
+                        in the security and defense sector, including
+                        the National Security Strategy and the
+                        Strategic Defense Bulletin.
+                    </p>
+                    <div class="card-progres-info flex j-s-b">
+                        <div class="price"></div>
+                        <div class="progress"></div>
+                    </div>
+                </div>
+                <div class="card-loader">
+                    <div class="loader-bg">
+                        <div class="progress blue-gradient-background" style="width: calc( 100% * ( 4 / 5 ) )"></div>
+                    </div>
+                </div>
+                <div class="card-bottom flex j-s-b">
+                    <a href="course.html" class="btn more-detail">
+                        Подробнее
+                    </a>
+                    <a href="course-teaching.html" class="btn blue-gradient-background box-shadow go-to-course">
+                        Пройти курс
+                    </a>
+                </div>
+            </div>
+            <!--  Card Text End  -->
+
+            <!-- Card Text Start -->
+            <div class="card box-shadow flex f-d-c j-s-b order4">
+                <div class="card-header flex j-e">
+                    <div class="status pink-gradient-background">РЕКОМЕНДУЕМ</div>
+                </div>
+                <div class="card-title flex j-s-b">
+                    <div class="card-title-name">Тайм-менеджмент</div>
+                    <div class="card-title-tools">
+                        <input type="checkbox" class="like-check-input" id="like-it4">
+                        <label class="like-reverse" for="like-it4"></label>
+                    </div>
+                </div>
+                <div class="card-body" onClick="return true" style="background: url(img/cards/2.png); background-size: cover;">
+                    <p>
+                        Ukraine needs to develop a critical mass
+                        of professional managers to create and
+                        implement the state’s strategic documents
+                        in the security and defense sector, including
+                        the National Security Strategy and the
+                        Strategic Defense Bulletin.
+                    </p>
+                    <div class="card-progres-info flex j-s-b">
+                        <div class="price"></div>
+                        <div class="progress"></div>
+                    </div>
+                </div>
+                <div class="card-loader">
+                    <div class="">
+                        <div class="" style="width: calc( 100% * ( 4 / 5 ) )"></div>
+                    </div>
+                </div>
+                <div class="card-bottom flex j-s-b">
+                    <a href="webinar.html" class="btn more-detail">
+                        Подробнее
+                    </a>
+                    <a href="webinar-info.html" class="btn blue-gradient-background box-shadow go-to-course-again">
+                        Пройти вебинар
+                    </a>
+                </div>
+            </div>
+            <!--  Card Text End  -->
+
+            <!-- Card Text Start -->
+            <div class="card box-shadow flex f-d-c j-s-b order6">
+                <div class="card-header flex j-e">
+                    <div class="status pink-gradient-background">РЕКОМЕНДУЕМ</div>
+                </div>
+                <div class="card-title flex j-s-b">
+                    <div class="card-title-name">Евгений Лобанов</div>
+                    <div class="card-title-tools">
+                        <form action="">
+                        <input type="checkbox" class="like-check-input" id="like-it5">
+                        <label class="like-reverse" for="like-it5"></label>
+                        </form>
+                    </div>
+                </div>
+                <div class="card-body" onClick="return true" style="background: url(img/cards/lobanov.jpg); background-size: cover; background-position: center">
+                    <p>
+                        Ukraine needs to develop a critical mass
+                        of professional managers to create and
+                        implement the state’s strategic documents
+                        in the security and defense sector, including
+                        the National Security Strategy and the
+                        Strategic Defense Bulletin.
+                    </p>
+                    <div class="card-progres-info flex j-s-b">
+                        <div class="price hide-price-progress">50$</div>
+                        <div class="progress hide-price-progress">0/3</div>
+                    </div>
+                </div>
+                <div class="card-loader">
+                    <div class="">
+                        <div class="" style="width: calc( 100% * ( 0 / 3 ) )"></div>
+                    </div>
+                </div>
+                <div class="card-bottom flex j-s-b">
+                    <a href="" class="btn more-detail">
+                        Подробнее
+                    </a>
+                    <a href="" class="btn blue-gradient-background box-shadow go-to-course-again-long">
+                        Перейти к курсам
+                    </a>
+                </div>
+            </div>
+            <!--  Card Text End  -->
+
+        </div>
+        <!--  card-container End  -->
+    </main>
+</div>
+
+<script src="script/libs/customSelect.js"></script>
+<script src="script/inner.js"></script>
+<script src="script/resp-menu.js"></script>
+</body>
+</html>

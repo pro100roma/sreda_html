@@ -1,0 +1,451 @@
+<html lang="ru"><head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Рейтинги - сотрудники</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../../style/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="../../style/style.css">
+    <link rel="stylesheet" href="../../style/roman.css">
+    <link rel="stylesheet" href="../../style/i-style/style.css">
+    <link rel="stylesheet" href="../../style/media.css">
+    <!-- Styles -->
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+
+</head>
+<body>
+<div id="background" class="bg-blue"></div>
+<div id="papa">
+    <header id="header">
+        <div class="logo">
+            <a href="../../courses.html"><img src="../../img/logo.png" alt=""></a>
+            <div id="menu-3-lines" class="menu-absolute">
+                <div class="line top-line"></div>
+                <div class="line mid-line"></div>
+                <div class="line bot-line"></div>
+            </div>
+        </div>
+        <div class="right-block flex a-c">
+            <nav class="header-navigation" id="left-menu">
+                <ul class="menu">
+                    <li><a class="active-menu menu-item" href="">Обучение</a></li>
+                    <li><a class="menu-item" href="">Консалтинг</a></li>
+                    <li><a class="menu-item" href="">О нас</a></li>
+                    <li><a class="menu-item" href="">Контакты</a></li>
+                </ul>
+            </nav>
+            <div id="header-bell" class="bell p-r">
+                <div class="bell-notifications">3</div>
+                <a href="../../notifications.html"><i class="bell-img i-bell"></i></a>
+            </div>
+        </div>
+    </header>
+    <aside id="left-side-bar">
+        <div id="mobile-menu">
+        </div>
+        <div class="top-pearson-info flex j-c a-c f-d-c m-a mt-40">
+            <div class="pearson-photo">
+                <img src="../../img/corp/avatar.png" alt="">
+            </div>
+            <div class="pearson-name">
+                Протасова Александра
+            </div>
+        </div>
+        <nav id="pearson-nav">
+            <ul>
+                <li>
+                    <a href="general.html">
+                        <img src="../../img/corp/icons/ratings.png" alt="icon" class="icon-li">
+                        <span class="active-menu">Рейтинги</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../constructor/courses.html">
+                        <img src="../../img/corp/icons/settings.png" alt="icon" class="icon-li">
+                        <span>Конструктор</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../../img/corp/icons/team.png" alt="icon" class="icon-li">
+                        <span>Корпоративное обучение</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../courses.html">
+                        <img src="../../img/icon/book.png" alt="icon" class="icon-li">
+                        <span>Мое обучение</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../vacancies/vacancies.html">
+                        <img src="../../img/corp/icons/vacancies.png" alt="icon" class="icon-li">
+                        <span>Вакансии</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../payment-rent.html">
+                        <img src="../../img/icon/money.png" alt="icon" class="icon-li">
+                        <span>Оплата</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../faq.html">
+                        <img src="../../img/icon/info.png" alt="icon" class="icon-li">
+                        <span>Помощь</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../profile/data.html">
+                        <img src="../../img/icon/user.png" alt="icon" class="icon-li">
+                        <span>Профиль</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../communication/students.html">
+                        <img src="../../img/corp/icons/discussion.png" alt="icon" class="icon-li">
+                        <span>Общение</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main id="main">
+
+        <!-- Top Buttons Container Start -->
+        <div class="top-buttons-wrappper flex f-w">
+            <a href="general.html" class="a-btn box-shadow">
+                Общие
+            </a>
+            <a href="region.html" class="a-btn box-shadow">
+                Регион
+            </a>
+            <a href="tests.html" class="a-btn box-shadow">
+                Тесты
+            </a>
+            <a href="courses.html" class="a-btn box-shadow">
+                Курсы
+            </a>
+            <a href="staff.html" class="a-btn blue-gradient-background box-shadow">
+                Сотрудники
+            </a>
+        </div>
+        <!--  Top Buttons Container End  -->
+
+        <!--  Filters start  -->
+        <div class="filters-wrapper flex f-w test-members-designate-sort">
+            <div class="filter cust-select-wrap custom-select-filter">
+                <select>
+                    <option value="0">Период</option>
+                    <option value="1">Квартал 1</option>
+                    <option value="2">Квартал 2</option>
+                    <option value="3">Квартал 3</option>
+                </select>
+            </div>
+
+        </div>
+        <!--  Filters end  -->
+
+        <div class="content-container">
+
+            <div class="charts-wrap region-chart">
+                <div class="chart-wrap chart04-wrap box-shadow">
+                    <h3 class="title"><a href="staff.html">Активность сотрудников на платформе</a></h3>
+                    <canvas id="chart04"></canvas>
+                </div>
+            </div>
+
+            <div class="ratings-members-search-filters">
+                <!--  Filters start  -->
+                <div class="filters-wrapper flex f-w test-members-designate-sort">
+                    <div class="filter cust-select-wrap custom-select-filter">
+                        <select>
+                            <option value="0">Период</option>
+                            <option value="1">Квартал 1</option>
+                            <option value="2">Квартал 2</option>
+                            <option value="3">Квартал 3</option>
+                        </select>
+                    </div>
+                    <div class="filter cust-select-wrap custom-select-filter">
+                        <select>
+                            <option value="0">Регион</option>
+                            <option value="1">Регион 1</option>
+                            <option value="2">Регион 2</option>
+                            <option value="3">Регион 3</option>
+                        </select>
+                    </div>
+                    <div class="filter cust-select-wrap custom-select-filter">
+                        <select>
+                            <option value="0">Покация</option>
+                            <option value="1">Локация 1</option>
+                            <option value="2">Локация 2</option>
+                            <option value="3">Локация 3</option>
+                        </select>
+                    </div>
+                </div>
+                <!--  Filters end  -->
+
+                <div class="ui-ux_design-content">
+                    <div class="design-content__row search-wrap search-wrap__tests">
+                        <form>
+                            <input type="submit" value="" />
+                            <input type="search" placeholder="Поиск по ФИО" />
+                        </form>
+                    </div>
+                </div>
+
+                <div class="excel-icon-wrap">
+                    <a href="#">
+                        <img src="../../img/corp/icons/excel.png" alt="Excel" />
+                    </a>
+                </div>
+            </div>
+
+            <div class="table-wrap">
+                <div class="custom-table ratings-members-table01">
+                    <div class="custom-table__header flex j-s-b">
+                        <div class="custom-table__col">ФИО</div>
+                        <div class="custom-table__col">Регион</div>
+                        <div class="custom-table__col">Локация</div>
+                        <div class="custom-table__col">Рейтинг активности по курсам</div>
+                        <div class="custom-table__col">Общий результат тестов</div>
+                    </div>
+                    <div class="custom-table__body">
+                        <div class="custom-table__row flex j-s-b f-w">
+                            <div class="custom-table__cell"><a href="#" class="done-test__name">Васильева Людмила Владимировна</a></div>
+                            <div class="custom-table__cell">Москва</div>
+                            <div class="custom-table__cell">Театральный пр-д, 5/1</div>
+                            <div class="custom-table__cell"><span class="test-result">88</span>%<span class="result-dot green"></span></div>
+                            <div class="custom-table__cell"><span class="test-result">79</span>%<span class="result-dot green"></span></div>
+                        </div>
+                        <div class="custom-table__row flex j-s-b f-w">
+                            <div class="custom-table__cell"><a href="#" class="done-test__name">Вертяков Валентин Владимирович</a></div>
+                            <div class="custom-table__cell">Москва</div>
+                            <div class="custom-table__cell">Театральный пр-д, 5/1</div>
+                            <div class="custom-table__cell"><span class="test-result">55</span>%<span class="result-dot yellow"></span></div>
+                            <div class="custom-table__cell"><span class="test-result">63</span>%<span class="result-dot yellow"></span></div>
+                        </div>
+                        <div class="custom-table__row flex j-s-b f-w">
+                            <div class="custom-table__cell"><a href="#" class="done-test__name">Ветер Иван Анатольевич</a></div>
+                            <div class="custom-table__cell">Москва</div>
+                            <div class="custom-table__cell">Театральный пр-д, 5/1</div>
+                            <div class="custom-table__cell"><span class="test-result">15</span>%<span class="result-dot red"></span></div>
+                            <div class="custom-table__cell"><span class="test-result">19</span>%<span class="result-dot red"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-wrap">
+                <div class="custom-table ratings-members-courses-table">
+                    <div class="custom-table__header flex j-s-b">
+                        <div class="custom-table__col"><a href="#" class="table-toggle">Курсы</a></div>
+                        <div class="custom-table__col">Прогресс</div>
+                        <div class="custom-table__col">Домашнее задание</div>
+                        <div class="custom-table__col">Результат теста</div>
+                        <div class="custom-table__col">Дата начала обучения</div>
+                        <div class="custom-table__col">Дата активности</div>
+                        <div class="custom-table__col">Статус</div>
+                    </div>
+                    <div class="custom-table__body">
+                        <div class="custom-table__row flex j-s-b f-w">
+                            <div class="custom-table__cell">Как повысить лояльность персонала?</div>
+                            <div class="custom-table__cell">5/5<span class="result-dot green"></span></div>
+                            <div class="custom-table__cell">5/5<span class="result-dot green"></span></div>
+                            <div class="custom-table__cell">73/100<span class="result-dot green"></span></div>
+                            <div class="custom-table__cell">01.02.2019</div>
+                            <div class="custom-table__cell">01.03.2019</div>
+                            <div class="custom-table__cell">Пройден<span class="result-dot green"></span></div>
+                        </div>
+                        <div class="custom-table__row flex j-s-b f-w">
+                            <div class="custom-table__cell">Как повысить лояльность персонала?</div>
+                            <div class="custom-table__cell">4/7<span class="result-dot green"></span></div>
+                            <div class="custom-table__cell">4/7<span class="result-dot green"></span></div>
+                            <div class="custom-table__cell">-</div>
+                            <div class="custom-table__cell">01.02.2019</div>
+                            <div class="custom-table__cell">01.03.2019</div>
+                            <div class="custom-table__cell">В процессе</div>
+                        </div>
+                        <div class="custom-table__row flex j-s-b f-w">
+                            <div class="custom-table__cell">Как повысить лояльность персонала?</div>
+                            <div class="custom-table__cell">6/6<span class="result-dot green"></span></div>
+                            <div class="custom-table__cell">2/6<span class="result-dot red"></span></div>
+                            <div class="custom-table__cell">25/100<span class="result-dot red"></span></div>
+                            <div class="custom-table__cell">01.02.2019</div>
+                            <div class="custom-table__cell">01.03.2019</div>
+                            <div class="custom-table__cell">Не пройден<span class="result-dot red"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-wrap">
+                <div class="custom-table ratings-members-tests-table">
+                    <div class="custom-table__header flex j-s-b">
+                        <div class="custom-table__col"><a href="#" class="table-toggle">Тесты</a></div>
+                        <div class="custom-table__col">Дата прохождения</div>
+                        <div class="custom-table__col">Использовано попыток</div>
+                        <div class="custom-table__col">Результат теста</div>
+                        <div class="custom-table__col">Статус</div>
+                        <div class="custom-table__col"></div>
+                    </div>
+                    <div class="custom-table__body">
+                        <div class="custom-table__row flex j-s-b f-w">
+                            <div class="custom-table__cell">Как повысить лояльность персонала?</div>
+                            <div class="custom-table__cell">01.02.2019<span class="result-dot green"></span></div>
+                            <div class="custom-table__cell">1/2</div>
+                            <div class="custom-table__cell">73/100<span class="result-dot green"></span></div>
+                            <div class="custom-table__cell">Пройден<span class="result-dot green"></span></div>
+                            <div class="custom-table__cell"><a href="#">Перейти к анкете</a></div>
+                        </div>
+                        <div class="custom-table__row flex j-s-b f-w">
+                            <div class="custom-table__cell">Как повысить лояльность персонала?</div>
+                            <div class="custom-table__cell">01.02.2019<span class="result-dot green"></span></div>
+                            <div class="custom-table__cell">1/2</div>
+                            <div class="custom-table__cell">25/100<span class="result-dot red"></span></div>
+                            <div class="custom-table__cell">Не пройден<span class="result-dot red"></span></div>
+                            <div class="custom-table__cell"><a href="#">Перейти к анкете</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-wrap mt-50">
+                <div class="custom-table ratings-members-hw-table">
+                    <div class="custom-table__header flex j-s-b">
+                        <div class="custom-table__col"><a href="#" class="table-toggle">Домашние задания</a></div>
+                        <div class="custom-table__col">Колличество ДЗ/ Номер ДЗ</div>
+                        <div class="custom-table__col">Дедлайн</div>
+                        <div class="custom-table__col">Дата сдачи</div>
+                        <div class="custom-table__col">Статус</div>
+                        <div class="custom-table__col"></div>
+                    </div>
+                    <div class="custom-table__body">
+                        <div class="custom-table__row flex j-s-b f-w">
+                            <div class="custom-table__cell"><a href="#" class="done-test__name">Как повысить лояльность персонала?</a></div>
+                            <div class="custom-table__cell">2/3</div>
+                            <div class="custom-table__cell"></div>
+                            <div class="custom-table__cell"></div>
+                            <div class="custom-table__cell">Просрочено<span class="result-dot red"></span></div>
+                            <div class="custom-table__cell"></div>
+                            <div class="custom-table__row-inn">
+                                <div class="custom-table__row flex j-s-b">
+                                    <div class="custom-table__cell"></div>
+                                    <div class="custom-table__cell">1</div>
+                                    <div class="custom-table__cell">01.02.2019</div>
+                                    <div class="custom-table__cell">01.02.2019</div>
+                                    <div class="custom-table__cell">Принято<span class="result-dot green"></span></div>
+                                    <div class="custom-table__cell"><a href="#">Перейти к ДЗ</a></div>
+                                </div>
+                                <div class="custom-table__row flex j-s-b">
+                                    <div class="custom-table__cell"></div>
+                                    <div class="custom-table__cell">2</div>
+                                    <div class="custom-table__cell">01.02.2019</div>
+                                    <div class="custom-table__cell">01.02.2019</div>
+                                    <div class="custom-table__cell">Ожидает обратной связи<span class="result-dot yellow"></span></div>
+                                    <div class="custom-table__cell"><a href="#">Перейти к ДЗ</a></div>
+                                </div>
+                                <div class="custom-table__row flex j-s-b">
+                                    <div class="custom-table__cell"></div>
+                                    <div class="custom-table__cell">3</div>
+                                    <div class="custom-table__cell">01.02.2019</div>
+                                    <div class="custom-table__cell">01.02.2019</div>
+                                    <div class="custom-table__cell">Просрочено<span class="result-dot red"></span></div>
+                                    <div class="custom-table__cell"><a href="#">Перейти к ДЗ</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-table__row flex j-s-b f-w">
+                            <div class="custom-table__cell"><a href="#" class="done-test__name">Инструменты оценки сервиса</a></div>
+                            <div class="custom-table__cell">1/1</div>
+                            <div class="custom-table__cell"></div>
+                            <div class="custom-table__cell"></div>
+                            <div class="custom-table__cell">Принято<span class="result-dot green"></span></div>
+                            <div class="custom-table__cell"></div>
+                            <div class="custom-table__row-inn">
+                                <div class="custom-table__row flex j-s-b">
+                                    <div class="custom-table__cell"></div>
+                                    <div class="custom-table__cell">1</div>
+                                    <div class="custom-table__cell">01.02.2019</div>
+                                    <div class="custom-table__cell">01.02.2019</div>
+                                    <div class="custom-table__cell">Принято<span class="result-dot green"></span></div>
+                                    <div class="custom-table__cell"><a href="#">Перейти к ДЗ</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </main>
+</div>
+
+
+<script src="../../script/libs/jquery.custom-select.js"></script>
+<script src="../../script/inner.js"></script>
+<script src="../../script/resp-menu.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+<!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"-->
+<!--        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"-->
+<!--        crossorigin="anonymous"></script>-->
+
+<script src="../../script/common.js"></script>
+
+<script>
+    jQuery(function ($) {
+        $(document).ready(function () {
+            $('.select-search select').customSelect({
+                search: true
+            });
+            $('.cust-select-wrap select').customSelect();
+
+        });
+    });
+
+    //Chart
+    var ctx04 = document.getElementById('chart04').getContext('2d');
+
+    var chart04 = new Chart(ctx04, {
+        // The type of chart we want to create
+        type: 'line',
+
+        // The data for our dataset
+        data: {
+            labels: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август'],
+            datasets: [{
+                label: '',
+                borderColor: '#3fc4d7',
+                backgroundColor: 'transparent',
+                data: [35, 10, 15, 20, 20, 40, 5, 25, 30, 5],
+            }]
+        },
+
+        // Configuration options go here
+        options: {
+            maintainAspectRatio: false,
+            scales: {
+                yAxes: [{
+                    stacked: true,
+                    gridLines: {
+                        display: false,
+                    },
+                }],
+                xAxes: [{
+                    gridLines: {
+                        display: false,
+                        drawBorder: false,
+                    },
+                }]
+            }
+        }
+    });
+</script>
+
+</body>
+</html>

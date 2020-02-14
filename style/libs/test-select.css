@@ -1,0 +1,77 @@
+/*the container must be positioned relative:*/
+.select-wrapper {
+    position: relative;
+    width: 370px;
+    background-color: rgba(255,255,255,0.5);
+    border: 1.5px solid #63deee;
+    border-radius: 20px;
+    height: 40px;
+}
+.select-wrapper select {
+    display: none; /*hide original SELECT element:*/
+}
+.selected-select {
+    background-color: rgba(255,255,255, 0.3);
+    line-height: 15px;
+}
+/*style the arrow inside the select element:*/
+.selected-select:after {
+    transition: 0.3s;
+    position: absolute;
+    display: inline-block;
+    content: "";
+    top: 16px !important;
+    right: 20px !important;
+    width: 14px;
+    height: 8px;
+    background: url(../../img/selectarrow.png);
+    z-index: 1000;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.selected-select.select-arrow-active:after {
+    transform-origin: center center;
+    transform: rotate(180deg);
+}
+.select-items div,.selected-select {
+    color: #000;
+    padding: 10px 15px !important;
+    cursor: pointer;
+    user-select: none;
+    background-color: rgba(255,255,255, 0.0);
+    border-radius: 10px;
+    margin-top: 4px;
+    margin-left: 5px;
+    white-space: nowrap;
+    width: 90%;
+}
+.select-items {
+    border: solid 1.5px #000000;
+    border-radius: 10px;
+    background-color: #ffffff;
+    position: absolute;
+    z-index: 99;
+    left: -10px !important;
+    width: 103% !important;
+    top: -3px !important;
+}
+.select-items div:first-child{
+    display: none;
+}
+.select-items div:hover{
+    background-color: rgba(255,255,255, 0.3);
+}
+.select-hide {
+    display: none;
+}
+.select-items div:hover, .same-as-selected {
+    background-color: rgba(255,255,255, 0.3);
+}
+
+/*Additional style*/
+.select-blue-border{
+    border: 1.5px solid #63deee;
+    padding: 8px;
+    border-radius: 37px;
+    width: 366px;
+}

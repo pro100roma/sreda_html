@@ -1,0 +1,96 @@
+/*the container must be positioned relative:*/
+.country-select-wrapper {
+    position: relative;
+    width: 140px;
+    background-color: rgba(255,255,255,0.5);
+    height: 40px;
+}
+.country-select-wrapper select {
+    display: none; /*hide original SELECT element:*/
+}
+.selected-country {
+    background-color: rgba(255,255,255, 0.3);
+    line-height: 15px;
+}
+/*style the arrow inside the select element:*/
+.selected-country:after {
+    transition: 0.3s;
+    position: absolute;
+    display: inline-block;
+    content: "";
+    top: 12px;
+    right: -20px !important;
+    width: 15px;
+    height: 15px;
+    -webkit-mask: url(../../img/icon/caret-down-solid.svg) no-repeat 100% 100%;
+    mask: url(../../img/icon/caret-down-solid.svg) no-repeat 100% 100%;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    background-color: #3ec5d9;
+    z-index: 1000;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.selected-country.select-arrow-active:after {
+    transform-origin: center center;
+    transform: rotate(180deg);
+    top: 8px;
+}
+.selected-country{
+    color: #3ec5d9;
+    padding: 10px 10px !important;
+    cursor: pointer;
+    user-select: none;
+    background-color: rgba(255,255,255, 0.0);
+    border-radius: 10px;
+    white-space: nowrap;
+    width: fit-content;
+    position: relative;
+}
+.country-select-items div {
+    color: #000;
+    padding: 10px 0px 10px 13px !important;
+    cursor: pointer;
+    user-select: none;
+    background-color: rgba(255,255,255, 0.0);
+    border-radius: 10px;
+    margin-top: 4px;
+    margin-left: 5px;
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 600;
+    width: 83%;
+    margin-bottom: 6px;
+}
+.country-select-items {
+    -webkit-box-shadow: 0px 5px 13.5px 1.5px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 5px 13.5px 1.5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 13.5px 1.5px rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+    background-color: #ffffff;
+    position: absolute;
+    z-index: 99;
+    left: 20px;
+    width: 103% !important;
+    top: 31px;
+}
+.country-select-items div:first-child{
+    display: none;
+}
+.country-select-items div:hover{
+    background-color: rgba(255,255,255, 0.3);
+}
+.select-hide {
+    display: none;
+}
+.country-select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/*Additional style*/
+.select-blue-border{
+    border: 1.5px solid #63deee;
+    padding: 8px;
+    border-radius: 37px;
+    width: 366px;
+}

@@ -1,0 +1,133 @@
+<html lang="ru"><head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Регистрация</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/roman.css">
+    <link rel="stylesheet" href="../style/i-style/style.css">
+    <link rel="stylesheet" href="../style/media.css">
+    <!-- Styles -->
+
+</head>
+<body class="registration-body">
+<div id="background" class="bg-blue"></div>
+<div id="papa">
+    <header id="header">
+        <div class="logo">
+            <a href="../courses.html"><img src="../img/logo.png" alt=""></a>
+            <div id="menu-3-lines" class="menu-absolute">
+                <div class="line top-line"></div>
+                <div class="line mid-line"></div>
+                <div class="line bot-line"></div>
+            </div>
+        </div>
+        <div class="right-block flex a-c">
+            <nav class="header-navigation" id="left-menu">
+                <ul class="menu">
+                    <li><a class="active-menu menu-item" href="">Обучение</a></li>
+                    <li><a class="menu-item" href="">Консалтинг</a></li>
+                    <li><a class="menu-item" href="">О нас</a></li>
+                    <li><a class="menu-item" href="">Контакты</a></li>
+                </ul>
+            </nav>
+            <div id="header-bell" class="bell p-r"></div>
+        </div>
+    </header>
+    <aside id="left-side-bar">
+        <div id="mobile-menu"></div>
+    </aside>
+
+    <div class="registration-box">
+        <h1>Регистрация</h1>
+        <p class="small-reg-text">С помощью соц.сетей</p>
+        <div class="registration-box__soc-reg">
+            <a href="#">
+                <img src="../img/corp/google-btn.png" alt="" />
+            </a>
+            <a href="#">
+                <img src="../img/corp/fb-btn.png" alt="" />
+            </a>
+        </div>
+        <p class="small-reg-text">Или заполните самостоятельно</p>
+
+        <form class="registration-form" action="">
+            <div class="input-group">
+                <label>Фамилия*</label>
+                <input type="text" name="lastname" class="input-shdw has-error" />
+                <p class="alert-error">Заполните, пожалуйста, поле</p>
+            </div>
+            <div class="input-group">
+                <label>Имя*</label>
+                <input type="text" name="name" class="input-shdw" />
+            </div>
+            <div class="input-group">
+                <label>Отчество*</label>
+                <input type="text" name="fathername" class="input-shdw" />
+            </div>
+            <div class="input-group">
+                <label>Номер телефона</label>
+                <input type="tel" name="tel" class="input-shdw" />
+            </div>
+            <div class="input-group">
+                <label>Email</label>
+                <input type="email" name="email" class="input-shdw" />
+            </div>
+            <div class="input-group">
+                <label>Компания</label>
+                <input type="text" name="company" class="input-shdw" />
+            </div>
+            <div class="input-group">
+                <label>Пароль</label>
+                <input type="password" name="password" class="input-shdw" />
+            </div>
+            <div class="input-group">
+                <label>Повторите пароль</label>
+                <input type="password" name="password" class="input-shdw" />
+            </div>
+            <div class="input-group">
+                <label class="test-radio">
+                    <input type="checkbox" name="getnews" />
+                    <div class="test-radio__answer"><span class="answer">Получать рассылку * *</span></div>
+                </label>
+            </div>
+            <div class="input-group captcha-wrap">
+                <img src="../img/corp/captcha.png" alt="" />
+            </div>
+            <div class="input-group form-btns-wrap">
+                <input type="submit" value="Отправить" class="btn-main box-shadow blue-gradient-background"/>
+                <input type="reset" value="Отмена" class="btn-main box-shadow"/>
+            </div>
+        </form>
+        <p class="reg-notice">* Данные профиля будут использованы при формировании сертификата</p>
+        <p class="reg-notice">* * Мне интересно получать рассылку (только полезная информация: рекомендации, статьи, литература и анонсы мероприятий)</p>
+
+        <div class="cond-accept">
+            Создавая аккаунт, я принимаю <a href="#">Условия пользования</a> и <a href="#">Политику конфиденциальности</a> платформы
+        </div>
+    </div>
+</div>
+
+<script
+        src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous"></script>
+<script src="../script/libs/jquery.magnific-popup.min.js"></script>
+<script src="../script/inner.js"></script>
+<script src="../script/resp-menu.js"></script>
+<script src="../script/common.js"></script>
+
+<script>
+    jQuery(function ($) {
+        $(document).ready(function () {
+
+        });
+    });
+</script>
+
+
+</body>
+</html>

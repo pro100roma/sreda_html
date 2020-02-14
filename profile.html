@@ -1,0 +1,417 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Профиль</title>
+
+    <!-- Styles -->
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="script/libs/SearchableMultiselect/mock.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="script/libs/SearchableMultiselect/jquery.dropdown.css">
+    <script src="script/libs/SearchableMultiselect/jquery.dropdown.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/i-style/style.css">
+    <link rel="stylesheet" href="style/libs/countrySelect.css">
+    <link rel="stylesheet" href="style/libs/timeZoneSelect.css">
+    <link rel="stylesheet" href="style/media.css">
+    <!-- Styles -->
+
+</head>
+<body>
+<div id="background" class="bg-blue"></div>
+<div id="papa">
+    <header id="header">
+        <div class="logo">
+            <a href="courses.html"><img src="img/logo.png" alt=""></a>
+            <div id="menu-3-lines" class="menu-absolute">
+                <div class="line top-line"></div>
+                <div class="line mid-line"></div>
+                <div class="line bot-line"></div>
+            </div>
+        </div>
+        <div class="right-block flex a-c">
+            <nav class="header-navigation" id="left-menu">
+                <ul class="menu">
+                    <li><a class="active-menu menu-item" href="">Обучение</a></li>
+                    <li><a class="menu-item" href="">Консалтинг</a></li>
+                    <li><a class="menu-item" href="">О нас</a></li>
+                    <li><a class="menu-item" href="">Контакты</a></li>
+                </ul>
+            </nav>
+            <div id="header-bell" class="bell p-r">
+                <div class="bell-notifications">3</div>
+                <a href="notifications.html"><i class="bell-img i-bell"></i></a>
+            </div>
+        </div>
+    </header>
+    <aside id="left-side-bar">
+        <div id="mobile-menu">
+        </div>
+        <div class="top-pearson-info flex j-c a-c f-d-c m-a mt-40">
+            <div class="pearson-photo">
+                <img src="img/pearson/cover.jpg" alt="">
+            </div>
+            <div class="pearson-name">
+                Варфоломей Книжный
+            </div>
+        </div>
+        <nav id="pearson-nav">
+            <ul>
+                <li>
+                    <a href="courses.html">
+                        <img src="img/icon/book.png" alt="icon" class="icon-li">
+                        <span>Мое обучение</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="pending-peyment.html">
+                        <img src="img/icon/money.png" alt="icon" class="icon-li">
+                        <span>Оплата</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="faq.html">
+                        <img src="img/icon/info.png" alt="icon" class="icon-li">
+                        <span>Помощь</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="profile.html">
+                        <img src="img/icon/user.png" alt="icon" class="icon-li">
+                        <span class="active-menu">Профиль</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main id="main">
+        <!-- Top Buttons Container Start -->
+        <div class="top-buttons-wrappper flex f-w">
+            <a href="profile.html" class="a-btn box-shadow blue-gradient-background">
+                Данные
+            </a>
+            <a href="certifications.html" class="a-btn box-shadow">
+                Сертификаты
+            </a>
+            <a href="employment.html" class="a-btn box-shadow">
+                Трудоустройство
+            </a>
+            <a href="notifications.html" class="a-btn box-shadow">
+                Уведомления
+            </a>
+        </div>
+        <!--  Top Buttons Container End  -->
+        <section class="profile-content">
+            <div class="profile-content-wrapper">
+                <div class="user-avatar" style="background: url(img/pearson/cover.jpg)">
+                    <div class="upload-new-avatar">
+                        <input type="file" id="add-avatar" class="add-avatar hide-input">
+                        <label for="add-avatar" class="add-photo">
+                            <img src="img/icon/photo-camera.png" class="photo-camera" alt="">
+                        </label>
+                    </div>
+                </div>
+                <div class="data-container">
+                    <form action="" class="user-data">
+                    <div class="user-profile-data">
+                            <div class="profile-item">
+                                <p class="profile-item-name bold700"><em>Фамилия *</em></p>
+                                <p class="profile-item-data">Книжный</p>
+                                <input type="text" name="" class="hide" id="surname" value="Книжный">
+                            </div>
+                            <div class="profile-item">
+                                <p class="profile-item-name bold700"><em>Имя *</em></p>
+                                <p class="profile-item-data">Варфоломей</p>
+                                <input type="text" name="" class="hide" id="name" value="Варфоломей">
+                            </div>
+                            <div class="profile-item">
+                                <p class="profile-item-name bold700"><em>Отчество</em></p>
+                                <p class="profile-item-data">Варфоломеев</p>
+                                <input type="text" name="" class="hide" id="patronymic" value="Варфоломеев">
+                            </div>
+                            <div class="profile-item">
+                                    <p  class="profile-item-name bold700"><em>Номер телефона*</em></p>
+                                    <p class="profile-item-data">+380 66 430 65 65</p>
+                                <input type="text" name="" class="hide" id="phone" value="+380 66 430 65 65">
+                            </div>
+                            <div class="profile-item">
+                                  <p class="profile-item-name bold700"><em>Email*</em></p>
+                                  <p class="profile-item-data">vorfolomeev@gmail.com</p>
+                                <input type="text" name="" class="hide" id="mail" value="vorfolomeev@gmail.com">
+                              </div>
+                            <div class="profile-item">
+                                    <p class="profile-item-name bold700"><em>Компания</em></p>
+                                    <p class="profile-item-data" id="company">4Service</p>
+                                <input type="text" name="" class="hide" value="4Service">
+                            </div>
+                            <div class="profile-item">
+                                    <p class="profile-item-name bold700"><em>Должность</em></p>
+                                    <p class="profile-item-data">Web-designer</p>
+                                <input type="text" name="" class="hide" value="Web-designer">
+                            </div>
+                            <div class="profile-item">
+                                 <p class="profile-item-name bold700"><em>Страна</em></p>
+                                <div class="select-container">
+                                    <div class="country-filters-wrapper flex f-w">
+                                        <div class="filter custom-select-filter">
+                                            <div class="country-select-wrapper">
+                                                <select>
+                                                    <option value="0" selected="selected">Укажите страну</option>
+                                                    <option value="1">Украина</option>
+                                                    <option value="2">Россия</option>
+                                                    <option value="3">Казахстан</option>
+                                                    <option value="4">Беларусь</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="title-for-required">Выберите ответ</p>
+                                </div>
+                            </div>
+                            <div class="profile-item">
+                                <p class="profile-item-name bold700"><em>Часовой пояс</em></p>
+                                <div class="select-container">
+                                    <div class="timeZone-filters-wrapper flex f-w">
+                                        <div class="filter custom-select-filter">
+                                            <div class="timeZone-select-wrapper">
+                                                <select name="ti-pes">
+                                                    <option value="Пусто" selected="selected">Выберите пояс</option>
+                                                    <!--                                                    <option value="(UTC-12:00) Линия перемены дат" selected="selected">(UTC-12:00) Линия перемены дат</option>-->
+                                                    <option value="(UTC-12:00) Линия перемены дат">(UTC-12:00) Линия перемены дат</option>
+                                                    <option value="(UTC-11:00) Время в формате UTC -11">(UTC-11:00) Время в формате UTC -11</option>
+                                                    <option value="(UTC-10:00) Алеутские острова">(UTC-10:00) Алеутские острова</option>
+                                                    <option value="(UTC-10:00) Гавайи">(UTC-10:00) Гавайи</option>
+                                                    <option value="(UTC-09:30) Маркизские острова">(UTC-09:30) Маркизские острова</option>
+                                                    <option value="(UTC-09:00) Аляска">(UTC-09:00) Аляска</option>
+                                                    <option value="(UTC-09:00) Время в формате UTC -09">(UTC-09:00) Время в формате UTC -09</option>
+                                                    <option value="(UTC-08:00) Время в формате UTC -08">(UTC-08:00) Время в формате UTC -08</option>
+                                                    <option value="(UTC-08:00) Нижняя Калифорния">(UTC-08:00) Нижняя Калифорния</option>
+                                                    <option value="(UTC-08:00)(UTC-08:00) Тихоокеанское время (США и Канада)">(UTC-08:00)(UTC-08:00) Тихоокеанское время (США и Канада)</option>
+                                                    <option value="(UTC-07:00) Аризона">(UTC-07:00) Аризона</option>
+                                                    <option value="(UTC-07:00) Горное время (США и Канада)">(UTC-07:00) Горное время (США и Канада)</option>
+                                                    <option value="(UTC-07:00) Ла-Пас, Мазатлан, Чихуахуа ">(UTC-07:00) Ла-Пас, Мазатлан, Чихуахуа </option>
+                                                    <option value="(UTC-06:00) Гвадалахара, Мехико, Монтеррей">(UTC-06:00) Гвадалахара, Мехико, Монтеррей</option>
+                                                    <option value="(UTC-06:00) о. Пасхи">(UTC-06:00) о. Пасхи</option>
+                                                    <option value="(UTC-06:00) Саскачеван">(UTC-06:00) Саскачеван</option>
+                                                    <option value="(UTC-06:00) Центральная Америка">(UTC-06:00) Центральная Америка</option>
+                                                    <option value="(UTC-06:00) Центральное время (США и Канада)">(UTC-06:00) Центральное время (США и Канада)</option>
+                                                    <option value="(UTC-05:00) Богота, Кито, Лима, Рио-Бранко ">(UTC-05:00) Богота, Кито, Лима, Рио-Бранко </option>
+                                                    <option value="(UTC-05:00) Восточное время (США и Канада) ">(UTC-05:00) Восточное время (США и Канада) </option>
+                                                    <option value="(UTC-05:00) Гавана">(UTC-05:00) Гавана</option>
+                                                    <option value="(UTC-05:00) Гаити">(UTC-05:00) Гаити</option>
+                                                    <option value="(UTC-05:00) Индиана (восток) ">(UTC-05:00) Индиана (восток) </option>
+                                                    <option value="(UTC-05:00) Острова Теркс и Кайкос">(UTC-05:00) Острова Теркс и Кайкос</option>
+                                                    <option value="(UTC-05:00) Четумаль">(UTC-05:00) Четумаль</option>
+                                                    <option value="(UTC-04:00) Асунсьон ">(UTC-04:00) Асунсьон </option>
+                                                    <option value="(UTC-04:00) Атлантическое время (Канада)">(UTC-04:00) Атлантическое время (Канада)</option>
+                                                    <option value="(UTC-04:00) Джорджтаун, Ла-Пас, Манаус, Сан-Хуан">(UTC-04:00) Джорджтаун, Ла-Пас, Манаус, Сан-Хуан</option>
+                                                    <option value="(UTC-04:00) Каракас">(UTC-04:00) Каракас</option>
+                                                    <option value="(UTC-04:00) Куяба">(UTC-04:00) Куяба</option>
+                                                    <option value="(UTC-04:00) Сантьяго">(UTC-04:00) Сантьяго</option>
+                                                    <option value="(UTC-03:30) Ньюфаундленд ">(UTC-03:30) Ньюфаундленд </option>
+                                                    <option value="(UTC-03:30) Арагуяна">(UTC-03:30) Арагуяна</option>
+                                                    <option value="(UTC-03:00) Бразилия">(UTC-03:00) Бразилия</option>
+                                                    <option value="(UTC-03:00) Буэнос-Айрес ">(UTC-03:00) Буэнос-Айрес </option>
+                                                    <option value="(UTC-03:00) Гренландия">(UTC-03:00) Гренландия</option>
+                                                    <option value="(UTC-03:00) Кайенна, Форталеза">(UTC-03:00) Кайенна, Форталеза</option>
+                                                    <option value="(UTC-03:00) Монтевидео">(UTC-03:00) Монтевидео</option>
+                                                    <option value="(UTC-03:00) Пунта-Аренас">(UTC-03:00) Пунта-Аренас</option>
+                                                    <option value="(UTC-03:00) Сальвадор">(UTC-03:00) Сальвадор</option>
+                                                    <option value="(UTC-03:00) Сен-Пьер и Микелон ">(UTC-03:00) Сен-Пьер и Микелон </option>
+                                                    <option value="(UTC-02:00) Время в формате UTC -02">(UTC-02:00) Время в формате UTC -02</option>
+                                                    <option value="(UTC-02:00) Среднеатлантическое время - старое">(UTC-02:00) Среднеатлантическое время - старое</option>
+                                                    <option value="(UTC-01:00) Азорские о-ва">(UTC-01:00) Азорские о-ва</option>
+                                                    <option value="(UTC-01:00) Кабо-Верде">(UTC-01:00) Кабо-Верде</option>
+                                                    <option value="(UTC) Время в формате UTC  ">(UTC) Время в формате UTC  </option>
+                                                    <option value="(UTC+00:00) Дублин, Эдинбург, Лиссабон, Лондон">(UTC+00:00) Дублин, Эдинбург, Лиссабон, Лондон</option>
+                                                    <option value="(UTC+00:00) Монровия, Рейкьявик">(UTC+00:00) Монровия, Рейкьявик</option>
+                                                    <option value="(UTC+00:00) Сан-Томе">(UTC+00:00) Сан-Томе</option>
+                                                    <option value="(UTC+01:00) Касабланка">(UTC+01:00) Касабланка</option>
+                                                    <option value="(UTC+01:00) Амстердам, Берлин, Берн, Вена, Рим, Стокгольм">(UTC+01:00) Амстердам, Берлин, Берн, Вена, Рим, Стокгольм</option>
+                                                    <option value="(UTC+01:00) Белград, Братислава, Будапешт, Любляна, Прага">(UTC+01:00) Белград, Братислава, Будапешт, Любляна, Прага</option>
+                                                    <option value="(UTC+01:00) Брюссель, Копенгаген, Мадрид, Париж">(UTC+01:00) Брюссель, Копенгаген, Мадрид, Париж</option>
+                                                    <option value="(UTC+01:00) Варшава, Загреб, Сараево, Скопье">(UTC+01:00) Варшава, Загреб, Сараево, Скопье</option>
+                                                    <option value="(UTC+01:00) Западная Центральная Африка">(UTC+01:00) Западная Центральная Африка</option>
+                                                    <option value="(UTC+02:00) Амман">(UTC+02:00) Амман</option>
+                                                    <option value="(UTC+02:00) Афины, Бухарест">(UTC+02:00) Афины, Бухарест</option>
+                                                    <option value="(UTC+02:00) Бейрут">(UTC+02:00) Бейрут</option>
+                                                    <option value="(UTC+02:00) Вильнюс, Киев, Рига, София, Таллин, Хельсинки">(UTC+02:00) Вильнюс, Киев, Рига, София, Таллин, Хельсинки</option>
+                                                    <option value="(UTC+02:00) Виндхук">(UTC+02:00) Виндхук</option>
+                                                    <option value="(UTC+02:00) Восточная Европа ">(UTC+02:00) Восточная Европа </option>
+                                                    <option value="(UTC+02:00) Дамаск">(UTC+02:00) Дамаск</option>
+                                                    <option value="(UTC+02:00) Иерусалим">(UTC+02:00) Иерусалим</option>
+                                                    <option value="(UTC+02:00) Каир">(UTC+02:00) Каир</option>
+                                                    <option value="(UTC+02:00) Калининград">(UTC+02:00) Калининград</option>
+                                                    <option value="(UTC+02:00) Кишинев">(UTC+02:00) Кишинев</option>
+                                                    <option value="(UTC+02:00) Сектор Газа, Хеврон">(UTC+02:00) Сектор Газа, Хеврон</option>
+                                                    <option value="(UTC+02:00) Триполи">(UTC+02:00) Триполи</option>
+                                                    <option value="(UTC+02:00) Хараре, Претория">(UTC+02:00) Хараре, Претория</option>
+                                                    <option value="(UTC+02:00) Хартум">(UTC+02:00) Хартум</option>
+                                                    <option value="(UTC+03:00) Багдад">(UTC+03:00) Багдад</option>
+                                                    <option value="(UTC+03:00) Кувейт, Эр-Рияд ">(UTC+03:00) Кувейт, Эр-Рияд </option>
+                                                    <option value="(UTC+03:00) Минск ">(UTC+03:00) Минск </option>
+                                                    <option value="(UTC+03:00) Москва, Санкт-Петербург">(UTC+03:00) Москва, Санкт-Петербург</option>
+                                                    <option value="(UTC+03:00) Найроби ">(UTC+03:00) Найроби </option>
+                                                    <option value="(UTC+03:00) Стамбул">(UTC+03:00) Стамбул</option>
+                                                    <option value="(UTC+03:30) Тегеран">(UTC+03:30) Тегеран</option>
+                                                    <option value="(UTC+04:00) Абу-Даби, Мускат ">(UTC+04:00) Абу-Даби, Мускат </option>
+                                                    <option value="(UTC+04:00) Баку">(UTC+04:00) Баку</option>
+                                                    <option value="(UTC+04:00) Волгоград">(UTC+04:00) Волгоград</option>
+                                                    <option value="(UTC+04:00) Ереван">(UTC+04:00) Ереван</option>
+                                                    <option value="(UTC+04:00) Ижевск, Самара ">(UTC+04:00) Ижевск, Самара </option>
+                                                    <option value="(UTC+04:00) Порт-Луи">(UTC+04:00) Порт-Луи</option>
+                                                    <option value="(UTC+04:00) Саратов">(UTC+04:00) Саратов</option>
+                                                    <option value="(UTC+04:00) Тбилиси">(UTC+04:00) Тбилиси</option>
+                                                    <option value="(UTC+04:30) Кабул">(UTC+04:30) Кабул</option>
+                                                    <option value="(UTC+05:00) Ашхабад, Ташкент ">(UTC+05:00) Ашхабад, Ташкент </option>
+                                                    <option value="(UTC+05:00) Екатеринбург ">(UTC+05:00) Екатеринбург </option>
+                                                    <option value="(UTC+05:00) Исламабад, Карачи ">(UTC+05:00) Исламабад, Карачи </option>
+                                                    <option value="(UTC+05:00) Кызылорда">(UTC+05:00) Кызылорда</option>
+                                                    <option value="(UTC+05:30) Колката, Мумбаи, Нью-Дели, Ченнай">(UTC+05:30) Колката, Мумбаи, Нью-Дели, Ченнай</option>
+                                                    <option value="(UTC+05:30) Шри-Джаявардене-пура-Котте">(UTC+05:30) Шри-Джаявардене-пура-Котте</option>
+                                                    <option value="(UTC+05:45) Катманду">(UTC+05:45) Катманду</option>
+                                                    <option value="(UTC+06:00) Астана">(UTC+06:00) Астана</option>
+                                                    <option value="(UTC+06:00) Дакка">(UTC+06:00) Дакка</option>
+                                                    <option value="(UTC+06:00) Омск">(UTC+06:00) Омск</option>
+                                                    <option value="(UTC+06:30) Янгон">(UTC+06:30) Янгон</option>
+                                                    <option value="(UTC+07:00) Бангкок, Джакарта, Ханой">(UTC+07:00) Бангкок, Джакарта, Ханой</option>
+                                                    <option value="(UTC+07:00) Барнаул, Горно-Алтайск">(UTC+07:00) Барнаул, Горно-Алтайск</option>
+                                                    <option value="(UTC+07:00) Красноярск">(UTC+07:00) Красноярск</option>
+                                                    <option value="(UTC+07:00) Новосибирск">(UTC+07:00) Новосибирск</option>
+                                                    <option value="(UTC+07:00) Томск">(UTC+07:00) Томск</option>
+                                                    <option value="(UTC+07:00) Ховд">(UTC+07:00) Ховд</option>
+                                                    <option value="(UTC+08:00) Гонконг, Пекин, Урумчи, Чунцин">(UTC+08:00) Гонконг, Пекин, Урумчи, Чунцин</option>
+                                                    <option value="(UTC+08:00) Иркутск">(UTC+08:00) Иркутск</option>
+                                                    <option value="(UTC+08:00) Куала-Лумпур, Сингапур">(UTC+08:00) Куала-Лумпур, Сингапур</option>
+                                                    <option value="(UTC+08:00) Перт">(UTC+08:00) Перт</option>
+                                                    <option value="(UTC+08:00) Тайбэй">(UTC+08:00) Тайбэй</option>
+                                                    <option value="(UTC+08:00) Улан-Батор">(UTC+08:00) Улан-Батор</option>
+                                                    <option value="(UTC+09:00) Осака, Саппоро, Токио">(UTC+09:00) Осака, Саппоро, Токио</option>
+                                                    <option value="(UTC+09:00) Сеул">(UTC+09:00) Сеул</option>
+                                                    <option value="(UTC+09:00) Чита">(UTC+09:00) Чита</option>
+                                                    <option value="(UTC+09:00) Якутск">(UTC+09:00) Якутск</option>
+                                                    <option value="(UTC+09:30) Аделаида">(UTC+09:30) Аделаида</option>
+                                                    <option value="(UTC+09:30) Дарвин">(UTC+09:30) Дарвин</option>
+                                                    <option value="(UTC+10:00) Брисбен">(UTC+10:00) Брисбен</option>
+                                                    <option value="(UTC+10:00) Владивосток">(UTC+10:00) Владивосток</option>
+                                                    <option value="(UTC+10:00) Гуам, Порт-Морсби">(UTC+10:00) Гуам, Порт-Морсби</option>
+                                                    <option value="(UTC+10:00) Канберра, Мельбурн, Сидней">(UTC+10:00) Канберра, Мельбурн, Сидней</option>
+                                                    <option value="(UTC+10:00) Хобарт">(UTC+10:00) Хобарт</option>
+                                                    <option value="(UTC+10:30) Лорд-Хау">(UTC+10:30) Лорд-Хау</option>
+                                                    <option value="(UTC+11:00) Магадан">(UTC+11:00) Магадан</option>
+                                                    <option value="(UTC+11:00) Остров Бегунвиль">(UTC+11:00) Остров Бегунвиль</option>
+                                                    <option value="(UTC+11:00) Остров Норфолк">(UTC+11:00) Остров Норфолк</option>
+                                                    <option value="(UTC+11:00) Сахалин">(UTC+11:00) Сахалин</option>
+                                                    <option value="(UTC+11:00) Соломоновы о-ва, Нов. Каледония">(UTC+11:00) Соломоновы о-ва, Нов. Каледония</option>
+                                                    <option value="(UTC+11:00) Чокурдах">(UTC+11:00) Чокурдах</option>
+                                                    <option value="(UTC+12:00) Анадырь, Петропавловск-Камчатский">(UTC+12:00) Анадырь, Петропавловск-Камчатский</option>
+                                                    <option value="(UTC+12:00) Веллингтон, Окленд ">(UTC+12:00) Веллингтон, Окленд </option>
+                                                    <option value="(UTC+12:00) Время в формате UTC +12">(UTC+12:00) Время в формате UTC +12</option>
+                                                    <option value="(UTC+12:00) Фиджи">(UTC+12:00) Фиджи</option>
+                                                    <option value="(UTC+12:00) Чатем">(UTC+12:00) Чатем</option>
+                                                    <option value="(UTC+13:00) Время в формате UTC +13">(UTC+13:00) Время в формате UTC +13</option>
+                                                    <option value="(UTC+13:00) Нукуалофа">(UTC+13:00) Нукуалофа</option>
+                                                    <option value="(UTC+13:00) Самоа">(UTC+13:00) Самоа</option>
+                                                    <option value="(UTC+14:00) О-в Киритимати ">(UTC+14:00) О-в Киритимати </option>
+                                                </select>
+<!--                                                <script>-->
+<!--                                                    $.each($('[name="ti-pes"] option'), function ($i,v,$arr){-->
+<!--                                                        console.log(v,$i,$arr);-->
+<!--                                                        $(v).attr( 'value', $(v).text() );-->
+<!--                                                    });-->
+<!--                                                </script>-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="title-for-required">Выберите ответ</p>
+                                </div>
+                            </div>
+                        <div class="profile-item experience">
+                            <!--<p class="experience-items profile-item-data">CSMS, Сервис, Customer Loyalty, Customer, Customer Experience, Вебинары-->
+                            <!--</p>-->
+                            <!--<input type="text" name="" class="hide" value="CSMS, Сервис, Customer Loyalty, Customer, Customer Experience, Вебинары">-->
+                            <p class="profile-item-name bold700"><em>Интересы</em></p>
+                            <div class="dropdown-mul-1">
+                                <select style="display:none"  name="" id="" multiple placeholder="Select">
+                                    <option value="CSMS">CSMS</option>
+                                    <option value="Сервис">Сервис</option>
+                                    <option value="Customer Loyalty">Customer Loyalty</option>
+                                    <option value="Customer">Customer</option>
+                                    <option value="Customer Experience">Customer Experience</option>
+                                    <option value="Вебинары">Вебинары</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-wrapp">
+                            <div class="question-block">
+                                <label class="radio_container">
+                                    <input type="checkbox" class="radio__option" name="receive-mail"> <span class="answer bold700">Получать рассылку * *</span>
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="radio_container check-recommend">
+                                    <input type="checkbox" class="radio__option" name="recommend"> <span class="answer bold700">Рекомендовать меня работодателю * * *</span>
+                                    <span class="checkmark"></span>
+                                    <a href="#"><i class="i-icon"></i></a>
+                                </label>
+                            </div>
+                        <div class="save-decline-btns">
+                            <button class="save-user-data form-btn">Сохранить</button>
+                            <button class="decline-user-data form-btn">Отмена</button>
+                        </div>
+                    </div>
+                    <div class="info-for-user">
+                        <p><em>* Данные профиля будут использованы при формировании сертификата</em></p>
+                        <p class="mt-15"><em>* * Мне интересно получать рассылку (только полезная информация: рекомендации, статьи, литература и анонсы
+                            мероприятий)</em></p>
+                        <p class="mt-15"><em>* * * Я хочу получать уведомления о рекомендуемых вакансиях и отображать мое резюме для просмотра работодателей</em></p>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+<script>
+    // var Random = Mock.Random;
+    // var json1 = Mock.mock({
+    //     "data|10-50": [{
+    //         name: function () {
+    //             return Random.name(true)
+    //         },
+    //         "id|+1": 1,
+    //         "disabled|1-2": true,
+    //         groupName: 'Group Name',
+    //         "groupId|1-4": 1,
+    //         "selected": false
+    //     }]
+    // });
+
+    // $('.dropdown-mul-1').dropdown({
+    //     data: json1.data,
+    //     limitCount: 40,
+    //     multipleMode: 'label',
+    //     choice: function () {
+    //         // console.log(arguments,this);
+    //     }
+    // });
+    // $('.dropdown-sin-1').dropdown({
+    //     readOnly: true,
+    //     input: '<input type="text" maxLength="20" placeholder="Search">'
+    // });
+    $('.dropdown-mul-1').dropdown({
+        limitCount: 40,
+        multipleMode: 'label',
+        choice: function () {
+            // console.log(arguments,this);
+        }
+    });
+</script>
+<script src="script/inner.js"></script>
+<script src="script/resp-menu.js"></script>
+<script src="script/edit-data.js"></script>
+<script src="script/libs/countrySelect.js"></script>
+<script src="script/libs/timeZoneSelect.js"></script>
+</body>

@@ -1,0 +1,513 @@
+<html lang="ru"><head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Тесты/ДЗ</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/i-style/style.css">
+    <link rel="stylesheet" href="style/media.css">
+    <!-- Styles -->
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+
+</head>
+<body>
+<div id="background" class="bg-blue"></div>
+<div id="papa">
+    <header id="header">
+        <div class="logo">
+            <a href="courses.html"><img src="img/logo.png" alt=""></a>
+            <div id="menu-3-lines" class="menu-absolute">
+                <div class="line top-line"></div>
+                <div class="line mid-line"></div>
+                <div class="line bot-line"></div>
+            </div>
+        </div>
+        <div class="right-block flex a-c">
+            <nav class="header-navigation" id="left-menu">
+                <ul class="menu">
+                    <li><a class="active-menu menu-item" href="">Обучение</a></li>
+                    <li><a class="menu-item" href="">Консалтинг</a></li>
+                    <li><a class="menu-item" href="">О нас</a></li>
+                    <li><a class="menu-item" href="">Контакты</a></li>
+                </ul>
+            </nav>
+            <div id="header-bell" class="bell p-r">
+                <div class="bell-notifications">3</div>
+                <a href="notifications.html"><i class="bell-img i-bell"></i></a>
+            </div>
+        </div>
+    </header>
+    <aside id="left-side-bar">
+        <div id="mobile-menu">
+        </div>
+        <div class="top-pearson-info flex j-c a-c f-d-c m-a mt-40">
+            <div class="pearson-photo">
+                <img src="img/pearson/cover.jpg" alt="">
+            </div>
+            <div class="pearson-name">
+                Варфоломей Книжный
+            </div>
+        </div>
+        <nav id="pearson-nav">
+            <ul>
+                <li>
+                    <a href="courses.html">
+                        <img src="img/icon/book.png" alt="icon" class="icon-li">
+                        <span class="active-menu">Мое обучение</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="pending-peyment.html">
+                        <img src="img/icon/money.png" alt="icon" class="icon-li">
+                        <span>Оплата</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="faq.html">
+                        <img src="img/icon/info.png" alt="icon" class="icon-li">
+                        <span>Помощь</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="profile.html">
+                        <img src="img/icon/user.png" alt="icon" class="icon-li">
+                        <span>Профиль</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main id="main">
+
+        <!-- Top Buttons Container Start -->
+        <div class="top-buttons-wrappper flex f-w">
+            <a href="courses.html" class="a-btn box-shadow">
+                Курсы
+            </a>
+            <a href="webinars.html" class="a-btn box-shadow">
+                Вебинары
+            </a>
+            <a href="tests.html" class="a-btn box-shadow blue-gradient-background">
+                Тесты/ДЗ
+            </a>
+            <a href="bookmarks.html" class="a-btn box-shadow">
+                Закладки
+            </a>
+            <a href="archive.html" class="a-btn box-shadow">
+                Архив
+            </a>
+        </div>
+        <!--  Top Buttons Container End  -->
+
+        <!-- Filters Select Start -->
+        <div class="filters-wrapper flex f-w">
+            <div class="filter custom-select-filter">
+                <div class="custom-select-wrapper">
+                    <select>
+                        <option value="0">Вид работы</option>
+                        <option value="1">Тест</option>
+                        <option value="2">Домашнее задание</option>
+                    </select>
+                </div>
+            </div>
+            <div class="filter custom-select-filter">
+                <div class="custom-select-wrapper">
+                    <select>
+                        <option value="12">Категория обучения</option>
+                        <option value="12">1</option>
+                        <option value="12">1</option>
+                        <option value="12">1</option>
+                        <option value="12">1</option>
+                        <option value="12">1</option>
+                        <option value="12">1</option>
+                        <option value="12">1</option>
+                    </select>
+                </div>
+            </div>
+            <div class="filter custom-select-filter">
+                <div class="custom-select-wrapper">
+                    <select>
+                        <option value="0">Статус теста/ДЗ</option>
+                        <option value="1">Пройдено</option>
+                        <option value="2">Не пройдено</option>
+                    </select>
+                </div>
+            </div>
+            <div class="filter select-search">
+                <select>
+                    <option value="0">Спикер</option>
+                    <option value="1">Евгений Лобанов</option>
+                    <option value="2">Оксана Белан</option>
+                    <option value="3">Елена Цисарь</option>
+                </select>
+            </div>
+        </div>
+        <!--  Filters Select End  -->
+        <!-- card-container Start -->
+        <div class="card-container flex f-w">
+
+            <!-- Card Text Start -->
+            <div class="card box-shadow flex f-d-c j-s-b">
+                <div class="card-header flex j-e">
+                    <div class="status">&nbsp</div>
+                </div>
+                <div class="card-title flex j-s-b">
+                    <div class="card-title-name">UI/UX design</div>
+                    <div class="card-title-tools">
+
+                    </div>
+                </div>
+                <div class="card-body" onClick="return true" style="background: url(img/cards/ui-ux-bg.png); background-size: cover;">
+                    <div class="card-data-main-container">
+                        <p class="small-title">ДЗ ПО УРОКУ</p>
+                        <p class="theme">ТЕМА: Простые советы для повышения
+                            лояльности сотрудников</p>
+                        <div class="card-data-wrapper">
+                            <div class="data-name">
+                                <p class="card-data-item bold700">Дедлайн </p>
+                            </div>
+                            <div class="data-result">
+                                <p class="bold700">10.02</p>
+                            </div>
+                        </div>
+                        <div class="card-data-wrapper">
+                            <div class="data-name">
+                                <p class="card-data-item">Сдача:</p>
+                            </div>
+                            <div class="data-result accepted2 tooltip">
+                                <div class="tooltip-text hide">
+                                    <i>
+                                        Если обратной связи нет, не волнуйтесь.
+                                        Проверка Вашей заявки по вакансии
+                                        занимает от 3 до 7 дней. О результатах
+                                        Вы будете проинформированы
+                                        в уведомлении
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-data-wrapper">
+                            <div class="data-name">
+                                <p class="card-data-item">Обратная связь*</p>
+                            </div>
+                            <div class="data-result update tooltip">
+                                <div class="tooltip-text">
+                                    <i>
+                                        Если обратной связи нет, не волнуйтесь.
+                                        Проверка Вашей заявки по вакансии
+                                        занимает от 3 до 7 дней. О результатах
+                                        Вы будете проинформированы
+                                        в уведомлении
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-progres-info flex j-s-b">
+                    </div>
+                </div>
+                <div class="card-loader">
+                </div>
+                <div class="card-bottom flex j-c">
+                    <a href="home-work.html" class="small-btn">
+                        Сделать дз
+                    </a>
+                </div>
+            </div>
+            <!--  Card Text End  -->
+
+            <!-- Card Img Start -->
+            <div class="card box-shadow flex f-d-c j-s-b">
+                <div class="card-header flex j-e">
+                    <div class="status">&nbsp</div>
+                </div>
+                <div class="card-title flex j-s-b">
+                    <div class="card-title-name">UI/UX design</div>
+                    <div class="card-title-tools">
+
+                    </div>
+                </div>
+                <div class="card-body" onClick="return true" style="background: url(img/cards/ui-ux-bg.png); background-size: cover;">
+                    <div class="card-data-main-container">
+                        <p class="small-title">ТЕСТ ПО УРОКУ</p>
+                        <p class="theme">ТЕМА: Простые советы для повышения
+                            лояльности сотрудников</p>
+                        <div class="card-data-wrapper">
+                            <div class="data-name">
+                                <p class="card-data-item">Баллы:</p>
+                            </div>
+                            <div class="data-result">
+                                <p>0/100</p>
+                            </div>
+                        </div>
+                        <div class="card-data-wrapper">
+                            <div class="data-name">
+                                <p class="card-data-item">Попыток:</p>
+                            </div>
+                            <div class="data-result">
+                                <p>0/2</p>
+                            </div>
+                        </div>
+                        <p class="rem-pading bold700">БЕСПЛАТНО</p>
+                        <p class="rem-pading font-12 hide">Запрос повторного теста 10$</p>
+                    </div>
+                </div>
+                <div class="card-loader">
+                </div>
+                <div class="card-bottom flex j-с">
+                    <a href="home-work-test.html" class="small-btn">
+                        Пройти тест
+                    </a>
+                </div>
+            </div>
+            <!--  Card Img End  -->
+
+            <!-- Card Img Start -->
+            <div class="card box-shadow flex f-d-c j-s-b">
+                <div class="card-header flex j-e">
+                    <div class="status">&nbsp</div>
+                </div>
+                <div class="card-title flex j-s-b">
+                    <div class="card-title-name">Особенности работы <br>
+                        с тайными покупателми</div>
+                    <div class="card-title-tools">
+                    </div>
+                </div>
+                <div class="card-body" onClick="return true" style="background: url(img/cards/unsplash.png); background-size: cover;">
+                    <div class="card-data-main-container">
+                        <p class="small-title">ТЕСТ ПО УРОКУ</p>
+                        <div class="card-data-wrapper">
+                            <div class="data-name">
+                                <p class="card-data-item">Баллы:</p>
+                            </div>
+                            <div class="data-result">
+                                <p>0/100</p>
+                            </div>
+                        </div>
+                        <div class="card-data-wrapper">
+                            <div class="data-name">
+                                <p class="card-data-item">Попыток:</p>
+                            </div>
+                            <div class="data-result">
+                                <p>1/1</p>
+                            </div>
+                        </div>
+                        <p class="rem-pading bold700 hide">БЕСПЛАТНО</p>
+                        <div class="card-data-wrapper">
+                            <div class="data-name">
+                                <p class="card-data-item mt-15">Результата Вашего теста</p>
+                            </div>
+                            <div class="data-result">
+                                <p class="bold700">28%</p>
+                            </div>
+                        </div>
+                        <p class="rem-pading bold700">Запрос повторного теста 15$</p>
+
+                    </div>
+                </div>
+                <div class="card-loader">
+                </div>
+                <div class="card-bottom flex j-c">
+
+                    <a href="" class="big-red-btn more-detail retest-tooltip">
+                        Запросить повторный  тест
+                        <div class="retest-tooltip-text">
+                            <i>
+                                «Ваш запрос принят. Ожидается решение»
+                            </i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!--  Card Img End  -->
+
+            <!-- Card Text Start -->
+            <div class="card box-shadow flex f-d-c j-s-b">
+                <div class="card-header flex j-e">
+                    <div class="status">&nbsp</div>
+                </div>
+                <div class="card-title flex j-s-b">
+                    <div class="card-title-name">Тайм-менеджмент</div>
+                    <div class="card-title-tools">
+                        <!--<input type="checkbox" class="like-check-input" id="like-it3">-->
+                        <!--<label class="like" for="like-it3"></label>-->
+                    </div>
+                </div>
+                <div class="card-body" onClick="return true" style="background: url(img/cards/big-boss.png); background-size: cover;">
+                    <div class="card-data-main-container">
+                        <p class="small-title">ДЗ ПО УРОКУ</p>
+                        <p class="theme">ТЕМА: Простые советы для повышения
+                            лояльности сотрудников</p>
+                        <div class="card-data-wrapper">
+                            <div class="data-name">
+                                <p class="card-data-item bold700">Дедлайн </p>
+                            </div>
+                            <div class="data-result">
+                                <p class="bold700">10.02</p>
+                            </div>
+                        </div>
+                        <div class="card-data-wrapper">
+                            <div class="data-name">
+                                <p class="card-data-item">Сдача:</p>
+                            </div>
+                            <div class="data-result accepted2 tooltip">
+                                <div class="tooltip-text hide">
+                                    <i>
+                                        Если обратной связи нет, не волнуйтесь.
+                                        Проверка домашнего задания
+                                        занимает от 3 до 7 дней. О результатах
+                                        Вы будете проинформированы
+                                        в уведомлении
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-data-wrapper">
+                            <div class="data-name">
+                                <p class="card-data-item">Обратная связь*</p>
+                            </div>
+                            <div class="data-result accepted2 tooltip">
+                                <div class="tooltip-text hide">
+                                    <i>
+                                        Если обратной связи нет, не волнуйтесь.
+                                        Проверка домашнего задания
+                                        занимает от 3 до 7 дней. О результатах
+                                        Вы будете проинформированы
+                                        в уведомлении
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-progres-info flex j-s-b">
+                    </div>
+                </div>
+                <div class="card-loader">
+                </div>
+                <div class="card-bottom flex j-c">
+                    <a href="home-work.html" class="small-btn">
+                        Сделать дз
+                    </a>
+                </div>
+            </div>
+            <!--  Card Text End  -->
+
+            <!-- Card Text Start -->
+            <div class="card box-shadow flex f-d-c j-s-b">
+                <div class="card-header flex j-e">
+                    <div class="status">&nbsp</div>
+                </div>
+                <div class="card-title flex j-s-b">
+                    <div class="card-title-name">Тайм-менеджмент</div>
+                    <div class="card-title-tools">
+
+                    </div>
+                </div>
+                <div class="card-body" onClick="return true" style="background: url(img/cards/2.png); background-size: cover;">
+                    <div class="card-data-main-container">
+                        <p class="small-title">ТЕСТ ПО УРОКУ</p>
+                        <p class="theme">ТЕМА: Простые советы для повышения
+                            лояльности сотрудников</p>
+                        <div class="card-data-wrapper">
+                            <div class="data-name">
+                                <p class="card-data-item">Баллы:</p>
+                            </div>
+                            <div class="data-result">
+                                <p>0/100</p>
+                            </div>
+                        </div>
+                        <div class="card-data-wrapper">
+                            <div class="data-name">
+                                <p class="card-data-item">Попыток:</p>
+                            </div>
+                            <div class="data-result">
+                                <p>0/2</p>
+                            </div>
+                        </div>
+                        <p class="rem-pading bold700">БЕСПЛАТНО</p>
+                        <p class="rem-pading font-12 hide">Запрос повторного теста 10$</p>
+                    </div>
+                </div>
+                <div class="card-loader">
+                </div>
+                <div class="card-bottom flex j-с">
+                    <a href="home-work-test.html" class="small-btn">
+                        Пройти тест
+                    </a>
+                </div>
+            </div>
+            <!--  Card Text End  -->
+
+            <!-- Card Text Start -->
+            <div class="card box-shadow flex f-d-c j-s-b">
+                <div class="card-header flex j-e">
+                    <div class="status">&nbsp</div>
+                </div>
+                <div class="card-title flex j-s-b">
+                    <div class="card-title-name">
+                        Как сделать клиента счастливым?
+                    </div>
+                    <div class="card-title-tools">
+                    </div>
+                </div>
+                <div class="card-body" onClick="return true" style="background: url(img/cards/analytic.png); background-size: cover;">
+                    <div class="card-data-main-container">
+                        <p class="small-title">ТЕСТ ПО УРОКУ</p>
+                        <div class="card-data-wrapper">
+                            <div class="data-name">
+                                <p class="card-data-item">Баллы:</p>
+                            </div>
+                            <div class="data-result">
+                                <p>0/100</p>
+                            </div>
+                        </div>
+                        <div class="card-data-wrapper">
+                            <div class="data-name">
+                                <p class="card-data-item">Попыток:</p>
+                            </div>
+                            <div class="data-result">
+                                <p>1/1</p>
+                            </div>
+                        </div>
+                        <p class="rem-pading bold700 hide">БЕСПЛАТНО</p>
+                        <div class="card-data-wrapper">
+                            <div class="data-name">
+                                <p class="card-data-item mt-15">Результата Вашего теста</p>
+                            </div>
+                            <div class="data-result">
+                                <p class="bold700">78%</p>
+                            </div>
+                        </div>
+                        <p class="rem-pading bold700">Запрос повторного теста 15$</p>
+                    </div>
+                </div>
+                <div class="card-loader">
+                </div>
+                <div class="card-bottom flex j-c">
+                        <a href="" class="big-red-btn more-detail hide-btn">
+                            Запросить повторный  тест
+                        </a>
+                </div>
+            </div>
+            <!--  Card Text End  -->
+
+        </div>
+        <!--  card-container End  -->
+    </main>
+</div>
+
+<script src="script/libs/jquery.custom-select.js"></script>
+<script src="script/libs/customSelect.js"></script>
+<script src="script/inner.js"></script>
+<script src="script/resp-menu.js"></script>
+<script>
+    $('.select-search select').customSelect({
+        search: true
+    });
+</script>
+
+</body>
+</html>

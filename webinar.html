@@ -1,0 +1,743 @@
+<html lang="ru" xmlns:viber="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Вебинар</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/i-style/style.css">
+    <link rel="stylesheet" href="style/media.css">
+    <link rel="stylesheet" href="style/libs/slider.css">
+    <link rel="stylesheet" href="style/libs/owl.carousel.min.css">
+    <!-- Styles -->
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+
+</head>
+<body>
+<div class="error-message-overlay">
+    <div class="error-message-popup">
+        <div class="close-message">+</div>
+        <div class="message-text">
+            <p>Вы ввели неверний e-mail!</p>
+        </div>
+    </div>
+</div>
+<div class="success-message-overlay">
+    <div class="success-message-popup">
+        <div class="closePopupmessage">+</div>
+        <div class="successMessage-text">
+            <p>Спасибо, Ваши контакты отправлены!</p>
+        </div>
+    </div>
+</div>
+<div id="background" class="bg-blue"></div>
+<div id="papa">
+    <header id="header">
+        <div class="logo">
+            <a href="courses.html"><img src="img/logo.png" alt=""></a>
+            <div id="menu-3-lines" class="menu-absolute">
+                <div class="line top-line"></div>
+                <div class="line mid-line"></div>
+                <div class="line bot-line"></div>
+            </div>
+        </div>
+        <div class="right-block flex a-c">
+            <nav class="header-navigation" id="left-menu">
+                <ul class="menu">
+                    <li><a class="active-menu menu-item" href="">Обучение</a></li>
+                    <li><a class="menu-item" href="">Консалтинг</a></li>
+                    <li><a class="menu-item" href="">О нас</a></li>
+                    <li><a class="menu-item" href="">Контакты</a></li>
+                </ul>
+            </nav>
+            <div id="header-bell" class="bell p-r">
+                <div class="bell-notifications">3</div>
+                <a href="notifications.html"><i class="bell-img i-bell"></i></a>
+            </div>
+        </div>
+    </header>
+    <aside id="left-side-bar">
+        <div id="mobile-menu">
+        </div>
+        <div class="top-pearson-info flex j-c a-c f-d-c m-a mt-40">
+            <div class="pearson-photo">
+                <img src="img/pearson/cover.jpg" alt="">
+            </div>
+            <div class="pearson-name">
+                Варфоломей Книжный
+            </div>
+        </div>
+        <nav id="pearson-nav">
+            <ul>
+                <li>
+                    <a href="courses.html">
+                        <img src="img/icon/book.png" alt="icon" class="icon-li">
+                        <span class="active-menu">Мое обучение</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="pending-peyment.html">
+                        <img src="img/icon/money.png" alt="icon" class="icon-li">
+                        <span>Оплата</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="faq.html">
+                        <img src="img/icon/info.png" alt="icon" class="icon-li">
+                        <span>Помощь</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="profile.html">
+                        <img src="img/icon/user.png" alt="icon" class="icon-li">
+                        <span>Профиль</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main id="main">
+
+        <!-- Top Buttons Conrainer Start -->
+        <div class="top-buttons-wrappper flex f-w">
+            <a href="courses.html" class="a-btn box-shadow">
+                Курсы
+            </a>
+            <a href="webinars.html" class="a-btn box-shadow blue-gradient-background">
+                Вебинары
+            </a>
+            <a href="tests.html" class="a-btn box-shadow">
+                Тесты/ДЗ
+            </a>
+            <a href="bookmarks.html" class="a-btn box-shadow">
+                Закладки
+            </a>
+            <a href="archive.html" class="a-btn box-shadow ">
+                Архив
+            </a>
+        </div>
+        <!--  Top Buttons Conrainer End  -->
+        <div class="vacancy-wrapper">
+            <ul class="vacancy_list">
+                <li class="vacancy_item"><a class="vacancy_item_link" href="webinars.html">Все вебинары</a></li>
+            </ul>
+        </div>
+        <section class="design">
+            <div class="design-container">
+                <div class="registration">
+                    <ul class="reg_list">
+                        <li class="reg_item design-icon">Дизайн</li>
+                        <li class="reg_item knowledge">juniore/middle/PRO</li>
+                        <li class="reg_item date">27.02.19</li>
+                        <li class="reg_item clock">15:00 </li>
+                        <li class="reg_item medal">Тест по итогу вебинара</li>
+                        <li class="reg_item money">50$</li>
+                        <li class="reg_item guarantee">Гарантия возврата денег</li>
+                    </ul>
+                    <div class="reg-btn-wrapper">
+                        <a href="pending-peyment.html" class="registration-btn box-shadow">Регистрация</a>
+                    </div>
+                </div>
+                <div class="webinar-description-block">
+                    <div class="ui-ux_design_title">
+                        <h2>UI/UX design</h2>
+                        <div class="design_like_wrapper">
+                            <input type="checkbox" class="like-check-input" id="like-it">
+                            <label class="like" for="like-it"></label>
+                        </div>
+                    </div>
+                    <div class="webinar-design-info">
+                        <p>Какие составляющие сервиса приносят прибыль?</p>
+                        <p class="mt-15">Как привлечь внимание персонала к сервису?</p>
+                        <p class="mt-15">Как сделать стандарты живыми? Стоит ли бросать все силы на
+                            WOW сервис?</p>
+                        <p class="mt-15">Все это Вы узнаете на простом курсе вебинаров «Easy service»</p>
+                        <p class="mt-15">26 апреля Центр Сервис Менеджмента запустил курс
+                            вебинаров, в котором мы собрали реальные кейсы и живые
+                            примеры, объединили работающие рекомендации и простые
+                            ответы на сложные вопросы.</p>
+                        <p class="mt-20"><span class="bold">Ваша роль:</span> слушатель – общение посредством чата</p>
+                        <p class="mt-15">
+                            <span class="bold">ВАЖНО:</span> Просим Вас подключиться за 20-30 минут до начала
+                            мероприятия, для проверки связи со спикером и возможности
+                            заблаговременного устранения неполадок
+                        </p>
+                    </div>
+                </div>
+                <!--<div class="status">-->
+                    <!--<p class="mt-20 bold webinar-status">Статус: <span class="blu-text">ПРЕДСТОИТ</span></p>-->
+                    <!--<div class="enter-webinar-btn-wrapper">-->
+                        <!--<a href="#" class="enter-webinar-btn disable-btn">Войти</a>-->
+                        <!--<div class="technical-requirements-wrapper">-->
+                            <!--<p class="bold status-title">Технические требования </p>-->
+                            <!--<a href="#" class="small-btn">Посмотреть</a>-->
+                        <!--</div>-->
+                        <!--<div class="technical-testing">-->
+                            <!--<p class="bold status-title">Тестирование Вашего <br> оборудования</p>-->
+                            <!--<a href="#" class="small-btn">Пройти</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            </div>
+        </section>
+        <section class="you-can-get">
+            <h4 class="title">
+                НА ВЕБИНАРЕ ВЫ ПОЛУЧИТЕ
+            </h4>
+            <div class="you-can-get_container">
+                <div class="you-can-get_item">
+                    <div class="blue-line">
+                    </div>
+                    <div class="you-can-get_item_text">
+                        <p>Возможность найти 2-5 эффективных</p>
+                        <p>инcтрумента для оценки</p>
+                        <p>и измерения сервиса</p>
+                    </div>
+                </div>
+                <div class="you-can-get_item">
+                    <div class="blue-line">
+                    </div>
+                    <div class="you-can-get_item_text">
+                        <p>Отримати набір унікальних інструментів</p>
+                        <p>для втілення системи сервісу у вашій компанії </p>
+                        <p>(від сервіс-візії до стандартів клієнтського </p>
+                        <p>досвіду) та відпрацювати навички роботи </p>
+                        <p>з ними на практичних завданнях</p>
+                    </div>
+                </div>
+                <div class="you-can-get_item">
+                    <div class="blue-line">
+                    </div>
+                    <div class="you-can-get_item_text">
+                        <p>Ваша цель: установить объективный </p>
+                        <p>и прозрачный способ контроля </p>
+                        <p>работы персонала</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="video-registration">
+            <div class="video-registration-wrapper">
+                <div class="video-block">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/s_uyfdZvhos" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="registration-block">
+                    <div class="registration-blick_text">
+                        <p>26 апреля Центр Сервис Менеджмента</p>
+                        <p>запустил курс вебинаров, в котором</p>
+                        <p>мы собрали реальные кейсы и живые</p>
+                        <p>примеры, объединили работающие</p>
+                        <p>рекомендации и простые ответы</p>
+                        <p>на сложные вопросы.</p>
+                        <a href="pending-peyment.html" class="registration-btn box-shadow mt-20">Регистрация</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contents">
+            <h4 class="title">СОДЕРЖАНИЕ</h4>
+            <div class="contents_paragraphs">
+                <div class="spoiler-container">
+                    <input type="checkbox" id="spoiler-1-1">
+                    <label for="spoiler-1-1"><p class="point"><span class="point_big_number">1.</span> Три секрета управлений персоналом с пошаговой инструкцией;</p></label>
+                    <div class="spoiler">
+                        <ul class="contents_paragraphs_list">
+                            <li class="contents_paragraphs_item">Как проводить вервисную беседу с сотрудником;</li>
+                            <li class="contents_paragraphs_item">Как проводить собрание по сервису;</li>
+                            <li class="contents_paragraphs_item">Как ставить цели по сервису и достигать их;</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="spoiler-container">
+                    <input type="checkbox" id="spoiler-1-2">
+                    <label for="spoiler-1-2"> <p class="point"><span class="point_big_number">2.</span> Эффективные решения и «must be» атрибуты по роботе с персоналом;</p></label>
+                    <div class="spoiler">
+                        <ul class="contents_paragraphs_list">
+                            <li class="contents_paragraphs_item">Как проводить вервисную беседу с сотрудником;</li>
+                            <li class="contents_paragraphs_item">Как проводить собрание по сервису;</li>
+                            <li class="contents_paragraphs_item">Как ставить цели по сервису и достигать их;</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="spoiler-container">
+                    <input type="checkbox" id="spoiler-1-3">
+                    <label for="spoiler-1-3"> <p class="point"><span class="point_big_number">3.</span> Живый практические примеры;</p></label>
+                    <div class="spoiler">
+                        <ul class="contents_paragraphs_list">
+                            <li class="contents_paragraphs_item">Как проводить вервисную беседу с сотрудником;</li>
+                            <li class="contents_paragraphs_item">Как проводить собрание по сервису;</li>
+                            <li class="contents_paragraphs_item">Как ставить цели по сервису и достигать их;</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="spoiler-container">
+                    <input type="checkbox" id="spoiler-1-4">
+                    <label for="spoiler-1-4">  <p class="point"><span class="point_big_number">4.</span> Простые советы для повышения лояльности сотрудников;</p></label>
+                    <div class="spoiler">
+                        <ul class="contents_paragraphs_list">
+                            <li class="contents_paragraphs_item">Как проводить вервисную беседу с сотрудником;</li>
+                            <li class="contents_paragraphs_item">Как проводить собрание по сервису;</li>
+                            <li class="contents_paragraphs_item">Как ставить цели по сервису и достигать их;</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="spoiler-container">
+                    <input type="checkbox" id="spoiler-1-5">
+                    <label for="spoiler-1-5"> <p class="point"><span class="point_big_number">5.</span> Список действий по преодоление сопротивления персонала;</p></label>
+                    <div class="spoiler">
+                        <ul class="contents_paragraphs_list">
+                            <li class="contents_paragraphs_item">Как проводить вервисную беседу с сотрудником;</li>
+                            <li class="contents_paragraphs_item">Как проводить собрание по сервису;</li>
+                            <li class="contents_paragraphs_item">Как ставить цели по сервису и достигать их;</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="chare-buttons-wrapper">
+                <div class="share-buttons">
+                    <!--<p class="share_social bold">Поделиться вакансией</p>-->
+                    <a class="share-btn-vk" href="https://vk.com/share.php?url=[LINK]" target="_blank" onclick="return Share.me(this);">
+                        <div class="vk share-block">
+                            <img class="soc-icon-size" src="img/social_icon/vk.png" alt="instagram">
+                        </div>
+                    </a>
+                    <a href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Ffiddle.jshell.net%2F_display%2F&text=https://www.ukr.net/" target="_blank" onclick="return Share.me(this)">
+                        <div class="twitter share-block">
+                            <img class="soc-icon-size" src="img/social_icon/twitter.png" alt="instagram">
+                        </div>
+                    </a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank" onclick="return Share.me(this);">
+                        <div class="google share-block">
+                            <img class="soc-icon-size" src="img/social_icon/facebook.png" alt="instagram">
+                        </div>
+                    </a>
+                    <a href="tg://msg_url?url=https://www.google.com.mx/">
+                        <div class="telegram share-block">
+                            <img class="soc-icon-size" src="img/social_icon/telegram.png" alt="telegram">
+                        </div>
+                    </a>
+                    <a class="share-btn-in" href="viber://forward?text=<Your Text>">
+                        <!--<a href="viber://pa?chatURI=[public account URI]&text=[message text]" target="_blank" onclick="return Share.me(this);">-->
+                        <!--<a href="viber://pa?chatURI=http://www.example.com">-->
+                        <div class="viber share-block">
+                            <img class="soc-icon-size" src="img/social_icon/viber.png" alt="viber">
+                        </div>
+                    </a>
+                    <!--<a href="whatsapp://send?text={url}">-->
+
+                    <a href="whatsapp://send?text=https://www.google.com.mx/" data-action="share/whatsapp/share" >
+                        <div class="whatsapp share-block">
+                            <img class="soc-icon-size" src="img/social_icon/whatsapp.png" alt="instagram">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="certificate">
+            <h4 class="title">НУЖЕН СЕРТИФИКАТ?</h4>
+            <div class="certificate-info-wrapper">
+                <div class="certificate-img-wrapper">
+                    <img class="certificate-img" src="img/certificate.png" alt="">
+                </div>
+                <div class="certificate-info">
+                    <p>Вы можете получить его после сдачи тестирования по результатам обучения.</p>
+                    <p>С доступными сертификатами Вы можете ознакомиться в профиле
+                    </p>
+                    <p class="mt-15"><i>* стоимость сертификата в бесплатном курсе - 10$</i></p>
+                    <a href="#" class="registration-btn box-shadow mt-20">Регистрация</a>
+                </div>
+            </div>
+        </section>
+        <section class="speaker">
+            <h4 class="title">СПИКЕР</h4>
+            <div class="speaker-items-wrapper">
+                <div class="speaker-avatar">
+                </div>
+                <div class="speaker-details">
+                    <p class="speaker_name">Елена Цысарь</p>
+                    <p class="mt-20">основатель Центра Сервис Менеджмента,</p>
+                    <p>автор статей и учебных программ в России,</p>
+                    <p>Украине, Казахстане с успешным 17-летним</p>
+                    <p>опытом создания и сопровождения</p>
+                    <p>сервисных проектов в 500+ компаниях</p>
+                </div>
+                <div class="speaker-companies">
+                    <p class="speaker-companies_title">Компании, с которыми работала Елена</p>
+                    <ul class="companies-list">
+                        <li class="company_logo ">
+                            <img class="kisil" src="img/icon/logo-eng.png" alt="">
+                        </li>
+                        <li class="company_logo">
+                            <img class="baker" src="img/icon/baker_logo.png" alt="">
+                        </li>
+                        <li class="company_logo">
+                            <img class="solar" src="img/icon/solar_logo.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="registered-users">
+            <div class="counter-wrapper">
+                <h3 class="counter-title">КОЛЛИЧЕСТВО ЗАРЕГЕСТРИРОВАВШИХСЯ</h3>
+                <p class="registered-number">129</p>
+                <p>человек</p>
+                <a href="pending-peyment.html" class="registration-btn box-shadow mt-20">Регистрация</a>
+            </div>
+        </section>
+        <section class="feedback">
+            <div class="feedback-container">
+                <h4 class="title">
+                    отзывы
+                </h4>
+                <div class="owl-carousel owl-theme responsiveClass">
+                    <div class="slide-cont-wrapp">
+                        <div class="employer_avatar">
+                        </div>
+                        <div class="response_text">
+                            <p class="bold response-name">Ирина Смирнова</p>
+                            <p class="response_position"><i>Директор по развитию клиентского опыта</i></p>
+                            <p class="mt-20">Выбор семиместного кроссовера привел
+                                к Volvo XC 90 или Discovery 5 почти
+                                идентичной комплектации. На тест драйве
+                                Volvo показал себя чуть резвее, а Discovery
+                                чуть комфортнее.
+                                Победили полноценные 7 мест, реальная
+                                внедорожность при прочих равных
+                                параметрах и ценовое предложение
+                                по Discovery.</p>
+                        </div>
+                    </div>
+                    <div class="slide-cont-wrapp">
+                        <div class="employer_avatar">
+                        </div>
+                        <div class="response_text">
+                            <p class="response-name">Ирина Смирнова</p>
+                            <p class="response_position"><i>Арт-директор</i></p>
+                            <p class="mt-20">Вот решил опять остаться в семье Nissan.
+                                Данный производитель порадовал меня
+                                своей надежностью, хотя были тоже
+                                неплохие автомобили ранее: Опель Вектра,
+                                ВАЗ Нива,  Ровер 406, Мазда 6, Киа Спортаж,
+                                Форд Мондео. Последний был Nissan
+                                X-Trail 2. 0dCi SE в кузове Т31. Автомобиль
+                                порадовал меня своим классическим
+                                внедорожным дизайном, качеством
+                                и простором салона (кроме заднего ряда),
+                                комфортной подвеской, мягким автоматом
+                                и эластичным дизелем. Полный привод
+                                тоже отличный, наверное лучший в классе.</p>
+                        </div>
+                    </div>
+                    <div class="slide-cont-wrapp">
+                        <div class="employer_avatar">
+                        </div>
+                        <div class="response_text">
+                            <p class="response-name">Ирина Смирнова</p>
+                            <p class="response_position"><i>Арт-директор</i></p>
+                            <p class="mt-20">Вот решил опять остаться в семье Nissan.
+                                Данный производитель порадовал меня
+                                своей надежностью, хотя были тоже
+                                неплохие автомобили ранее: Опель Вектра,
+                                ВАЗ Нива,  Ровер 406, Мазда 6, Киа Спортаж,
+                                Форд Мондео. Последний был Nissan
+                                X-Trail 2. 0dCi SE в кузове Т31. Автомобиль
+                                порадовал меня своим классическим
+                                внедорожным дизайном, качеством
+                                и простором салона (кроме заднего ряда),
+                                комфортной подвеской, мягким автоматом
+                                и эластичным дизелем. Полный привод
+                                тоже отличный, наверное лучший в классе.</p>
+                        </div>
+                    </div>
+                    <div class="slide-cont-wrapp">
+                        <div class="employer_avatar">
+                        </div>
+                        <div class="response_text">
+                            <p class="response-name">Ирина Смирнова</p>
+                            <p class="response_position"><i>Арт-директор</i></p>
+                            <p class="mt-20">Вот решил опять остаться в семье Nissan.
+                                Данный производитель порадовал меня
+                                своей надежностью, хотя были тоже
+                                неплохие автомобили ранее: Опель Вектра,
+                                ВАЗ Нива,  Ровер 406, Мазда 6, Киа Спортаж,
+                                Форд Мондео. Последний был Nissan
+                                X-Trail 2. 0dCi SE в кузове Т31. Автомобиль
+                                порадовал меня своим классическим
+                                внедорожным дизайном, качеством
+                                и простором салона (кроме заднего ряда),
+                                комфортной подвеской, мягким автоматом
+                                и эластичным дизелем. Полный привод
+                                тоже отличный, наверное лучший в классе.</p>
+                        </div>
+                    </div>
+                    <div class="slide-cont-wrapp">
+                        <div class="employer_avatar">
+                        </div>
+                        <div class="response_text">
+                            <p class="response-name">Ирина Смирнова</p>
+                            <p class="response_position"><i>Арт-директор</i></p>
+                            <p class="mt-20">Вот решил опять остаться в семье Nissan.
+                                Данный производитель порадовал меня
+                                своей надежностью, хотя были тоже
+                                неплохие автомобили ранее: Опель Вектра,
+                                ВАЗ Нива,  Ровер 406, Мазда 6, Киа Спортаж,
+                                Форд Мондео. Последний был Nissan
+                                X-Trail 2. 0dCi SE в кузове Т31. Автомобиль
+                                порадовал меня своим классическим
+                                внедорожным дизайном, качеством
+                                и простором салона (кроме заднего ряда),
+                                комфортной подвеской, мягким автоматом
+                                и эластичным дизелем. Полный привод
+                                тоже отличный, наверное лучший в классе.</p>
+                        </div>
+                    </div>
+                    <div class="slide-cont-wrapp">
+                        <div class="employer_avatar">
+                        </div>
+                        <div class="response_text">
+                            <p class="response-name">Ирина Смирнова</p>
+                            <p class="response_position"><i>Арт-директор</i></p>
+                            <p class="mt-20">Вот решил опять остаться в семье Nissan.
+                                Данный производитель порадовал меня
+                                своей надежностью, хотя были тоже
+                                неплохие автомобили ранее: Опель Вектра,
+                                ВАЗ Нива,  Ровер 406, Мазда 6, Киа Спортаж,
+                                Форд Мондео. Последний был Nissan
+                                X-Trail 2. 0dCi SE в кузове Т31. Автомобиль
+                                порадовал меня своим классическим
+                                внедорожным дизайном, качеством
+                                и простором салона (кроме заднего ряда),
+                                комфортной подвеской, мягким автоматом
+                                и эластичным дизелем. Полный привод
+                                тоже отличный, наверное лучший в классе.</p>
+                        </div>
+                    </div>
+                    <div class="slide-cont-wrapp">
+                        <div class="employer_avatar">
+                        </div>
+                        <div class="response_text">
+                            <p class="response-name">Ирина Смирнова</p>
+                            <p class="response_position"><i>Арт-директор</i></p>
+                            <p class="mt-20">Вот решил опять остаться в семье Nissan.
+                                Данный производитель порадовал меня
+                                своей надежностью, хотя были тоже
+                                неплохие автомобили ранее: Опель Вектра,
+                                ВАЗ Нива,  Ровер 406, Мазда 6, Киа Спортаж,
+                                Форд Мондео. Последний был Nissan
+                                X-Trail 2. 0dCi SE в кузове Т31. Автомобиль
+                                порадовал меня своим классическим
+                                внедорожным дизайном, качеством
+                                и простором салона (кроме заднего ряда),
+                                комфортной подвеской, мягким автоматом
+                                и эластичным дизелем. Полный привод
+                                тоже отличный, наверное лучший в классе.</p>
+                        </div>
+                    </div>
+                    <div class="slide-cont-wrapp">
+                        <div class="employer_avatar">
+                        </div>
+                        <div class="response_text">
+                            <p class="response-name">Ирина Смирнова</p>
+                            <p class="response_position"><i>Арт-директор</i></p>
+                            <p class="mt-20">Вот решил опять остаться в семье Nissan.
+                                Данный производитель порадовал меня
+                                своей надежностью, хотя были тоже
+                                неплохие автомобили ранее: Опель Вектра,
+                                ВАЗ Нива,  Ровер 406, Мазда 6, Киа Спортаж,
+                                Форд Мондео. Последний был Nissan
+                                X-Trail 2. 0dCi SE в кузове Т31. Автомобиль
+                                порадовал меня своим классическим
+                                внедорожным дизайном, качеством
+                                и простором салона (кроме заднего ряда),
+                                комфортной подвеской, мягким автоматом
+                                и эластичным дизелем. Полный привод
+                                тоже отличный, наверное лучший в классе.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <script>
+                    $(document).ready(function(){
+                        $('.owl-carousel').owlCarousel({
+                            margin:100,
+                            responsiveClass:true,
+                            responsive:{
+                                0:{
+                                    items:1,
+                                    center:true,
+                                    //dots: false
+
+                                },
+                                1000:{
+                                    items:1,
+                                    center:true,
+                                    //dots: false
+
+                                },
+                                1350:{
+                                    items:2,
+                                    loop:false
+                                }
+                            },
+                            loop:true,
+                            items:2,
+                            dots: true
+                        })
+                    });
+                </script>
+                <a href="#" class="registration-btn box-shadow mt-60">Регистрация</a>
+            </div>
+        </section>
+        <section class="recommended-webinars">
+            <h4 class="title">
+                РЕКОМЕНДУЕМЫЕ ВЕБИНАРЫ
+            </h4>
+            <div class="card-container flex f-w">
+                <!-- Card Text Start -->
+                <div class="card box-shadow flex f-d-c j-s-b">
+                    <div class="card-header flex j-e">
+                        <div class="status pink-gradient-background">РЕКОМЕНДУЕМ</div>
+                    </div>
+                    <div class="card-title flex j-s-b">
+                        <div class="card-title-name">Как зарабатывать больше?</div>
+                        <div class="card-title-tools">
+                            <input type="checkbox" class="like-check-input" id="like-it3">
+                            <label class="like" for="like-it3"></label>
+                        </div>
+                    </div>
+                    <div class="card-body" onClick="return true" style="background: url(img/cards/earn-more.png)">
+                        <p>
+                            Ukraine needs to develop a critical mass
+                            of professional managers to create and
+                            implement the state’s strategic documents
+                            in the security and defense sector, including
+                            the National Security Strategy and the
+                            Strategic Defense Bulletin.
+                        </p>
+                        <div class="card-progres-info flex j-s-b">
+                            <div class="price"></div>
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+                    <div class="card-loader">
+                        <div class="">
+                            <div class="progress blue-gradient-background"></div>
+                        </div>
+                    </div>
+                    <div class="card-bottom flex j-s-b">
+                        <a href="webinar.html" class="btn more-detail">
+                            Открыть
+                        </a>
+                        <span></span>
+                    </div>
+                </div>
+                <!--  Card Text End  -->
+
+                <!-- Card Text Start -->
+                <div class="card box-shadow flex f-d-c j-s-b">
+                    <div class="card-header flex j-e">
+                        <div class="status pink-gradient-background">РЕКОМЕНДУЕМ</div>
+                    </div>
+                    <div class="card-title flex j-s-b">
+                        <div class="card-title-name">Как стать BIG BOSS?</div>
+                        <div class="card-title-tools">
+                            <input type="checkbox" class="like-check-input" id="like-it4">
+                            <label class="like" for="like-it4"></label>
+                        </div>
+                    </div>
+                    <div class="card-body" onClick="return true" style="background: url(img/cards/big-boss.png)">
+                        <p>
+                            Ukraine needs to develop a critical mass
+                            of professional managers to create and
+                            implement the state’s strategic documents
+                            in the security and defense sector, including
+                            the National Security Strategy and the
+                            Strategic Defense Bulletin.
+                        </p>
+                        <div class="card-progres-info flex j-s-b">
+                            <div class="price"></div>
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+                    <div class="card-loader">
+                        <div class="">
+                            <div class="progress blue-gradient-background"></div>
+                        </div>
+                    </div>
+                    <div class="card-bottom flex j-s-b">
+                        <a href="webinar.html" class="btn more-detail">
+                            Открыть
+                        </a>
+                        <span></span>
+                    </div>
+                </div>
+                <!--  Card Text End  -->
+
+                <!-- Card Text Start -->
+                <div class="card box-shadow flex f-d-c j-s-b">
+                    <div class="card-header flex j-e">
+                        <div class="status pink-gradient-background">РЕКОМЕНДУЕМ</div>
+                    </div>
+                    <div class="card-title flex j-s-b">
+                        <div class="card-title-name">Тайм-менеджмент</div>
+                        <div class="card-title-tools">
+                            <input type="checkbox" class="like-check-input" id="like-it2">
+                            <label class="like" for="like-it2"></label>
+                        </div>
+                    </div>
+                    <div class="card-body" onClick="return true" style="background: url(img/cards/2.png); background-size: cover;">
+                        <p>
+                            Ukraine needs to develop a critical mass
+                            of professional managers to create and
+                            implement the state’s strategic documents
+                            in the security and defense sector, including
+                            the National Security Strategy and the
+                            Strategic Defense Bulletin.
+                        </p>
+                    </div>
+                    <div class="card-loader">
+                        <div class="">
+                            <div class="progress blue-gradient-background"></div>
+                        </div>
+                    </div>
+                    <div class="card-bottom flex j-s-b">
+                        <a href="webinar.html" class="btn more-detail">
+                            Открыть
+                        </a>
+                        <span></span>
+                    </div>
+                </div>
+                <!--  Card Text End  -->
+            </div>
+            <div class="chat-wrapper">
+                <div class="chat">
+                    <img class="chat-icon" src="img/icon/chat-icon.png" alt="">
+                </div>
+            </div>
+        </section>
+        <footer class="questions">
+            <div class="questions_content">
+                <p class="questions_title">ОСТАЛИСЬ ВОПРОСЫ?</p>
+                <p class="leave_contacts">Оставьте свои контакты и мы свяжемся с Вами</p>
+                <form id="second_form_id" method="post" action="" onsubmit="validate(event, 'second_form_id','email');">
+                    <div class="yourQuestion">
+                        <input placeholder="Укажите Ваш вопрос" type="text" class="questions-field hide" id="yourQuestion" name="question">
+                    </div>
+                    <div class="write_mail">
+                        <input placeholder="Ваш email" type="text" class="questions-field" id="second_email" name="email" required>
+                        <input class="send-btn" type="submit" value="Отправить"/>
+                    </div>
+                </form>
+            </div>
+        </footer>
+    </main>
+</div>
+<script src="script/libs/owl.carousel.min.js"></script>
+<script src="script/e-mailValidation.js"></script>
+<script src="script/inner.js"></script>
+<script src="script/resp-menu.js"></script>
+<script src="script/share-popup.js"></script>
+</body>

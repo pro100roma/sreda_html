@@ -1,0 +1,190 @@
+<html lang="ru"><head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Общение - чат</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../../style/style.css">
+    <link rel="stylesheet" href="../../style/roman.css">
+    <link rel="stylesheet" href="../../style/i-style/style.css">
+    <link rel="stylesheet" href="../../style/media.css">
+    <!-- Styles -->
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+
+</head>
+<body>
+<div id="background" class="bg-blue"></div>
+<div id="papa">
+    <header id="header">
+        <div class="logo">
+            <a href="../../courses.html"><img src="../../img/logo.png" alt=""></a>
+            <div id="menu-3-lines" class="menu-absolute">
+                <div class="line top-line"></div>
+                <div class="line mid-line"></div>
+                <div class="line bot-line"></div>
+            </div>
+        </div>
+        <div class="right-block flex a-c">
+            <nav class="header-navigation" id="left-menu">
+                <ul class="menu">
+                    <li><a class="active-menu menu-item" href="">Обучение</a></li>
+                    <li><a class="menu-item" href="">Консалтинг</a></li>
+                    <li><a class="menu-item" href="">О нас</a></li>
+                    <li><a class="menu-item" href="">Контакты</a></li>
+                </ul>
+            </nav>
+            <div id="header-bell" class="bell p-r">
+                <div class="bell-notifications">3</div>
+                <a href="../profile/notifications.html"><i class="bell-img i-bell"></i></a>
+            </div>
+        </div>
+    </header>
+    <aside id="left-side-bar">
+        <div id="mobile-menu">
+        </div>
+        <div class="top-pearson-info flex j-c a-c f-d-c m-a mt-40">
+            <div class="pearson-photo">
+                <img src="../../img/corp/avatar.png" alt="">
+            </div>
+            <div class="pearson-name">
+                Протасова Александра
+            </div>
+        </div>
+        <nav id="pearson-nav">
+            <ul>
+                <li>
+                    <a href="../ratings/general.html">
+                        <img src="../../img/corp/icons/ratings.png" alt="icon" class="icon-li">
+                        <span>Рейтинги</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../constructor/courses.html">
+                        <img src="../../img/corp/icons/settings.png" alt="icon" class="icon-li">
+                        <span>Конструктор</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../../img/corp/icons/team.png" alt="icon" class="icon-li">
+                        <span>Корпоративное обучение</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../courses.html">
+                        <img src="../../img/icon/book.png" alt="icon" class="icon-li">
+                        <span>Мое обучение</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../vacancies/vacancies.html">
+                        <img src="../../img/corp/icons/vacancies.png" alt="icon" class="icon-li">
+                        <span>Вакансии</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../payment-rent.html">
+                        <img src="../../img/icon/money.png" alt="icon" class="icon-li">
+                        <span>Оплата</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../faq.html">
+                        <img src="../../img/icon/info.png" alt="icon" class="icon-li">
+                        <span>Помощь</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../profile/data.html">
+                        <img src="../../img/icon/user.png" alt="icon" class="icon-li">
+                        <span>Профиль</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="students.html">
+                        <img src="../../img/corp/icons/discussion.png" alt="icon" class="icon-li">
+                        <span class="active-menu">Общение</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main id="main">
+
+        <!-- Top Buttons Container Start -->
+        <div class="top-buttons-wrappper flex f-w">
+            <a href="../../courses.html" class="a-btn box-shadow">
+                Курсы
+            </a>
+            <a href="students.html" class="a-btn blue-gradient-background box-shadow">
+                Студенты
+            </a>
+        </div>
+        <!--  Top Buttons Container End  -->
+        <!-- Breadcrumbs -->
+        <div class="vacancy-wrapper">
+            <ul class="vacancy_list">
+                <li class="vacancy_item"><a class="vacancy_item_link" href="students.html">Все чаты</a></li>
+            </ul>
+        </div><!-- /Breadcrumbs -->
+
+        <div class="content-container candidate-container">
+            <section class="speaker-live-chat">
+                <div class="chat-wrapper">
+                    <div class="chat-content">
+                        <div class="speaker-avatar-wrapper">
+                            <div class="speaker-avatar">
+
+                            </div>
+                            <p class="speaker-name">Елена</p>
+                            <p class="speaker-name">Цысарь</p>
+                        </div>
+                        <div class="messages-wrapper">
+                            <div class="user-message">
+                                <span class="user-message-text bold" >Елена, добрый день!  Скажите, пожалуйста, будет ли  продолжение</span>
+                                <i class="send-time">12:35</i>
+                            </div>
+                            <div class="speaker-message">
+                                <span class="speaker-message-text bold" >Здравствуйте! Да, вторая часть курса запланирована  на март</span>
+                                <i class="send-time">12:35</i>
+                            </div>
+                        </div>
+                        <div class="message-text-field-wrapper">
+                            <input class="message-text-field" type="text" placeholder="Задать вопрос спикеру">
+                            <i class="send-massage-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+
+
+
+    </main>
+</div>
+
+<script src="../../script/libs/customSelect.js"></script>
+<script src="../../script/libs/jquery.custom-select.js"></script>
+<script src="../../script/inner.js"></script>
+<script src="../../script/resp-menu.js"></script>
+<script src="../../script/common.js"></script>
+
+<script>
+    jQuery(function ($) {
+        $(document).ready(function () {
+            $('.select-search select').customSelect({
+                search: true
+            });
+            $('.cust-select-wrap select').customSelect();
+
+        });
+    });
+</script>
+
+
+</body>
+</html>

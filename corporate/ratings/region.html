@@ -1,0 +1,295 @@
+<html lang="ru"><head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Рейтинги - регион</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../../style/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="../../style/style.css">
+    <link rel="stylesheet" href="../../style/roman.css">
+    <link rel="stylesheet" href="../../style/i-style/style.css">
+    <link rel="stylesheet" href="../../style/media.css">
+    <!-- Styles -->
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+
+</head>
+<body>
+<div id="background" class="bg-blue"></div>
+<div id="papa">
+    <header id="header">
+        <div class="logo">
+            <a href="../../courses.html"><img src="../../img/logo.png" alt=""></a>
+            <div id="menu-3-lines" class="menu-absolute">
+                <div class="line top-line"></div>
+                <div class="line mid-line"></div>
+                <div class="line bot-line"></div>
+            </div>
+        </div>
+        <div class="right-block flex a-c">
+            <nav class="header-navigation" id="left-menu">
+                <ul class="menu">
+                    <li><a class="active-menu menu-item" href="">Обучение</a></li>
+                    <li><a class="menu-item" href="">Консалтинг</a></li>
+                    <li><a class="menu-item" href="">О нас</a></li>
+                    <li><a class="menu-item" href="">Контакты</a></li>
+                </ul>
+            </nav>
+            <div id="header-bell" class="bell p-r">
+                <div class="bell-notifications">3</div>
+                <a href="../../notifications.html"><i class="bell-img i-bell"></i></a>
+            </div>
+        </div>
+    </header>
+    <aside id="left-side-bar">
+        <div id="mobile-menu">
+        </div>
+        <div class="top-pearson-info flex j-c a-c f-d-c m-a mt-40">
+            <div class="pearson-photo">
+                <img src="../../img/corp/avatar.png" alt="">
+            </div>
+            <div class="pearson-name">
+                Протасова Александра
+            </div>
+        </div>
+        <nav id="pearson-nav">
+            <ul>
+                <li>
+                    <a href="general.html">
+                        <img src="../../img/corp/icons/ratings.png" alt="icon" class="icon-li">
+                        <span class="active-menu">Рейтинги</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../constructor/courses.html">
+                        <img src="../../img/corp/icons/settings.png" alt="icon" class="icon-li">
+                        <span>Конструктор</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../../img/corp/icons/team.png" alt="icon" class="icon-li">
+                        <span>Корпоративное обучение</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../courses.html">
+                        <img src="../../img/icon/book.png" alt="icon" class="icon-li">
+                        <span>Мое обучение</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../vacancies/vacancies.html">
+                        <img src="../../img/corp/icons/vacancies.png" alt="icon" class="icon-li">
+                        <span>Вакансии</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../payment-rent.html">
+                        <img src="../../img/icon/money.png" alt="icon" class="icon-li">
+                        <span>Оплата</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../faq.html">
+                        <img src="../../img/icon/info.png" alt="icon" class="icon-li">
+                        <span>Помощь</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../profile/data.html">
+                        <img src="../../img/icon/user.png" alt="icon" class="icon-li">
+                        <span>Профиль</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../communication/students.html">
+                        <img src="../../img/corp/icons/discussion.png" alt="icon" class="icon-li">
+                        <span>Общение</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main id="main">
+
+        <!-- Top Buttons Container Start -->
+        <div class="top-buttons-wrappper flex f-w">
+            <a href="general.html" class="a-btn box-shadow">
+                Общие
+            </a>
+            <a href="region.html" class="a-btn blue-gradient-background box-shadow">
+                Регион
+            </a>
+            <a href="tests.html" class="a-btn box-shadow">
+                Тесты
+            </a>
+            <a href="courses.html" class="a-btn box-shadow">
+                Курсы
+            </a>
+            <a href="staff.html" class="a-btn box-shadow">
+                Сотрудники
+            </a>
+        </div>
+        <!--  Top Buttons Container End  -->
+
+        <!--  Filters start  -->
+        <div class="filters-wrapper flex f-w test-members-designate-sort">
+            <div class="filter cust-select-wrap custom-select-filter">
+                <select>
+                    <option value="0">Регион</option>
+                    <option value="1">Регион 1</option>
+                    <option value="2">Регион 2</option>
+                    <option value="3">Регион 3</option>
+                </select>
+            </div>
+
+        </div>
+        <!--  Filters end  -->
+
+        <div class="content-container">
+
+            <div class="charts-wrap region-chart">
+                <div class="chart-wrap chart01-wrap box-shadow">
+                    <h3 class="title"><a href="#">Индекс активности по всем курсам</a></h3>
+                    <canvas id="chart01"></canvas>
+                </div>
+            </div>
+
+            <div class="excel-icon-wrap">
+                <a href="#">
+                    <img src="../../img/corp/icons/excel.png" alt="Excel" />
+                </a>
+            </div>
+
+            <div class="table-wrap">
+                <div class="custom-table ratings-region-table">
+                    <div class="custom-table__header flex j-s-b">
+                        <div class="custom-table__col">Регион</div>
+                        <div class="custom-table__col">Количество локаций</div>
+                        <div class="custom-table__col">Рейтинг активности</div>
+                        <div class="custom-table__col">Курсы</div>
+                        <div class="custom-table__col">Тесты</div>
+                        <div class="custom-table__col">Вебинары</div>
+                    </div>
+                    <div class="custom-table__body">
+                        <div class="custom-table__row flex j-s-b f-w">
+                            <div class="custom-table__cell"><a href="#" class="done-test__name">Московская область</a></div>
+                            <div class="custom-table__cell">105</div>
+                            <div class="custom-table__cell"><span class="test-result">97</span>%<span class="result-dot green"></span></div>
+                            <div class="custom-table__cell">9/23<span class="result-dot red"></span></div>
+                            <div class="custom-table__cell">21/23<span class="result-dot green"></span></div>
+                            <div class="custom-table__cell">21/23<span class="result-dot green"></span></div>
+
+                            <div class="custom-table__row flex j-s-b f-w">
+                                <div class="custom-table__cell"><a href="#" class="done-test__name">Москва</a></div>
+                                <div class="custom-table__cell">55</div>
+                                <div class="custom-table__cell"><span class="test-result">97</span>%<span class="result-dot green"></span></div>
+                                <div class="custom-table__cell">4/13<span class="result-dot red"></span></div>
+                                <div class="custom-table__cell">12/13<span class="result-dot green"></span></div>
+                                <div class="custom-table__cell">12/13<span class="result-dot green"></span></div>
+
+                                <div class="custom-table__row flex j-s-b f-w">
+                                    <div class="custom-table__cell">ул. Московская</div>
+                                    <div class="custom-table__cell">105</div>
+                                    <div class="custom-table__cell"><span class="test-result">97</span>%<span class="result-dot green"></span></div>
+                                    <div class="custom-table__cell">5/13<span class="result-dot red"></span></div>
+                                    <div class="custom-table__cell">12/13<span class="result-dot green"></span></div>
+                                    <div class="custom-table__cell">12/13<span class="result-dot green"></span></div>
+                                </div>
+                            </div>
+                            <div class="custom-table__row flex j-s-b f-w">
+                                <div class="custom-table__cell"><a href="#" class="done-test__name">Подмосковье</a></div>
+                                <div class="custom-table__cell">50</div>
+                                <div class="custom-table__cell"><span class="test-result">77</span>%<span class="result-dot green"></span></div>
+                                <div class="custom-table__cell">4/10<span class="result-dot red"></span></div>
+                                <div class="custom-table__cell">9/10<span class="result-dot green"></span></div>
+                                <div class="custom-table__cell">9/10<span class="result-dot green"></span></div>
+
+                                <div class="custom-table__row flex j-s-b f-w">
+                                    <div class="custom-table__cell">ул. Подмосковская</div>
+                                    <div class="custom-table__cell">20</div>
+                                    <div class="custom-table__cell"><span class="test-result">77</span>%<span class="result-dot green"></span></div>
+                                    <div class="custom-table__cell">2/5<span class="result-dot red"></span></div>
+                                    <div class="custom-table__cell">4/5<span class="result-dot green"></span></div>
+                                    <div class="custom-table__cell">5/5<span class="result-dot green"></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+</div>
+
+
+<script src="../../script/libs/jquery.custom-select.js"></script>
+<script src="../../script/inner.js"></script>
+<script src="../../script/resp-menu.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+<!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"-->
+<!--        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"-->
+<!--        crossorigin="anonymous"></script>-->
+
+<script src="../../script/common.js"></script>
+
+<script>
+    jQuery(function ($) {
+        $(document).ready(function () {
+            $('.select-search select').customSelect({
+                search: true
+            });
+            $('.cust-select-wrap select').customSelect();
+
+        });
+    });
+
+    //Chart
+    var ctx01 = document.getElementById('chart01').getContext('2d');
+
+    var chart01 = new Chart(ctx01, {
+        // The type of chart we want to create
+        type: 'bar',
+
+        // The data for our dataset
+        data: {
+            labels: ['Мск', 'Питер', 'Орел', 'Ижевск', 'Самара', 'Казань', 'Перьм', 'Ек-бг', 'Омск', 'Уфа', 'Мск', 'Питер', 'Орел', 'Ижевск', 'Самара', 'Казань' ],
+            datasets: [{
+                label: '',
+                backgroundColor: '#3fc4d7',
+                data: [35, 10, 15, 20, 20, 40, 40, 25, 30, 5, 10, 20, 35, 10, 15, 20, 20, 40],
+            }]
+        },
+        // Configuration options go here
+        options: {
+            maintainAspectRatio: false,
+            scales: {
+                yAxes: [{
+                    stacked: true,
+                    gridLines: {
+                        display: false,
+                        beginAtZero:true
+                    },
+                    ticks: {
+                        //display:false, // hide main x-axis line
+                    },
+                }],
+                xAxes: [{
+                    gridLines: {
+                        display: false,
+                        drawBorder: false,
+                    },
+                    barThickness: 25,
+                }]
+            }
+        }
+    });
+</script>
+
+</body>
+</html>

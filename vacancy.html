@@ -1,0 +1,640 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Вакансия</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/i-style/style.css">
+    <link rel="stylesheet" href="style/media.css">
+
+    <!-- Styles -->
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+</head>
+<body>
+<div class="error-message-overlay">
+    <div class="error-message-popup">
+        <div class="close-message">+</div>
+        <div class="message-text">
+            <p>Вы ввели неверний e-mail!</p>
+        </div>
+    </div>
+</div>
+<div class="success-message-overlay">
+    <div class="success-message-popup">
+        <div class="closePopupmessage">+</div>
+        <div class="successMessage-text">
+            <p>Спасибо, Ваши контакты отправлены!</p>
+        </div>
+    </div>
+</div>
+<div class="message-overlay">
+    <div class="message-popup">
+        <div class="closeMessage">+</div>
+        <div class="message-text">
+            <p>Заполните, пожалуйста, ответы на все вопросы</p>
+        </div>
+    </div>
+</div>
+<div class="test-result-overlay"  onclick="window.removeEventListener('beforeunload', beforeLoad); window.location.href = window.location.href.split('?')[0]">
+    <div class="test-result-popup" onclick="window.removeEventListener('beforeunload', beforeLoad); window.location.href = window.location.href.split('?')[0]">
+        <div class="close">+</div>
+        <div class="result-information">
+            <p>Поздравляем!</p>
+            <p>Ваш результат теста - <span>100</span> б,</p>
+            <p>что составляет <span>100</span>%</p>
+        </div>
+        <div class="chare-buttons-wrapper">
+            <p class="share-buttons-title">Поделиться результатами </p>
+            <div class="share-buttons">
+                <!--<p class="share_social bold">Поделиться вакансией</p>-->
+                <a class="share-btn-vk" href="https://vk.com/share.php?url=[LINK]" target="_blank" onclick="return Share.me(this);">
+                    <div class="vk share-block">
+                        <img class="soc-icon-size" src="img/social_icon/vk.png" alt="instagram">
+                    </div>
+                </a>
+                <a href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Ffiddle.jshell.net%2F_display%2F&text=https://www.ukr.net/" target="_blank" onclick="return Share.me(this)">
+                    <div class="twitter share-block">
+                        <img class="soc-icon-size" src="img/social_icon/twitter.png" alt="instagram">
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank" onclick="return Share.me(this);">
+                    <div class="google share-block">
+                        <img class="soc-icon-size" src="img/social_icon/facebook.png" alt="instagram">
+                    </div>
+                </a>
+                <a href="tg://msg_url?url=https://www.google.com.mx/">
+                    <div class="telegram share-block">
+                        <img class="soc-icon-size" src="img/social_icon/telegram.png" alt="telegram">
+                    </div>
+                </a>
+                <a class="share-btn-in" href="viber://forward?text=<Your Text>">
+                    <!--<a href="viber://pa?chatURI=[public account URI]&text=[message text]" target="_blank" onclick="return Share.me(this);">-->
+                    <!--<a href="viber://pa?chatURI=http://www.example.com">-->
+                    <div class="viber share-block">
+                        <img class="soc-icon-size" src="img/social_icon/viber.png" alt="viber">
+                    </div>
+                </a>
+                <!--<a href="whatsapp://send?text={url}">-->
+
+                <a href="whatsapp://send?text=https://www.google.com.mx/" data-action="share/whatsapp/share" >
+                    <div class="whatsapp share-block">
+                        <img class="soc-icon-size" src="img/social_icon/whatsapp.png" alt="instagram">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="background" class="bg-blue"></div>
+<div id="papa">
+    <header id="header">
+        <div class="logo">
+            <a href="courses.html"><img src="img/logo.png" alt=""></a>
+            <div id="menu-3-lines" class="menu-absolute">
+                <div class="line top-line"></div>
+                <div class="line mid-line"></div>
+                <div class="line bot-line"></div>
+            </div>
+        </div>
+        <div class="right-block flex a-c">
+            <nav class="header-navigation" id="left-menu">
+                <ul class="menu">
+                    <li><a class="active-menu menu-item" href="">Обучение</a></li>
+                    <li><a class="menu-item" href="">Консалтинг</a></li>
+                    <li><a class="menu-item" href="">О нас</a></li>
+                    <li><a class="menu-item" href="">Контакты</a></li>
+                </ul>
+            </nav>
+            <div id="header-bell" class="bell p-r">
+                <div class="bell-notifications">3</div>
+                <a href="notifications.html"><i class="bell-img i-bell"></i></a>
+            </div>
+        </div>
+    </header>
+    <aside id="left-side-bar">
+        <div id="mobile-menu">
+        </div>
+        <div class="top-pearson-info flex j-c a-c f-d-c m-a mt-40">
+            <div class="pearson-photo">
+                <img src="img/pearson/cover.jpg" alt="">
+            </div>
+            <div class="pearson-name">
+                Варфоломей Книжный
+            </div>
+        </div>
+        <nav id="pearson-nav">
+            <ul>
+                <li>
+                    <a href="courses.html">
+                        <img src="img/icon/book.png" alt="icon" class="icon-li">
+                        <span class="active-menu">Мое обучение</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="pending-peyment.html">
+                        <img src="img/icon/money.png" alt="icon" class="icon-li">
+                        <span>Оплата</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="faq.html">
+                        <img src="img/icon/info.png" alt="icon" class="icon-li">
+                        <span>Помощь</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="profile.html">
+                        <img src="img/icon/user.png" alt="icon" class="icon-li">
+                        <span>Профиль</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main id="main">
+
+        <!-- Top Buttons Conrainer Start -->
+        <div class="top-buttons-wrappper flex f-w">
+            <a href="profile.html" class="a-btn box-shadow">
+                Данные
+            </a>
+            <a href="certifications.html" class="a-btn box-shadow">
+                Сертификаты
+            </a>
+            <a href="employment.html" class="a-btn box-shadow blue-gradient-background">
+                Трудоустройство
+            </a>
+            <a href="notifications.html" class="a-btn box-shadow">
+                Уведомления
+            </a>
+        </div>
+        <div class="vacancy-wrapper">
+            <ul class="vacancy_list">
+                <li class="vacancy_item"><a class="vacancy_item_link" href="employment.html">Трудоустройство</a></li>
+                <li class="vacancy_item item_margin"><a class="vacancy_item_link link_margin" href="#">UI/UX designer</a></li>
+            </ul>
+        </div>
+
+        <section class="project-description-wrapper flex">
+            <div class="project-img">
+                <img class="project_img_content" src="img/vacancy-list.png" alt="">
+            </div>
+            <div class="project-info">
+                <div class="project_title_wrapper">
+                    <p class="project-info-title">UI/UX designer</p>
+                    <div class="project-logo">
+                        <img class="project-logo-img" src="img/icon/logo-eng.png" alt="">
+                    </div>
+                </div>
+                <p><i class="bold">О проекте:</i> Маркетингова система повного циклу, яка охоплює інструменти створення, моніторингу, оптимізації реклами, керування нею, а також системи звітності й підтримки
+                    прийняття рішень. </p>
+                <p>Система взаємодіє з понад 300 рекламними майданчиками та мережами в усьому світі.
+                    Її застосовують усі студії Plarium і компанії-партнери. 
+                </p>
+                <p class="web-site"><i class="bold">Сайт компании:</i> <a href="http://developers.plarium.com/ua" target="_blank">http://developers.plarium.com/ua</a></p>
+                <p class="social"><i class="bold">Компания в социальных сетях:</i></p>
+                <div class="social_company">
+
+                    <a class="share-btn-vk" href="https://vk.com/mysteryshopping" target="_blank">
+                        <div class="vk share-block">
+                            <img class="soc-icon-size" src="img/social_icon/vk.png" alt="vk">
+                        </div>
+                    </a>
+                    <a href="https://twitter.com/4servicegroup" target="_blank">
+                        <div class="twitter share-block">
+                            <img class="soc-icon-size" src="img/social_icon/twitter.png" alt="twitter">
+                        </div>
+                    </a>
+                    <a class="share-btn-fb" href="https://www.facebook.com/4ServiceRu/" target="_blank">
+                        <div class="facebook share-block">
+                            <img class="soc-icon-size" src="img/social_icon/facebook.png" alt="fb">
+                        </div>
+                    </a>
+
+                    <a href="https://www.instagram.com/4service.group/" target="_blank">
+                        <div class="instagramm share-block">
+                            <img class="soc-icon-size" src="img/social_icon/instagram.png" alt="instagram">
+                        </div>
+                    </a>
+                    <a class="share-btn-in" href="https://www.youtube.com/channel/UCqF_hXduIk416QqL3PMm_Hg" target="_blank">
+                        <div class="youtube share-block">
+                            <img class="soc-icon-size" src="img/social_icon/youtube.png" alt="youtube">
+                        </div>
+                    </a>
+
+                </div>
+                <p class="publication_date">Вакансия опубликована: <span class="date_value">21.03.2019</span></p>
+            </div>
+        </section>
+        <section class="our-conditions">
+            <div class="conditions-list-wrapper">
+                <ul class="conditions-list">
+                    <li class="conditions-list_titel requirements"> <h4>Требования:</h4></li>
+                    <li class="conditions-list_item">Высшее образование (дизайн);</li>
+                    <li class="conditions-list_item"> Креативность и нестандартность мышления;</li>
+                    <li class="conditions-list_item">Наличие портфолио или ссылки на него;</li>
+                    <li class="conditions-list_item">Умение совмещать работу с несколькими проектами</li>
+                    <li class="conditions-list_item"> Опыт работы от 2х лет на аналогичной должности.</li>
+                </ul>
+            </div>
+            <div class="conditions-list-wrapper">
+                <ul class="conditions-list">
+                    <li class="conditions-list_titel responsibility"> <h4>Основные обязанности:</h4></li>
+                    <li class="conditions-list_item">Дизайн страниц сайта и презентаций курсов (оформление материалов, продающийх страниц)</li>
+                    <li class="conditions-list_item"> Качественная визуализация в Photoshop.</li>
+                    <li class="conditions-list_item">Прорисовка, визуализация раздаточных/рекламных материалов и баннеров для конференций.</li>
+                </ul>
+            </div>
+            <div class="conditions-list-wrapper">
+                <ul class="conditions-list">
+                    <li class="conditions-list_titel working_conditions"> <h4> Условия работы:</h4></li>
+                    <li class="conditions-list_item">Молодой дружный коллектив</li>
+                    <li class="conditions-list_item"> График работы: с 9 до 18, с понедельника по пятницу</li>
+                    <li class="conditions-list_item">Посещение международных выставок</li>
+                    <li class="conditions-list_item">Официальное трудоустройство</li>
+                </ul>
+            </div>
+            <div class="chare-buttons-wrapper">
+                <div class="share-buttons">
+                    <p class="share_social">Поделиться вакансией</p>
+                    <!--<p class="share_social bold">Поделиться вакансией</p>-->
+                    <a class="share-btn-vk" href="https://vk.com/share.php?url=[LINK]" target="_blank" onclick="return Share.me(this);">
+                        <div class="vk share-block">
+                            <img class="soc-icon-size" src="img/social_icon/vk.png" alt="instagram">
+                        </div>
+                    </a>
+                    <a href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Ffiddle.jshell.net%2F_display%2F&text=https://www.ukr.net/" target="_blank" onclick="return Share.me(this)">
+                        <div class="twitter share-block">
+                            <img class="soc-icon-size" src="img/social_icon/twitter.png" alt="instagram">
+                        </div>
+                    </a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank" onclick="return Share.me(this);">
+                        <div class="google share-block">
+                            <img class="soc-icon-size" src="img/social_icon/facebook.png" alt="instagram">
+                        </div>
+                    </a>
+                    <a href="tg://msg_url?url=https://www.google.com.mx/">
+                        <div class="telegram share-block">
+                            <img class="soc-icon-size" src="img/social_icon/telegram.png" alt="telegram">
+                        </div>
+                    </a>
+                    <a class="share-btn-in" href="viber://forward?text=<Your Text>">
+                        <!--<a href="viber://pa?chatURI=[public account URI]&text=[message text]" target="_blank" onclick="return Share.me(this);">-->
+                        <!--<a href="viber://pa?chatURI=http://www.example.com">-->
+                        <div class="viber share-block">
+                            <img class="soc-icon-size" src="img/social_icon/viber.png" alt="viber">
+                        </div>
+                    </a>
+                    <!--<a href="whatsapp://send?text={url}">-->
+
+                    <a href="whatsapp://send?text=https://www.google.com.mx/" data-action="share/whatsapp/share" >
+                        <div class="whatsapp share-block">
+                            <img class="soc-icon-size" src="img/social_icon/whatsapp.png" alt="instagram">
+                        </div>
+                    </a>
+                    <div class="share-value-wrapper">
+                        <p class="share-value"><span>156</span> поделилось</p>
+                    </div>
+                </div>
+            </div>
+            <form action="">
+            <div class="upload-resume">
+                <h3 class="upload-resume_title">ЗАГРУЗИТЬ РЕЗЮМЕ</h3>
+                <div class="upload_file_wrapper">
+                    <input type="file" id="upload" class="hide inputfile">
+                    <label for="upload" class="upload-icon"><span class="file-name"></span><img src="img/icon/upload.png" class="upload-arrow" alt=""></label>
+                </div>
+                <h3 class="upload-resume_title">Также Вы можете загрузить свои рекомендации и сертификаты</h3>
+                <div class="upload_file_wrapper">
+                    <input type="file" id="upload-cert" class="hide inputfile">
+                    <label for="upload-cert" class="upload-icon"><span class="file-name"></span><img src="img/icon/upload.png" class="upload-arrow" alt=""></label>
+                </div>
+            </div>
+            <div class="send-btn-wrapper">
+                <a href="#" class="send-btn box-shadow">Отправить</a>
+            </div>
+            </form>
+        </section>
+        <div class="test-main-title" style="margin-bottom: 30px;">
+            <h3 id="do_test" style="width: 212px;">ТЕСТ ПО ВАКАНСИИ</h3>
+        </div>
+        <section class="main-test hide" style="margin-bottom: 30px;">
+            <div id="timer"></div>
+            <div class="main-test_container" id="section-by-section">
+                <div class="main-test_questions-wrapper">
+                    <h3 class="main-test_title">тест по вакансии</h3>
+                    <div class="main-test_question-block">
+                        <form action="#done-test" id="form-test">
+                            <p class="chapter">Раздел 1 "Название..."</p>
+                            <div class="main-test_question-wrapper">
+                                <p class="main-test_question-text">
+                                    <span class="main-test_question-big-number">1</span>/5 <span class="pl-20">Клиентский опыт (Customer Experience) - это ...</span>
+                                </p>
+                                <label class="radio_container">
+                                    <input type="radio" name="optradio1" class="radio__option">
+                                    <span class="answer">Опыт работы тайным покупателем</span>
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="radio_container">
+                                    <input type="radio" name="optradio1" class="radio__option">
+                                    <span class="answer">Экспертный опыт клиента в различных областях бизнеса</span>
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="radio_container">
+                                    <input type="radio" name="optradio1" class="radio__option">
+                                    <span class="answer">Весь комплекс взаимодействия клиента и бренда/бизнеса (состоит из пути клиента, локации, окружения)</span>
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="radio_container">
+                                    <input type="radio" name="optradio1" class="radio__option">
+                                    <span class="answer">Жизненный опыт клиента</span>
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="main-test_question-block">
+                        <div class="main-test_question-wrapper">
+                            <p class="main-test_question-text">
+                                <span class="main-test_question-big-number">2</span>/5 <span class="pl-20">Клиентский опыт (Customer Experience) - это ...</span>
+                            </p>
+                            <label class="radio_container">
+                                <input type="radio" name="optradio2" class="radio__option">
+                                <span class="answer">Опыт работы тайным покупателем</span>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="radio_container">
+                                <input type="radio" name="optradio2" class="radio__option">
+                                <span class="answer">Экспертный опыт клиента в различных областях бизнеса</span>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="radio_container">
+                                <input type="radio" name="optradio2" class="radio__option">
+                                <span class="answer">Весь комплекс взаимодействия клиента и бренда/бизнеса (состоит из пути клиента, локации, окружения)</span>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="radio_container">
+                                <input type="radio" name="optradio2" class="radio__option">
+                                <span class="answer">Жизненный опыт клиента</span>
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="main-test_btn-wrapper">
+                        <button class="main-test_btn next-question">Далее</button>
+                    </div>
+                </div>
+                <div class="main-test_questions-wrapper">
+                    <div class="main-test_question-block">
+                        <p class="chapter">Раздел 2 "Название..."</p>
+                        <div class="main-test_question-wrapper">
+                            <p class="main-test_question-text">
+                                <span class="main-test_question-big-number">3</span>/5 <span class="pl-20">Клиентский опыт (Customer Experience) - это ...</span>
+                            </p>
+                            <label class="radio_container">
+                                <input type="radio" name="optradio3" class="radio__option">
+                                <span class="answer">Опыт работы тайным покупателем</span>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="radio_container">
+                                <input type="radio" name="optradio3" class="radio__option">
+                                <span class="answer">Экспертный опыт клиента в различных областях бизнеса</span>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="radio_container">
+                                <input type="radio" name="optradio3" class="radio__option">
+                                <span class="answer">Весь комплекс взаимодействия клиента и бренда/бизнеса (состоит из пути клиента, локации, окружения)</span>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="radio_container">
+                                <input type="radio" name="optradio3" class="radio__option">
+                                <span class="answer">Жизненный опыт клиента</span>
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="main-test_question-block">
+                        <div class="main-test_question-wrapper">
+                            <p class="main-test_question-text">
+                                <span class="main-test_question-big-number">4</span>/5 <span class="pl-20">Клиентский опыт (Customer Experience) - это ...</span>
+                            </p>
+                            <label class="radio_container">
+                                <input type="radio" name="optradio4" class="radio__option">
+                                <span class="answer">Опыт работы тайным покупателем</span>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="radio_container">
+                                <input type="radio" name="optradio4" class="radio__option">
+                                <span class="answer">Экспертный опыт клиента в различных областях бизнеса</span>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="radio_container">
+                                <input type="radio" name="optradio4" class="radio__option">
+                                <span class="answer">Весь комплекс взаимодействия клиента и бренда/бизнеса (состоит из пути клиента, локации, окружения)</span>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="radio_container">
+                                <input type="radio" name="optradio4" class="radio__option">
+                                <span class="answer">Жизненный опыт клиента</span>
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="main-test_btn-wrapper">
+                        <button class="main-test_btn previous-question">Назад</button>
+                        <button class="main-test_btn next-question">Далее</button>
+                    </div>
+                </div>
+                <div class="main-test_questions-wrapper">
+                    <div class="main-test_question-block">
+                        <p class="chapter">Раздел 3 "Название..."</p>
+                        <div class="main-test_question-wrapper">
+                            <p class="main-test_question-text">
+                                <span class="main-test_question-big-number">5</span>/5 <span class="pl-20">Клиентский опыт (Customer Experience) - это ...</span>
+                            </p>
+                            <label class="radio_container">
+                                <input type="radio" name="optradio5" class="radio__option">
+                                <span class="answer">Опыт работы тайным покупателем</span>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="radio_container">
+                                <input type="radio" name="optradio5" class="radio__option">
+                                <span class="answer">Экспертный опыт клиента в различных областях бизнеса</span>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="radio_container">
+                                <input type="radio" name="optradio5" class="radio__option">
+                                <span class="answer">Весь комплекс взаимодействия клиента и бренда/бизнеса (состоит из пути клиента, локации, окружения)</span>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="radio_container">
+                                <input type="radio" name="optradio5" class="radio__option">
+                                <span class="answer">Жизненный опыт клиента</span>
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="main-test_btn-wrapper">
+                            <button class="main-test_btn previous-question">Назад</button>
+                            <button class="main-test_btn send-question_btn">Отправить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--<section class="test-course">-->
+            <!--<p class="title">ТЕСТ ПО ВАКАНСИИ</p>-->
+            <!--<div class="test-course-question">-->
+                <!--<form class="questions-form" action="">-->
+                    <!--<div class="question-block">-->
+                        <!--<p class="chapter">Раздел 1 "Название..."</p>-->
+                <!--<p class="question-text">-->
+                    <!--<span class="question_big_number">1</span>/5 <span class="pl-20">Клиентский опыт (Customer Experience) - это ...</span>-->
+                <!--</p>-->
+
+                    <!--<label class="radio_container">-->
+                        <!--<input type="radio"  name="optradio1" class="radio__option"> <span class="answer">Опыт работы тайным покупателем</span>-->
+                        <!--<span class="checkmark"></span>-->
+                    <!--</label>-->
+                    <!--<label class="radio_container">-->
+                        <!--<input type="radio" name="optradio1" class="radio__option"> <span class="answer">Экспертный опыт клиента в различных областях бизнеса</span>-->
+                        <!--<span class="checkmark"></span>-->
+                    <!--</label>-->
+                    <!--<label class="radio_container">-->
+                        <!--<input type="radio" name="optradio1" class="radio__option"> <span class="answer">Весь комплекс взаимодействия клиента и бренда/бизнеса (состоит из пути клиента, локации, окружения)</span>-->
+                        <!--<span class="checkmark"></span>-->
+                    <!--</label>-->
+                    <!--<label class="radio_container">-->
+                        <!--<input type="radio" name="optradio1" class="radio__option"> <span class="answer">Жизненный опыт клиента</span>-->
+                        <!--<span class="checkmark"></span>-->
+                    <!--</label>-->
+                    <!--</div>-->
+                    <!--<div class="question-block">-->
+                        <!--<p class="chapter">Раздел 2 "Название..."</p>-->
+                    <!--<p class="question-text">-->
+                        <!--<span class="question_big_number">2</span>/5 <span class="pl-20">Клиентский опыт (Customer Experience) - это ...</span>-->
+                    <!--</p>-->
+
+                    <!--<label class="radio_container">-->
+                        <!--<input type="radio" name="optradio2" class="radio__option"> <span class="answer">Опыт работы тайным покупателем</span>-->
+                        <!--<span class="checkmark"></span>-->
+                    <!--</label>-->
+                    <!--<label class="radio_container">-->
+                        <!--<input type="radio" name="optradio2" class="radio__option"> <span class="answer">Экспертный опыт клиента в различных областях бизнеса</span>-->
+                        <!--<span class="checkmark"></span>-->
+                    <!--</label>-->
+                    <!--<label class="radio_container">-->
+                        <!--<input type="radio" name="optradio2" class="radio__option"> <span class="answer">Весь комплекс взаимодействия клиента и бренда/бизнеса (состоит из пути клиента, локации, окружения)</span>-->
+                        <!--<span class="checkmark"></span>-->
+                    <!--</label>-->
+                    <!--<label class="radio_container">-->
+                        <!--<input type="radio" name="optradio2" class="radio__option"> <span class="answer">Жизненный опыт клиента</span>-->
+                        <!--<span class="checkmark"></span>-->
+                    <!--</label>-->
+         <!--</div>-->
+
+               <!--<div class="question-block">-->
+                   <!--<p class="chapter">Раздел 3 "Название..."</p>-->
+                    <!--<p class="question-text">-->
+                        <!--<span class="question_big_number">3</span>/5 <span class="pl-20">Клиентский опыт (Customer Experience) - это ...</span>-->
+                    <!--</p>-->
+                    <!--<label class="radio_container">-->
+                        <!--<input type="radio" name="optradio3" class="radio__option"> <span class="answer">Опыт работы тайным покупателем</span>-->
+                        <!--<span class="checkmark"></span>-->
+                    <!--</label>-->
+                    <!--<label class="radio_container">-->
+                        <!--<input type="radio" name="optradio3" class="radio__option"> <span class="answer">Экспертный опыт клиента в различных областях бизнеса</span>-->
+                        <!--<span class="checkmark"></span>-->
+                    <!--</label>-->
+                    <!--<label class="radio_container">-->
+                        <!--<input type="radio" name="optradio3" class="radio__option"> <span class="answer">Весь комплекс взаимодействия клиента и бренда/бизнеса (состоит из пути клиента, локации, окружения)</span>-->
+                        <!--<span class="checkmark"></span>-->
+                    <!--</label>-->
+                    <!--<label class="radio_container">-->
+                        <!--<input type="radio" name="optradio3" class="radio__option"> <span class="answer">Жизненный опыт клиента</span>-->
+                        <!--<span class="checkmark"></span>-->
+                    <!--</label>-->
+
+               <!--</div>-->
+                    <!--<div class="question-block">-->
+                        <!--<p class="chapter">Раздел 4 "Название..."</p>-->
+                    <!--<p class="question-text">-->
+                        <!--<span class="question_big_number">4</span>/5 <span class="pl-20">Клиентский опыт (Customer Experience) - это ...</span>-->
+                    <!--</p>-->
+
+                    <!--<label class="radio_container">-->
+                        <!--<input type="radio" name="optradio4" class="radio__option"> <span class="answer">Опыт работы тайным покупателем</span>-->
+                        <!--<span class="checkmark"></span>-->
+                    <!--</label>-->
+                    <!--<label class="radio_container">-->
+                        <!--<input type="radio" name="optradio4" class="radio__option"> <span class="answer">Экспертный опыт клиента в различных областях бизнеса</span>-->
+                        <!--<span class="checkmark"></span>-->
+                    <!--</label>-->
+                    <!--<label class="radio_container">-->
+                        <!--<input type="radio" name="optradio4" class="radio__option"> <span class="answer">Весь комплекс взаимодействия клиента и бренда/бизнеса (состоит из пути клиента, локации, окружения)</span>-->
+                        <!--<span class="checkmark"></span>-->
+                    <!--</label>-->
+                    <!--<label class="radio_container">-->
+                        <!--<input type="radio" name="optradio4" class="radio__option"> <span class="answer">Жизненный опыт клиента</span>-->
+                        <!--<span class="checkmark"></span>-->
+                    <!--</label>-->
+                    <!--</div>-->
+                    <!--<div class="question-block">-->
+                        <!--<p class="chapter">Раздел 5 "Название..."</p>-->
+                    <!--<p class="question-text">-->
+                        <!--<span class="question_big_number">5</span>/5 <span class="pl-20">Клиентский опыт (Customer Experience) - это ...</span>-->
+                    <!--</p>-->
+                    <!--<label class="radio_container">-->
+                        <!--<input type="radio" name="optradio5" class="radio__option"> <span class="answer">Опыт работы тайным покупателем</span>-->
+                        <!--<span class="checkmark"></span>-->
+                    <!--</label>-->
+                    <!--<label class="radio_container">-->
+                        <!--<input type="radio" name="optradio5" class="radio__option"> <span class="answer">Экспертный опыт клиента в различных областях бизнеса</span>-->
+                        <!--<span class="checkmark"></span>-->
+                    <!--</label>-->
+                    <!--<label class="radio_container">-->
+                        <!--<input type="radio" name="optradio5" class="radio__option"> <span class="answer">Весь комплекс взаимодействия клиента и бренда/бизнеса (состоит из пути клиента, локации, окружения)</span>-->
+                        <!--<span class="checkmark"></span>-->
+                    <!--</label>-->
+                    <!--<label class="radio_container">-->
+                        <!--<input type="radio" name="optradio5" class="radio__option"> <span class="answer">Жизненный опыт клиента</span>-->
+                        <!--<span class="checkmark"></span>-->
+                    <!--</label>-->
+            <!--</div>-->
+                    <!--<div class="send-btn-wrapper">-->
+                        <!--<a href="#" class="send-btn box-shadow" id="submit">Отправить</a>-->
+                    <!--</div>-->
+                <!--</form>-->
+            <!--</div>-->
+        <!--</section>-->
+        <footer class="questions">
+            <div class="questions_content">
+                <p class="questions_title">ОСТАЛИСЬ ВОПРОСЫ?</p>
+                <p class="leave_contacts">Оставьте свои контакты и мы свяжемся с Вами</p>
+                <form id="form_id" method="post" action="" onsubmit="validate(event, 'form_id','email');">
+                    <div class="yourQuestion">
+                        <textarea placeholder="Укажите Ваш вопрос" type="text" class="questions-field" id="yourQuestion" name="question" required></textarea>
+                    </div>
+                    <div class="write_questions">
+                        <input placeholder="Ваш email" type="text" class="questions-field" id="email" name="email">
+                        <input class="send-btn" type="submit" value="Отправить"/>
+                    </div>
+                </form>
+            </div>
+        </footer>
+    </main>
+</div>
+<script src="script/libs/timer.js"></script>
+<script src="script/do-test.js"></script>
+<script src="script/confirm.js"></script>
+<script src="script/e-mailValidation.js"></script>
+<!--<script src="script/valid-radio.js"></script>-->
+<script src="script/libs/customSelect.js"></script>
+<script src="script/inner.js"></script>
+<script src="script/resp-menu.js"></script>
+<script src="script/share-popup.js"></script>
+<script src="script/libs/upload.js"></script>
+</body>
+</html>
