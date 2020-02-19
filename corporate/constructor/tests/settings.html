@@ -169,6 +169,7 @@
                         <div class="ui-ux_design_title">
                             <h2>UI/UX design</h2>
                         </div>
+                        <form action="">
                             <div class="multiselect-wrap">
                                 <div class="profile-item experience">
                                     <p class="profile-item-name">Категории:</p>
@@ -185,51 +186,55 @@
                                 </div>
                             </div>
 
-                        <div class="ui-ux_design-content">
+                            <div class="ui-ux_design-content">
 
-                            <div class="design-content__row">Статус теста:
-                                <span class="info-icon">i <span class="icon-info__text">При статусе «Завершен» пользователи не смогут взаимодействовать с курсом и видеть его в списке доступных  </span></span>
-                                <select>
-                                    <option value="0">Активный</option>
-                                    <option value="1">Завершен</option>
-                                </select>
-                            </div>
-                            <div class="design-content__row webinar-date">Ограничить время прохождения теста
-                                <span id="webinar-length"><input type="text" value="0:12:00" /></span>
+                                <div class="design-content__row">Статус теста:
+                                    <span class="info-icon">i <span class="icon-info__text">При статусе «Завершен» пользователи не смогут взаимодействовать с курсом и видеть его в списке доступных  </span></span>
+                                    <select>
+                                        <option value="0">Активный</option>
+                                        <option value="1">Завершен</option>
+                                    </select>
+                                </div>
+                                <div class="design-content__row webinar-date">Ограничить время прохождения теста
+                                    <span id="webinar-length"><input type="text" value="0:12:00" /></span>
+                                </div>
+                                <div class="design-content__row">
+                                    <label class="test-radio">
+                                        <input type="checkbox" name="webinar-new-regs" />
+                                        <div class="test-radio__answer"><span class="answer">Перемешать ответы</span></div>
+                                    </label>
+                                </div>
+                                <div class="design-content__row">Минимальный результат прохождения
+                                    <select>
+                                        <option value="0">50%</option>
+                                        <option value="1">60%</option>
+                                        <option value="2">70%</option>
+                                        <option value="3">80%</option>
+                                        <option value="4">90%</option>
+                                    </select>
+                                </div>
+                                <div class="design-content__row">Количество повторных попыток
+                                    <select>
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">5</option>
+                                        <option value="4">Бесконечно</option>
+                                    </select>
+                                </div>
+                                <div class="design-content__row">Подача теста
+                                    <select>
+                                        <option value="0">Все вопросы</option>
+                                        <option value="1">Часть вопросов</option>
+                                    </select>
+                                </div>
+
+                                <div class="design-content__row history">Изменена: <span>20.04.2019 в 16:41</span><img src="../../../img/corp/icons/history.png" alt="History" /></div>
                             </div>
                             <div class="design-content__row">
-                                <label class="test-radio">
-                                    <input type="checkbox" name="webinar-new-regs" />
-                                    <div class="test-radio__answer"><span class="answer">Перемешать ответы</span></div>
-                                </label>
+                                <input type="submit" value="Сохранить" class="btn btn-submit" />
                             </div>
-                            <div class="design-content__row">Минимальный результат прохождения
-                                <select>
-                                    <option value="0">50%</option>
-                                    <option value="1">60%</option>
-                                    <option value="2">70%</option>
-                                    <option value="3">80%</option>
-                                    <option value="4">90%</option>
-                                </select>
-                            </div>
-                            <div class="design-content__row">Количество повторных попыток
-                                <select>
-                                    <option value="0">0</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">5</option>
-                                    <option value="4">Бесконечно</option>
-                                </select>
-                            </div>
-                            <div class="design-content__row">Подача теста
-                                <select>
-                                    <option value="0">Все вопросы</option>
-                                    <option value="1">Часть вопросов</option>
-                                </select>
-                            </div>
-
-                            <div class="design-content__row history">Изменена: <span>20.04.2019 в 16:41</span><img src="../../../img/corp/icons/history.png" alt="History" /></div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </section>

@@ -45,7 +45,7 @@
   outline: none;
   padding: 20px; }
 
-.vac-question__form textarea.has-error {
+.vac-question__form .has-error textarea {
   -webkit-box-shadow: 0px 5px 13.5px 1.5px rgba(255, 0, 0, 0.6);
   -moz-box-shadow: 0px 5px 13.5px 1.5px rgba(255, 0, 0, 0.6);
   box-shadow: 0px 5px 13.5px 1.5px rgba(255, 0, 0, 0.6); }
@@ -324,12 +324,12 @@
     color: #3fc6d9;
     font-weight: 500; }
 
-textarea.has-error {
+.has-error textarea {
   -webkit-box-shadow: 0px 5px 13.5px 1.5px rgba(255, 0, 0, 0.6);
   -moz-box-shadow: 0px 5px 13.5px 1.5px rgba(255, 0, 0, 0.6);
   box-shadow: 0px 5px 13.5px 1.5px rgba(255, 0, 0, 0.6); }
 
-input.input-blue.has-error {
+.has-error input.input-blue {
   border: 1px solid red; }
 
 .alert-error {
@@ -592,7 +592,7 @@ input.input-shdw {
   -moz-box-shadow: 0px 5px 13.5px 1.5px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 5px 13.5px 1.5px rgba(0, 0, 0, 0.1); }
 
-input.input-shdw.has-error {
+.has-error input.input-shdw {
   -webkit-box-shadow: 0px 5px 13.5px 1.5px rgba(255, 0, 0, 0.6);
   -moz-box-shadow: 0px 5px 13.5px 1.5px rgba(255, 0, 0, 0.6);
   box-shadow: 0px 5px 13.5px 1.5px rgba(255, 0, 0, 0.6); }
@@ -2424,5 +2424,29 @@ Due to the split circle of progress-left and progress right, we must use the ani
   .ratings-members-hw-table .custom-table__body .custom-table__row-inn {
     flex-basis: 100%;
     display: none; }
+
+.ui-ux_design-content .design-content__row .btn-submit,
+.vac-settings__block .design-content__row .btn-submit,
+form .design-content__row .btn-submit {
+  -webkit-box-shadow: 0px 5px 13.5px 1.5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 5px 13.5px 1.5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 13.5px 1.5px rgba(0, 0, 0, 0.1);
+  background-image: -moz-linear-gradient(-60deg, #3fc6d9 0%, #5bd9ea 71%, #76ecfa 100%);
+  background-image: -webkit-linear-gradient(-60deg, #3fc6d9 0%, #5bd9ea 71%, #76ecfa 100%);
+  background-image: -ms-linear-gradient(-60deg, #3fc6d9 0%, #5bd9ea 71%, #76ecfa 100%);
+  color: #ffffff;
+  padding: 10px;
+  min-width: 130px;
+  margin: 20px 0;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none; }
 
 /*# sourceMappingURL=roman.css.map */

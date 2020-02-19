@@ -148,188 +148,201 @@
             <div class="content-container">
                 <h4 class="title">ОСНОВНАЯ ИНФОРМАЦИЯ</h4>
                 <div class="ui-ux_design-content">
-                    <div class="design-content__row design-content__webinar-name">
-                        Название вебинара:
-                        <div class="input-group">
-                            <input type="text" value="UI/UX design" class="has-error input-shdw" placeholder="Название"/>
-                            <p class="alert-error">Заполните, пожалуйста, поле..</p>
-                        </div>
-                    </div>
-                    <div class="design-content__row flex">
-                        <div class="design-content__cell webinar-date">
-                            Дата вебинара:
-                            <span id="webinar-date"><input type="text" value="06.02.2020" /></span> c <span id="webinar-start"><input type="text" value="12:00am" /></span> по <span id="webinar-end"><input type="text" value="12:00am" /></span>
-                        </div>
-                    </div>
-                    <div class="design-content__row">Часовой пояс:
-                        <select>
-                            <option value="0">Киев</option>
-                            <option value="1">Минск</option>
-                            <option value="2">Москва</option>
-                        </select>
-                    </div>
-                    <div class="design-content__row">
-                        <label class="test-radio">
-                            <input type="checkbox" name="regular-webinar-checkbox" />
-                            <div class="test-radio__answer"><p>Сделать регулярным</p></div>
-                        </label>
-                        <div class="reg-webinar-settings">
-                            <div>
-                                Еженедельно:
-                                <select>
-                                    <option value="0">Понедельник</option>
-                                    <option value="1">Вторник</option>
-                                    <option value="2">Среда</option>
-                                    <option value="3">Четверг</option>
-                                    <option value="4">Пятница</option>
-                                    <option value="5">Суббота</option>
-                                    <option value="6">Воскресенье</option>
-                                </select>
-                            </div>
-
-                            <div>
-                                Повторять до:
-                                <span id="webinar-repeat"><input type="text" value="06.02.2020" /></span>
+                    <form action="">
+                        <div class="design-content__row design-content__webinar-name">
+                            Название вебинара:
+                            <div class="input-group">
+                                <input type="text" value="UI/UX design" class="has-error input-shdw" placeholder="Название"/>
+                                <p class="alert-error">Заполните, пожалуйста, поле..</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="design-content__row">Тип вебинара:
-                        <select class="webinar-select">
-                            <option value="0">Свободный</option>
-                            <option value="1">Вход по паролю</option>
-                        </select>
-                        <div class="input-group webinar-password">
-                            <input type="text" placeholder="Введите пароль" class="input-blue" />
+                        <div class="design-content__row flex">
+                            <div class="design-content__cell webinar-date">
+                                Дата вебинара:
+                                <span id="webinar-date"><input type="text" value="06.02.2020" /></span> c <span id="webinar-start"><input type="text" value="12:00am" /></span> по <span id="webinar-end"><input type="text" value="12:00am" /></span>
+                            </div>
                         </div>
-                    </div>
+                        <div class="design-content__row">Часовой пояс:
+                            <select>
+                                <option value="0">Киев</option>
+                                <option value="1">Минск</option>
+                                <option value="2">Москва</option>
+                            </select>
+                        </div>
+                        <div class="design-content__row">
+                            <label class="test-radio">
+                                <input type="checkbox" name="regular-webinar-checkbox" />
+                                <div class="test-radio__answer"><p>Сделать регулярным</p></div>
+                            </label>
+                            <div class="reg-webinar-settings">
+                                <div>
+                                    Еженедельно:
+                                    <select>
+                                        <option value="0">Понедельник</option>
+                                        <option value="1">Вторник</option>
+                                        <option value="2">Среда</option>
+                                        <option value="3">Четверг</option>
+                                        <option value="4">Пятница</option>
+                                        <option value="5">Суббота</option>
+                                        <option value="6">Воскресенье</option>
+                                    </select>
+                                </div>
 
-                    <div class="design-content__row">
-                        <label class="test-radio">
-                            <input type="checkbox" name="public-link-checkbox" />
-                            <div class="test-radio__answer"><p>Включить доступ по общей ссылке:</p></div>
-                        </label>
-                        <div class="input-group link-input">
-                            <img src="../../../img/corp/icons/link.png" alt="Link" />
-                            <input type="text" class="input-blue" />
+                                <div>
+                                    Повторять до:
+                                    <span id="webinar-repeat"><input type="text" value="06.02.2020" /></span>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                        <div class="design-content__row">Тип вебинара:
+                            <select class="webinar-select">
+                                <option value="0">Свободный</option>
+                                <option value="1">Вход по паролю</option>
+                            </select>
+                            <div class="input-group webinar-password">
+                                <input type="text" placeholder="Введите пароль" class="input-blue" />
+                            </div>
+                        </div>
 
-                    <div class="design-content__row reg-ban-wrap">
-                        <label class="test-radio">
-                            <input type="checkbox" name="reg-ban-checkbox" />
-                            <div class="test-radio__answer"><p>Запретить регистрацию:</p></div>
-                        </label>
-                        <div class="input-group link-input">
-                            <p>Ссылка на регистрацию</p>
-                            <img src="../../../img/corp/icons/link.png" alt="Link" />
-                            <input type="text" class="input-blue" />
+                        <div class="design-content__row">
+                            <label class="test-radio">
+                                <input type="checkbox" name="public-link-checkbox" />
+                                <div class="test-radio__answer"><p>Включить доступ по общей ссылке:</p></div>
+                            </label>
+                            <div class="input-group link-input">
+                                <img src="../../../img/corp/icons/link.png" alt="Link" />
+                                <input type="text" class="input-blue" />
+                            </div>
                         </div>
-                    </div>
+
+                        <div class="design-content__row reg-ban-wrap">
+                            <label class="test-radio">
+                                <input type="checkbox" name="reg-ban-checkbox" />
+                                <div class="test-radio__answer"><p>Запретить регистрацию:</p></div>
+                            </label>
+                            <div class="input-group link-input">
+                                <p>Ссылка на регистрацию</p>
+                                <img src="../../../img/corp/icons/link.png" alt="Link" />
+                                <input type="text" class="input-blue" />
+                            </div>
+                        </div>
+                        <div class="design-content__row">
+                            <input type="submit" value="Сохранить" class="btn btn-submit" />
+                        </div>
+                    </form>
                 </div>
                 <h4 class="title">НАСТРОЙКИ ВЕБИНАРНОЙ КОМНАТЫ</h4>
                 <div class="ui-ux_design-content">
                     <p>Макет вебинарной комнаты</p>
-                    <div class="design-content__row">
-                        <div class="webinar-layouts-checkboxes flex f-w">
+                    <form action="">
+                        <div class="design-content__row">
+                            <div class="webinar-layouts-checkboxes flex f-w">
+                                <label class="test-radio">
+                                    <input type="radio" name="webinar-layout-radio" />
+                                    <div class="test-radio__answer">
+                                        <img src="../../../img/corp/webinar-layout01.png" alt="" />
+                                        <span>Классический</span>
+                                    </div>
+                                </label>
+                                <label class="test-radio">
+                                    <input type="radio" name="webinar-layout-radio" />
+                                    <div class="test-radio__answer">
+                                        <img src="../../../img/corp/webinar-layout01.png" alt="" />
+                                        <span>Широкий чат</span>
+                                    </div>
+                                </label>
+                                <label class="test-radio">
+                                    <input type="radio" name="webinar-layout-radio" />
+                                    <div class="test-radio__answer">
+                                        <img src="../../../img/corp/webinar-layout01.png" alt="" />
+                                        <span>Большое видео</span>
+                                    </div>
+                                </label>
+                                <label class="test-radio">
+                                    <input type="radio" name="webinar-layout-radio" />
+                                    <div class="test-radio__answer">
+                                        <img src="../../../img/corp/webinar-layout01.png" alt="" />
+                                        <span>Мастерская</span>
+                                    </div>
+                                </label>
+                                <label class="test-radio">
+                                    <input type="radio" name="webinar-layout-radio" />
+                                    <div class="test-radio__answer">
+                                        <img src="../../../img/corp/webinar-layout01.png" alt="" />
+                                        <span>Тет-а-тет</span>
+                                    </div>
+                                </label>
+                                <label class="test-radio">
+                                    <input type="radio" name="webinar-layout-radio" />
+                                    <div class="test-radio__answer">
+                                        <img src="../../../img/corp/webinar-layout01.png" alt="" />
+                                        <span>Вопрос голосом</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="design-content__row">
                             <label class="test-radio">
-                                <input type="radio" name="webinar-layout-radio" />
-                                <div class="test-radio__answer">
-                                    <img src="../../../img/corp/webinar-layout01.png" alt="" />
-                                    <span>Классический</span>
-                                </div>
+                                <input type="checkbox" name="materials-checkbox" />
+                                <div class="test-radio__answer"><p>Включить чат</p></div>
                             </label>
                             <label class="test-radio">
-                                <input type="radio" name="webinar-layout-radio" />
-                                <div class="test-radio__answer">
-                                    <img src="../../../img/corp/webinar-layout01.png" alt="" />
-                                    <span>Широкий чат</span>
-                                </div>
+                                <input type="checkbox" name="materials-checkbox" />
+                                <div class="test-radio__answer"><p>Задать вопрос в чате</p></div>
                             </label>
                             <label class="test-radio">
-                                <input type="radio" name="webinar-layout-radio" />
-                                <div class="test-radio__answer">
-                                    <img src="../../../img/corp/webinar-layout01.png" alt="" />
-                                    <span>Большое видео</span>
-                                </div>
+                                <input type="checkbox" name="materials-checkbox" />
+                                <div class="test-radio__answer"><p>Задать вопрос голосом</p></div>
                             </label>
                             <label class="test-radio">
-                                <input type="radio" name="webinar-layout-radio" />
-                                <div class="test-radio__answer">
-                                    <img src="../../../img/corp/webinar-layout01.png" alt="" />
-                                    <span>Мастерская</span>
-                                </div>
+                                <input type="checkbox" name="materials-checkbox" />
+                                <div class="test-radio__answer"><p>Сообщения в чате видны только ведущему</p></div>
                             </label>
                             <label class="test-radio">
-                                <input type="radio" name="webinar-layout-radio" />
-                                <div class="test-radio__answer">
-                                    <img src="../../../img/corp/webinar-layout01.png" alt="" />
-                                    <span>Тет-а-тет</span>
-                                </div>
+                                <input type="checkbox" name="materials-checkbox" />
+                                <div class="test-radio__answer"><p>Скрыть список участников</p></div>
                             </label>
                             <label class="test-radio">
-                                <input type="radio" name="webinar-layout-radio" />
-                                <div class="test-radio__answer">
-                                    <img src="../../../img/corp/webinar-layout01.png" alt="" />
-                                    <span>Вопрос голосом</span>
-                                </div>
+                                <input type="checkbox" name="materials-checkbox" />
+                                <div class="test-radio__answer"><p>Скрыть колличество участников</p></div>
                             </label>
                         </div>
-                    </div>
-                    <div class="design-content__row">
-                        <label class="test-radio">
-                            <input type="checkbox" name="materials-checkbox" />
-                            <div class="test-radio__answer"><p>Включить чат</p></div>
-                        </label>
-                        <label class="test-radio">
-                            <input type="checkbox" name="materials-checkbox" />
-                            <div class="test-radio__answer"><p>Задать вопрос в чате</p></div>
-                        </label>
-                        <label class="test-radio">
-                            <input type="checkbox" name="materials-checkbox" />
-                            <div class="test-radio__answer"><p>Задать вопрос голосом</p></div>
-                        </label>
-                        <label class="test-radio">
-                            <input type="checkbox" name="materials-checkbox" />
-                            <div class="test-radio__answer"><p>Сообщения в чате видны только ведущему</p></div>
-                        </label>
-                        <label class="test-radio">
-                            <input type="checkbox" name="materials-checkbox" />
-                            <div class="test-radio__answer"><p>Скрыть список участников</p></div>
-                        </label>
-                        <label class="test-radio">
-                            <input type="checkbox" name="materials-checkbox" />
-                            <div class="test-radio__answer"><p>Скрыть колличество участников</p></div>
-                        </label>
-                    </div>
+                        <div class="design-content__row">
+                            <input type="submit" value="Сохранить" class="btn btn-submit" />
+                        </div>
+                    </form>
                 </div>
 
                 <div class="ui-ux_design-content">
                     <h4 class="title">НАСТРОЙКИ ВЕБИНАРНОЙ КОМНАТЫ</h4>
-                    <div class="design-content__row">Запись вебинара доступна:
-                        <select>
-                            <option value="0">Всем</option>
-                            <option value="1">Минск</option>
-                            <option value="2">Москва</option>
-                        </select>
-                    </div>
-
-                    <div class="design-content__row flex">
-                        <div class="design-content__cell webinar-date">
-                            Запись вебинара доступна с
-                            <span id="webinar-avble01"><input type="text" value="06.02.2020" /></span> по <span id="webinar-avble02"><input type="text" value="06.02.2020" /></span>
-                        </div>
-                    </div>
-
-                    <div class="design-content__row flex">
-                        <div class="design-content__cell webinar-date">
-                            <label class="test-radio">
-                                <input type="checkbox" name="materials-checkbox" />
-                                <div class="test-radio__answer"><p>Отправить запись вебинара <span id="webinar-video-date"><input type="text" value="06.02.2020" /></span> в <span id="webinar-video-time"><input type="text" value="12:00am" /></span></p></div>
-                            </label>
-
+                    <form action="">
+                        <div class="design-content__row">Запись вебинара доступна:
+                            <select>
+                                <option value="0">Всем</option>
+                                <option value="1">Минск</option>
+                                <option value="2">Москва</option>
+                            </select>
                         </div>
 
-                    </div>
+                        <div class="design-content__row flex">
+                            <div class="design-content__cell webinar-date">
+                                Запись вебинара доступна с
+                                <span id="webinar-avble01"><input type="text" value="06.02.2020" /></span> по <span id="webinar-avble02"><input type="text" value="06.02.2020" /></span>
+                            </div>
+                        </div>
+
+                        <div class="design-content__row flex">
+                            <div class="design-content__cell webinar-date">
+                                <label class="test-radio">
+                                    <input type="checkbox" name="materials-checkbox" />
+                                    <div class="test-radio__answer"><p>Отправить запись вебинара <span id="webinar-video-date"><input type="text" value="06.02.2020" /></span> в <span id="webinar-video-time"><input type="text" value="12:00am" /></span></p></div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="design-content__row">
+                            <input type="submit" value="Сохранить" class="btn btn-submit" />
+                        </div>
+                    </form>
 
                 </div>
             </div>

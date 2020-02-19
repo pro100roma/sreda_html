@@ -144,6 +144,7 @@
             </div><!-- /Breadcrumbs -->
 
             <div class="content-container">
+                <form action="">
                 <div class="ui-ux_design-content">
                     <h4 class="title">Материалы</h4>
                     <div class="design-content__row">Скопировать материалы из другого вебинара:
@@ -184,12 +185,12 @@
                 <div class="s-upload s-upload-pres">
                     <h4 class="title">Презентация</h4>
                     <div class="upload-field-wrap flex j-s-b a-c">
-                        <form class="upload-logo" method="POST" action="">
+                        <div class="upload-logo">
                             <div class="input-group">
                                 <input id="file-input" type="file" name="file">
                                 <label for="file-input" id="file-label"> <img class="upload-image" src="../../../img/corp/icons/download-arrow_blue.png"></label>
                             </div>
-                        </form>
+                        </div>
                         <a href="#" class="circle-add">+</a>
                     </div>
                     <div class="pres-checkboxes flex f-w">
@@ -269,7 +270,7 @@
                 <div class="s-upload s-upload-video">
                     <h4 class="title">Видеофайл</h4>
                     <div class="upload-field-wrap flex j-s-b a-c">
-                        <form class="upload-logo" method="POST" action="">
+                        <div class="upload-logo">
                             <div class="input-group">
                                 <input type="text" placeholder="рабочий стол/вебинар/видео/1" class="input-blue has-error" />
                                 <p class="alert-error">Заполните, пожалуйста, поле..</p>
@@ -278,7 +279,7 @@
                                 <input id="file-input2" type="file" name="file">
                                 <label for="file-input2" id="file-label2"> <img class="upload-image" src="../../../img/corp/icons/download-arrow_blue.png"></label>
                             </div>
-                        </form>
+                        </div>
                         <a href="#" class="circle-add">+</a>
                     </div>
                 </div>
@@ -286,12 +287,12 @@
                 <div class="s-upload">
                     <h4 class="title">Ссылки</h4>
                     <div class="upload-field-wrap flex j-s-b a-c">
-                        <form class="upload-logo" method="POST" action="">
+                        <div class="upload-logo">
                             <div class="input-group">
                                 <input type="text" placeholder="https://www.facebook.com/oleksandra.protasova" class="input-blue has-error" />
                                 <p class="alert-error">Заполните, пожалуйста, поле..</p>
                             </div>
-                        </form>
+                        </div>
                         <a href="#" class="circle-add">+</a>
                     </div>
                     <div class="input-group">
@@ -303,16 +304,19 @@
                 <div class="s-upload s-upload-other">
                     <h4 class="title">РАЗДАТОЧНЫЕ ФАЙЛЫ</h4>
                     <div class="upload-field-wrap flex j-s-b a-c">
-                        <form class="upload-logo" method="POST" action="">
+                        <div class="upload-logo">
                             <div class="input-group">
                                 <input id="file-input3" type="file" name="file">
                                 <label for="file-input3" id="file-label3"> <img class="upload-image" src="../../../img/corp/icons/download-arrow_blue.png"></label>
                             </div>
-                        </form>
+                        </div>
                         <a href="#" class="circle-add">+</a>
                     </div>
                 </div>
-
+                    <div class="design-content__row">
+                        <input type="submit" value="Сохранить" class="btn btn-submit" />
+                    </div>
+                </form>
             </div>
 
         </div><!-- /Content -->
