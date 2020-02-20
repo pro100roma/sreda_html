@@ -255,7 +255,8 @@
     padding-left: 0px; }
 
   body #papa main#main {
-    max-width: 100vw; } }
+    max-width: 100vw;
+    width: 100%; } }
 @media (max-width: 769px) {
   body #papa main#main .project-description-wrapper {
     flex-direction: column; }
@@ -1110,7 +1111,11 @@
   .ratings-members-courses-table,
   .ratings-members-tests-table,
   .ratings-members-table01 {
-    width: 880px; } }
+    width: 880px; }
+
+  .design-container > form {
+    flex-direction: column;
+    margin: 0 auto; } }
 @media screen and (max-width: 882px) {
   .registration-body aside#left-side-bar {
     display: block; } }

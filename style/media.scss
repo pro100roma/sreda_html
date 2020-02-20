@@ -429,6 +429,7 @@
   }
   body #papa main#main{
     max-width: 100vw;
+    width: 100%;
   }
 }
 @media (max-width: 769px){
@@ -1612,6 +1613,10 @@
   .ratings-members-tests-table,
   .ratings-members-table01 {
     width: 880px;
+  }
+  .design-container > form {
+    flex-direction: column;
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 882px) {
