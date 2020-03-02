@@ -1618,10 +1618,30 @@
     flex-direction: column;
     margin: 0 auto;
   }
+  .course-description-block {
+    width: 100%;
+    textarea {
+      margin: 30px 0;
+    }
+  }
+  .course-setting-wrap {
+    .registration {
+      margin: 0 auto;
+      width: 300px;
+    }
+  }
+  .course-set-chk .input-group {
+    display: block;
+    margin: 10px 0;
+  }
 }
 @media screen and (max-width: 882px) {
   .registration-body aside#left-side-bar {
     display: block;
+  }
+  .hover-info-text {
+    right: 0;
+    top: 20px;
   }
 }
 @media (max-width: 768px) {
@@ -1736,6 +1756,19 @@
     left: 20px;
     position: relative;
   }
+  .custom-table.course-content-table {
+    width: 720px;
+  }
+  .article-link {
+    width: 70%;
+  }
+  .article-edit {
+    width: 30%;
+    text-align: right;
+  }
+  .course-stats {
+    flex-direction: column;
+  }
 }
 @media screen and (max-width: 480px) {
   .user-vacancies-wrap {
@@ -1812,5 +1845,9 @@
       font-size: 14px;
       font-weight: 600;
     }
+  }
+  .upload-lesson label {
+    width: 240px;
+    margin: 0 auto;
   }
 }

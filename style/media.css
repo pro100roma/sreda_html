@@ -1115,10 +1115,27 @@
 
   .design-container > form {
     flex-direction: column;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+
+  .course-description-block {
+    width: 100%; }
+    .course-description-block textarea {
+      margin: 30px 0; }
+
+  .course-setting-wrap .registration {
+    margin: 0 auto;
+    width: 300px; }
+
+  .course-set-chk .input-group {
+    display: block;
+    margin: 10px 0; } }
 @media screen and (max-width: 882px) {
   .registration-body aside#left-side-bar {
-    display: block; } }
+    display: block; }
+
+  .hover-info-text {
+    right: 0;
+    top: 20px; } }
 @media (max-width: 768px) {
   .main-test_questions-wrapper .main-test_title {
     margin-bottom: 60px; }
@@ -1206,7 +1223,20 @@
   .ratings-members-search-filters > .ui-ux_design-content {
     right: auto;
     left: 20px;
-    position: relative; } }
+    position: relative; }
+
+  .custom-table.course-content-table {
+    width: 720px; }
+
+  .article-link {
+    width: 70%; }
+
+  .article-edit {
+    width: 30%;
+    text-align: right; }
+
+  .course-stats {
+    flex-direction: column; } }
 @media screen and (max-width: 480px) {
   .user-vacancies-wrap {
     overflow-x: auto; }
@@ -1276,6 +1306,10 @@
     padding: 30px 10px; }
     .chart-wrap .title {
       font-size: 14px;
-      font-weight: 600; } }
+      font-weight: 600; }
+
+  .upload-lesson label {
+    width: 240px;
+    margin: 0 auto; } }
 
 /*# sourceMappingURL=media.css.map */
