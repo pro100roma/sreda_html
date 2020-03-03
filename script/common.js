@@ -79,28 +79,28 @@ jQuery(function ($) {
         if(fileInput) {
             fileInput.onchange = function() {
                 if (this.files[0]) // если выбрали файл
-                    document.getElementById('file-label').innerHTML = this.files[0].name + '<img class="upload-image" src="../img/corp/icons/download-arrow_blue.png">';
+                    document.getElementById('file-label').innerHTML = this.files[0].name + '<img class="upload-image" src="../../../img/corp/icons/download-arrow_blue.png">';
             };
         }
         if(fileInput2) {
             fileInput2.onchange = function() {
                 if (this.files[0]) // если выбрали файл
-                    document.getElementById('file-label2').innerHTML = this.files[0].name + '<img class="upload-image" src="../img/corp/icons/download-arrow_blue.png">';
+                    document.getElementById('file-label2').innerHTML = this.files[0].name + '<img class="upload-image" src="../../../img/corp/icons/download-arrow_blue.png">';
             };
         }
         if(fileInput3) {
             fileInput3.onchange = function() {
                 if (this.files[0]) // если выбрали файл
-                    document.getElementById('file-label3').innerHTML = this.files[0].name + '<img class="upload-image" src="../img/corp/icons/download-arrow_blue.png">';
+                    document.getElementById('file-label3').innerHTML = this.files[0].name + '<img class="upload-image" src="../../../img/corp/icons/download-arrow_blue.png">';
             };
         }
 
         //Constructor content section checkbox
         $('.vac-settings__block input[type=checkbox]').change(function() {
-            if($(this).parents('.title').siblings('.vac-settings__block-content').is(':visible')) {
-                $(this).parents('.title').siblings('.vac-settings__block-content').fadeOut(300);
+            if($(this).parents('.tools-title').siblings('.vac-settings__block-content').is(':visible')) {
+                $(this).parents('.tools-title').siblings('.vac-settings__block-content').fadeOut(300);
             } else {
-                $(this).parents('.title').siblings('.vac-settings__block-content').fadeIn(300);
+                $(this).parents('.tools-title').siblings('.vac-settings__block-content').fadeIn(300);
             }
         });
         //Constructor content social links checkboxes
@@ -200,10 +200,10 @@ jQuery(function ($) {
         });
 
         //Upload photo alert
-        $('.upload-photo form').mouseenter(function() {
+        $('.upload-photo .upload-container').mouseenter(function() {
             $(this).parents('.upload-photo').find('.max-file-size-alert').fadeIn(300);
         });
-        $('.upload-photo form').mouseleave(function() {
+        $('.upload-photo .upload-container').mouseleave(function() {
             $(this).parents('.upload-photo').find('.max-file-size-alert').fadeOut(300);
         });
 
@@ -254,6 +254,40 @@ jQuery(function ($) {
             } else {
                 hwLink.slideDown(300);
             }
+        });
+
+        //Copy members
+        $('.members-copy').click(function(e) {
+            e.preventDefault();
+            if($(this).find('span').is(':visible')) {
+                $(this).find('span').fadeOut(300);
+            } else {
+                $(this).find('span').fadeIn(300);
+            }
+        });
+
+        //Date disable
+        $('.course-set-chk #checkbox01').change(function() {
+           if($(this).is(':checked')) {
+               $('#course-start input').attr('disabled', false);
+           } else {
+               $('#course-start input').attr('disabled', true);
+           }
+        });
+        $('.course-set-chk #checkbox02').change(function() {
+            if($(this).is(':checked')) {
+                $('#course-end input').attr('disabled', false);
+            } else {
+                $('#course-end input').attr('disabled', true);
+            }
+        });
+
+        //Title hover info
+        $('.title .hover-info').mouseenter(function() {
+            $(this).siblings('.hover-info-text').fadeIn(300);
+        });
+        $('.title .hover-info').mouseleave(function() {
+            $(this).siblings('.hover-info-text').fadeOut(300);
         });
 
 

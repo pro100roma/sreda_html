@@ -6,11 +6,12 @@
     <title>Профиль - данные</title>
 
     <!-- Styles -->
-    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="../../script/libs/SearchableMultiselect/mock.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="../../script/libs/SearchableMultiselect/jquery.dropdown.css">
-    <script src="../../script/libs/SearchableMultiselect/jquery.dropdown.js"></script>
+<!--    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">-->
+<!--    <script type="text/javascript" src="../../script/libs/SearchableMultiselect/mock.js"></script>-->
+
+<!--    <link rel="stylesheet" type="text/css" href="../../script/libs/SearchableMultiselect/jquery.dropdown.css">-->
+    <link rel="stylesheet" href="../../style/libs/select2.min.css">
+<!--    <script src="../../script/libs/SearchableMultiselect/jquery.dropdown.js"></script>-->
     <link rel="stylesheet" href="../../style/style.css">
     <link rel="stylesheet" href="../../style/i-style/style.css">
     <link rel="stylesheet" href="../../style/roman.css">
@@ -18,6 +19,7 @@
     <link rel="stylesheet" href="../../style/libs/timeZoneSelect.css">
     <link rel="stylesheet" href="../../style/media.css">
     <!-- Styles -->
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
 
 </head>
 <body>
@@ -425,16 +427,11 @@
                             <!--</p>-->
                             <!--<input type="text" name="" class="hide" value="CSMS, Сервис, Customer Loyalty, Customer, Customer Experience, Вебинары">-->
                             <p class="profile-item-name bold700"><em>Интересы</em></p>
-                            <div class="dropdown-mul-1">
-                                <select style="display:none"  name="" id="" multiple placeholder="Select">
-                                    <option value="CSMS">CSMS</option>
-                                    <option value="Сервис">Сервис</option>
-                                    <option value="Customer Loyalty">Customer Loyalty</option>
-                                    <option value="Customer">Customer</option>
-                                    <option value="Customer Experience">Customer Experience</option>
-                                    <option value="Вебинары">Вебинары</option>
-                                </select>
-                            </div>
+                            <select class="js-example-basic-multiple" name="interests[]" multiple="multiple">
+                                <option value="CSMS">CSMS</option>
+                                <option value="Service">Service</option>
+                                <option value="Customer">Customer</option>
+                            </select>
                         </div>
                     </div>
                     <div class="form-wrapp">
@@ -466,45 +463,26 @@
         </section>
     </main>
 </div>
-<script>
-    // var Random = Mock.Random;
-    // var json1 = Mock.mock({
-    //     "data|10-50": [{
-    //         name: function () {
-    //             return Random.name(true)
-    //         },
-    //         "id|+1": 1,
-    //         "disabled|1-2": true,
-    //         groupName: 'Group Name',
-    //         "groupId|1-4": 1,
-    //         "selected": false
-    //     }]
-    // });
 
-    // $('.dropdown-mul-1').dropdown({
-    //     data: json1.data,
-    //     limitCount: 40,
-    //     multipleMode: 'label',
-    //     choice: function () {
-    //         // console.log(arguments,this);
-    //     }
-    // });
-    // $('.dropdown-sin-1').dropdown({
-    //     readOnly: true,
-    //     input: '<input type="text" maxLength="20" placeholder="Search">'
-    // });
-    $('.dropdown-mul-1').dropdown({
-        limitCount: 40,
-        multipleMode: 'label',
-        choice: function () {
-            // console.log(arguments,this);
-        }
-    });
-</script>
+
+<script src="../../script/libs/select2.min.js"></script>
 <script src="../../script/inner.js"></script>
 <script src="../../script/resp-menu.js"></script>
 <script src="../../script/edit-data.js"></script>
 <script src="../../script/libs/countrySelect.js"></script>
 <script src="../../script/libs/timeZoneSelect.js"></script>
 <script src="../../script/common.js"></script>
+
+<script>
+    jQuery(function ($) {
+        $(document).ready(function () {
+            $('.js-example-basic-multiple').select2({
+                width: 'style'
+            });
+        });
+    });
+</script>
+
+
+
 </body>

@@ -6,7 +6,8 @@
     <title>Вакансии - Конструктор - Описание</title>
 
     <!-- Styles -->
-    <link rel="stylesheet" type="text/css" href="../../../script/libs/SearchableMultiselect/jquery.dropdown.css">
+<!--    <link rel="stylesheet" type="text/css" href="../../../script/libs/SearchableMultiselect/jquery.dropdown.css">-->
+    <link rel="stylesheet" href="../../../style/libs/select2.min.css">
     <link rel="stylesheet" href="../../../style/style.css">
     <link rel="stylesheet" href="../../../style/roman.css">
     <link rel="stylesheet" href="../../../style/i-style/style.css">
@@ -144,16 +145,22 @@
                         <div class="multiselect-wrap">
                             <div class="profile-item experience">
                                 <p class="profile-item-name">Специализация:</p>
-                                <div class="dropdown-mul-1">
-                                    <select style="display:none"  name="" id="" multiple placeholder="Select">
-                                        <option value="CSMS">CSMS</option>
-                                        <option value="Сервис">Сервис</option>
-                                        <option value="Customer Loyalty">Customer Loyalty</option>
-                                        <option value="Customer">Customer</option>
-                                        <option value="Customer Experience">Customer Experience</option>
-                                        <option value="Вебинары">Вебинары</option>
-                                    </select>
-                                </div>
+                                <select class="js-example-basic-multiple" name="specialization[]" multiple="multiple">
+                                    <option value="CSMS">CSMS</option>
+                                    <option value="Service">Service</option>
+                                    <option value="Customer">Customer</option>
+                                </select>
+
+<!--                                <div class="dropdown-mul-1">-->
+<!--                                    <select style="display:none"  name="" id="" multiple placeholder="Select">-->
+<!--                                        <option value="CSMS">CSMS</option>-->
+<!--                                        <option value="Сервис">Сервис</option>-->
+<!--                                        <option value="Customer Loyalty">Customer Loyalty</option>-->
+<!--                                        <option value="Customer">Customer</option>-->
+<!--                                        <option value="Customer Experience">Customer Experience</option>-->
+<!--                                        <option value="Вебинары">Вебинары</option>-->
+<!--                                    </select>-->
+<!--                                </div>-->
                             </div>
                         </div>
                     </div>
@@ -199,14 +206,20 @@
                         <div class="multiselect-wrap">
                             <div class="profile-item experience">
                                 <p class="profile-item-name">Навыки/знание программ::</p>
-                                <div class="dropdown-mul-1">
-                                    <select style="display:none"  name="" multiple placeholder="Select">
-                                        <option value="3d Max">3d Max</option>
-                                        <option value="Corel DRAW">Corel DRAW</option>
-                                        <option value="Photoshop">Photoshop</option>
-                                        <option value="Figma">Figma</option>
-                                    </select>
-                                </div>
+                                <select class="js-example-basic-multiple" name="skills[]" multiple="multiple">
+                                    <option value="3dmax">3d Max</option>
+                                    <option value="cdraw">Corel DRAW</option>
+                                    <option value="Photoshop">Photoshop</option>
+                                    <option value="Figma">Figma</option>
+                                </select>
+<!--                                <div class="dropdown-mul-1">-->
+<!--                                    <select style="display:none"  name="" multiple placeholder="Select">-->
+<!--                                        <option value="3d Max">3d Max</option>-->
+<!--                                        <option value="Corel DRAW">Corel DRAW</option>-->
+<!--                                        <option value="Photoshop">Photoshop</option>-->
+<!--                                        <option value="Figma">Figma</option>-->
+<!--                                    </select>-->
+<!--                                </div>-->
                             </div>
                         </div>
                     </div>
@@ -237,8 +250,9 @@
     </main>
 </div>
 
-<script src="../../../script/libs/SearchableMultiselect/jquery.dropdown.js"></script>
+<!--<script src="../../../script/libs/SearchableMultiselect/jquery.dropdown.js"></script>-->
 <script src="../../../script/libs/jquery.custom-select.js"></script>
+<script src="../../../script/libs/select2.min.js"></script>
 <script src="../../../script/inner.js"></script>
 <script src="../../../script/resp-menu.js"></script>
 <script src="../../../script/common.js"></script>
@@ -247,10 +261,14 @@
         $(document).ready(function () {
             $('.ui-ux_design-content select').customSelect();
 
-            $('.dropdown-mul-1').dropdown({
-                limitCount: 40,
-                multipleMode: 'label',
-                choice: function () {}
+            // $('.dropdown-mul-1').dropdown({
+            //     limitCount: 40,
+            //     multipleMode: 'label',
+            //     choice: function () {}
+            // });
+
+            $('.js-example-basic-multiple').select2({
+                width: 'style'
             });
         });
     });

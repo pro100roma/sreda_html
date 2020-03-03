@@ -6,7 +6,8 @@
     <title>Конструктор - курсы - редактирование - настройка</title>
 
     <!-- Styles -->
-    <link rel="stylesheet" type="text/css" href="../../../script/libs/SearchableMultiselect/jquery.dropdown.css">
+<!--    <link rel="stylesheet" type="text/css" href="../../../script/libs/SearchableMultiselect/jquery.dropdown.css">-->
+    <link rel="stylesheet" href="../../../style/libs/select2.min.css">
     <link rel="stylesheet" href="../../../style/libs/datepicker.min.css">
     <link rel="stylesheet" href="../../../style/style.css">
     <link rel="stylesheet" href="../../../style/roman.css">
@@ -155,13 +156,18 @@
                             </div>
                             <div class="design-content__row flex">
                                 <img src="../../../img/corp/icons/brain-tech.png" alt="Head">
-                                <div class="dropdown-mul-1">
-                                    <select style="display:none" multiple>
-                                        <option value="Junior">Junior</option>
-                                        <option value="Middle">Middle</option>
-                                        <option value="Pro">Pro</option>
-                                    </select>
-                                </div>
+<!--                                <div class="dropdown-mul-1">-->
+<!--                                    <select style="display:none" multiple>-->
+<!--                                        <option value="Junior">Junior</option>-->
+<!--                                        <option value="Middle">Middle</option>-->
+<!--                                        <option value="Pro">Pro</option>-->
+<!--                                    </select>-->
+<!--                                </div>-->
+                                <select class="js-example-basic-multiple" name="level[]" multiple="multiple">
+                                    <option value="junior">Junior</option>
+                                    <option value="middle">Middle</option>
+                                    <option value="pro">Pro</option>
+                                </select>
                             </div>
                             <div class="design-content__row flex">
                                 <img src="../../../img/corp/icons/book.png" alt="Book">
@@ -169,19 +175,30 @@
                             </div>
                             <div class="design-content__row flex">
                                 <img src="../../../img/corp/icons/calendar.png" alt="Calendar">
-                                <div class="dropdown-mul-1">
-                                    <select style="display:none" multiple placeholder="Select">
-                                        <option value="Понедельник">Понедельник</option>
-                                        <option value="Вторник">Вторник</option>
-                                        <option value="Среда">Среда</option>
-                                        <option value="Четверг">Четверг</option>
-                                        <option value="Пятница">Пятница</option>
-                                        <option value="Суббота">Суббота</option>
-                                        <option value="Восресенье">Восресенье</option>
-                                        <option value="Произвольно">Произвольно</option>
-                                        <option value="Ежедневно">Ежедневно</option>
-                                    </select>
-                                </div>
+<!--                                <div class="dropdown-mul-1">-->
+<!--                                    <select style="display:none" multiple placeholder="Select">-->
+<!--                                        <option value="Понедельник">Понедельник</option>-->
+<!--                                        <option value="Вторник">Вторник</option>-->
+<!--                                        <option value="Среда">Среда</option>-->
+<!--                                        <option value="Четверг">Четверг</option>-->
+<!--                                        <option value="Пятница">Пятница</option>-->
+<!--                                        <option value="Суббота">Суббота</option>-->
+<!--                                        <option value="Восресенье">Восресенье</option>-->
+<!--                                        <option value="Произвольно">Произвольно</option>-->
+<!--                                        <option value="Ежедневно">Ежедневно</option>-->
+<!--                                    </select>-->
+<!--                                </div>-->
+                                <select class="js-example-basic-multiple" name="period[]" multiple="multiple">
+                                    <option value="Понедельник">Понедельник</option>
+                                    <option value="Вторник">Вторник</option>
+                                    <option value="Среда">Среда</option>
+                                    <option value="Четверг">Четверг</option>
+                                    <option value="Пятница">Пятница</option>
+                                    <option value="Суббота">Суббота</option>
+                                    <option value="Восресенье">Восресенье</option>
+                                    <option value="Произвольно">Произвольно</option>
+                                    <option value="Ежедневно">Ежедневно</option>
+                                </select>
                             </div>
                             <div class="design-content__row flex">
                                 <img src="../../../img/corp/icons/medal.png" alt="Atom">
@@ -270,8 +287,9 @@
     </main>
 </div>
 
-<script src="../../../script/libs/SearchableMultiselect/jquery.dropdown.js"></script>
+<!--<script src="../../../script/libs/SearchableMultiselect/jquery.dropdown.js"></script>-->
 <script src="../../../script/libs/jquery.custom-select.js"></script>
+<script src="../../../script/libs/select2.min.js"></script>
 <script src="../../../script/libs/datepicker.min.js"></script>
 <script src="../../../script/inner.js"></script>
 <script src="../../../script/resp-menu.js"></script>
@@ -281,10 +299,13 @@
         $(document).ready(function () {
             $('.ui-ux_design-content select:not([multiple])').customSelect();
 
-            $('.dropdown-mul-1').dropdown({
-                limitCount: 40,
-                multipleMode: 'label',
-                choice: function () {}
+            // $('.dropdown-mul-1').dropdown({
+            //     limitCount: 40,
+            //     multipleMode: 'label',
+            //     choice: function () {}
+            // });
+            $('.js-example-basic-multiple').select2({
+                width: 'style'
             });
             $('#course-start input').datepicker();
             $('#course-end input').datepicker();

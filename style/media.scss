@@ -1769,6 +1769,9 @@
   .course-stats {
     flex-direction: column;
   }
+  .ui-ux_design-content .design-content__row .custom-select .custom-select__option--value:after {
+    margin-left: 2px;
+  }
 }
 @media screen and (max-width: 480px) {
   .user-vacancies-wrap {
