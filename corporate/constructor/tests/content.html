@@ -146,8 +146,9 @@
                         </h4>
                         <div class="vac-settings__block-content">
                             <div class="input-group has-error">
-                                <textarea>Введите вступительное слово</textarea>
+                                <textarea placeholder="Введите вступительное слово"></textarea>
                                 <p class="alert-error">Заполните, пожалуйста, поле</p>
+                                <h6 class="the-count"><span class="current-count">0</span> <span class="max-count">/ 300 </span></h6>
                             </div>
                         </div>
                     </div>
@@ -355,12 +356,12 @@
                                         </div>
                                         <div class="custom-table__cell">
                                             <div class="input-group test-scale">
-                                                <span>От 1</span>
+                                                <span>От <input type="number" min="1" max="10" value="1"/></span>
                                                 <input type="text" class="input-shdw answer" placeholder="Подпись (необязательно)"/>
                                                 <input class="scores input-shdw" type="text" value="0"/>
                                             </div>
                                             <div class="input-group test-scale">
-                                                <span>До 5</span>
+                                                <span>До <input type="number" min="1" max="10" value="10"/></span>
                                                 <input type="text" class="input-shdw answer" placeholder="Подпись (необязательно)"/>
                                                 <input class="scores input-shdw" type="text" value="10"/>
                                             </div>

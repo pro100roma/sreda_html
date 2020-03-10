@@ -154,10 +154,10 @@
                             <h4 class="title tools-title">
                                 КРАТКАЯ ИНФОРМАЦИЯ
                                 <div class="vac-tools">
-                                    <div class="input-group">
-                                        <input type="checkbox" class="checkbox" id="checkbox01" checked="checked" />
-                                        <label for="checkbox01"></label>
-                                    </div>
+<!--                                    <div class="input-group">-->
+<!--                                        <input type="checkbox" class="checkbox" id="checkbox01" checked="checked" />-->
+<!--                                        <label for="checkbox01"></label>-->
+<!--                                    </div>-->
                                     <div class="drag-block">
                                         <span></span>
                                         <span></span>
@@ -170,17 +170,18 @@
                                     <select>
                                         <option value="0">Junior</option>
                                         <option value="1">Middle</option>
-                                        <option value="2">Senior</option>
+                                        <option value="2">PRO</option>
                                     </select>
                                 </div>
                                 <div class="design-content__row webinar-date">Длительность вебинара
                                     <span id="webinar-length"><input type="text" value="1:30:00" /></span>
                                 </div>
-                                <div class="design-content__row">
+                                <div class="design-content__row webinar-test-wrap">
                                     <label class="test-radio">
                                         <input type="checkbox" name="webinar-end-test-checkbox" />
                                         <div class="test-radio__answer"><p>Тест по итогу вебинара</p></div>
                                     </label>
+                                    <span class="test-alert">Создан тест по итогу вебинара. Отредактировать тест Вы можете в разделе "Тесты"</span>
                                 </div>
                             </div>
 
@@ -204,8 +205,9 @@
                             </h4>
                             <div class="vac-settings__block-content">
                                 <div class="input-group">
-                                    <textarea class="has-error">Введите описание вебинара</textarea>
+                                    <textarea class="has-error" placeholder="Введите описание вебинара"></textarea>
                                     <p class="alert-error">Заполните, пожалуйста, поле</p>
+                                    <h6 class="the-count"><span class="current-count">0</span> <span class="max-count">/ 300 </span></h6>
                                 </div>
                             </div>
                         </div>
@@ -227,13 +229,16 @@
                             </h4>
                             <div class="vac-settings__block-content webinar-users-get flex f-w j-s-b">
                                 <div class="input-group">
-                                    <textarea>Возможность найти 2-5 эффективных инcтрумента для оценки и измерения сервиса</textarea>
+                                    <textarea placeholder="Возможность найти 2-5 эффективных инcтрумента для оценки и измерения сервиса"></textarea>
+                                    <h6 class="the-count"><span class="current-count">0</span> <span class="max-count">/ 300 </span></h6>
                                 </div>
                                 <div class="input-group">
-                                    <textarea>Отримати набір унікальних інструментів для втілення системи сервісу у вашій компанії (від сервіс-візії до стандартів клієнтського досвіду) та відпрацювати навички роб</textarea>
+                                    <textarea placeholder="Отримати набір унікальних інструментів для втілення системи сервісу у вашій компанії (від сервіс-візії до стандартів клієнтського досвіду) та відпрацювати навички роб"></textarea>
+                                    <h6 class="the-count"><span class="current-count">0</span> <span class="max-count">/ 300 </span></h6>
                                 </div>
                                 <div class="input-group">
-                                    <textarea>Ваша цель: установить объективный и прозрачный способ контроля работы персонала</textarea>
+                                    <textarea placeholder="Ваша цель: установить объективный и прозрачный способ контроля работы персонала"></textarea>
+                                    <h6 class="the-count"><span class="current-count">0</span> <span class="max-count">/ 300 </span></h6>
                                 </div>
                             </div>
                         </div>
@@ -259,7 +264,8 @@
                                     <p class="alert-error">Заполните, пожалуйста, поле</p>
                                 </div>
                                 <div class="input-group">
-                                    <textarea>26 апреля Центр Сервис Менеджмента запустил курс вебинаров, в котором мы собрали реальные кейсы и живые примеры, объединили работающие рекомендации и простые ответы на сложные вопросы.</textarea>
+                                    <textarea placeholder="26 апреля Центр Сервис Менеджмента запустил курс вебинаров, в котором мы собрали реальные кейсы и живые примеры, объединили работающие рекомендации и простые ответы на сложные вопросы."></textarea>
+                                    <h6 class="the-count"><span class="current-count">0</span> <span class="max-count">/ 300 </span></h6>
                                 </div>
                             </div>
                         </div>
@@ -486,12 +492,36 @@
                     <div class="input-group">
                         <textarea class="has-error" placeholder="Введите условия прохождения сертификации"></textarea>
                         <p class="alert-error">Заполните, пожалуйста, поле</p>
+                        <h6 class="the-count"><span class="current-count">0</span> <span class="max-count">/ 300 </span></h6>
+                    </div>
+                    <div class="s-cert-template">
+                        <h4 class="title">Шаблон сертификата <span class="hover-info">?</span><span class="hover-info-text box-shadow">Вы можете загрузить свой шаблон сертификата или использовать шаблон платформы SREDA</span></h4>
+                        <div class="upload-field-wrap flex j-c a-c">
+                            <div class="upload-logo">
+                                <div class="input-group">
+                                    <input id="file-input" type="file" name="file">
+                                    <label for="file-input" id="file-label"> <img class="upload-image" src="../../../img/corp/icons/download-arrow_blue.png"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blck-chk-wrap course-template-chk">
+                            <label class="test-radio">
+                                <input type="checkbox" name="template01" />
+                                <div class="test-radio__answer"><span class="answer">Использовать шаблон платформы SREDA</span></div>
+                            </label>
+                        </div>
+                        <div class="cert-template-descr">
+                            <strong>Обратите внимание</strong>: поля для автоматического заполнения данных студента фиксированы.
+                            <br>
+                            Скачайте <a href="#">шаблон</a> для просмотра заполненого сертификата.
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
 
-            <div class="design-content__row pl-20">
+            <div class="design-content__row pl-20 pr-20 text-center">
                 <input type="submit" value="Сохранить" class="btn btn-submit" />
             </div>
         </form>

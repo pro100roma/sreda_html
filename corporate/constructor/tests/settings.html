@@ -168,7 +168,12 @@
                     </div>
                     <div class="webinar-description-block">
                         <div class="ui-ux_design_title">
-                            <h2>UI/UX design</h2>
+                            <div class="design-content__row design-content__webinar-name">
+                                <div class="input-group">
+                                    <input type="text" value="UI/UX design" class="has-error input-shdw" placeholder="Название"/>
+                                    <p class="alert-error">Заполните, пожалуйста, поле..</p>
+                                </div>
+                            </div>
                         </div>
 
                             <div class="multiselect-wrap">
@@ -200,22 +205,22 @@
                                         <div class="test-radio__answer"><span class="answer">Перемешать ответы</span></div>
                                     </label>
                                 </div>
-                                <div class="design-content__row">Минимальный результат прохождения
-                                    <select>
-                                        <option value="0">50%</option>
-                                        <option value="1">60%</option>
-                                        <option value="2">70%</option>
-                                        <option value="3">80%</option>
-                                        <option value="4">90%</option>
-                                    </select>
+                                <div class="design-content__row min-res-wrap">Минимальный результат прохождения
+                                    <a href="#" class="min_res-output_link">50%</a>
+                                    <div class="min_res-wrap box-shadow">
+                                        <div class="min_res-output">50%</div>
+                                        <input type="range" min="1" max="100" value="50" class="test-min_res" id="min_res">
+                                    </div>
                                 </div>
                                 <div class="design-content__row">Количество повторных попыток
                                     <select>
                                         <option value="0">0</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
                                         <option value="3">5</option>
-                                        <option value="4">Бесконечно</option>
+                                        <option value="4">Без ограничений</option>
                                     </select>
                                 </div>
                                 <div class="design-content__row">Подача теста
@@ -225,7 +230,7 @@
                                     </select>
                                 </div>
 
-                                <div class="design-content__row history">Изменена: <span>20.04.2019 в 16:41</span><img src="../../../img/corp/icons/history.png" alt="History" /></div>
+                                <div class="design-content__row history">Изменена: <span>20.04.2019 в 16:41</span><!--<img src="../../../img/corp/icons/history.png" alt="History" />--></div>
                             </div>
                             <div class="design-content__row">
                                 <input type="submit" value="Сохранить" class="btn btn-submit" />

@@ -115,20 +115,14 @@
 
         <!-- Top Buttons Container Start -->
         <div class="top-buttons-wrappper flex f-w">
-            <a href="../webinars/descr.html" class="a-btn box-shadow">
-                Описание
-            </a>
             <a href="settings.html" class="a-btn box-shadow">
                 Настройки
             </a>
-            <a href="../courses.html" class="a-btn box-shadow">
-                Тесты\опросы
+            <a href="content.html" class="a-btn box-shadow">
+                Содержание
             </a>
             <a href="members.html" class="a-btn blue-gradient-background box-shadow">
                 Участники
-            </a>
-            <a href="../webinars/materials.html" class="a-btn box-shadow">
-                Материалы
             </a>
         </div>
         <!--  Top Buttons Container End  -->
@@ -184,21 +178,43 @@
             </div>
 
             <div class="generate-link-wrap">
-                <h4 class="title">АНОНИМНОЕ ЗАПОЛНЕНИЕ</h4>
-                <form action="">
-                    <div class="input-group">
-                        <input type="submit" value="Сгенерировать ссылку" class="blue-gradient-background box-shadow" />
+                <h4 class="title tools-title">
+                    АНОНИМНОЕ ЗАПОЛНЕНИЕ
+                    <div class="vac-tools">
+                        <div class="input-group">
+                            <input type="checkbox" class="checkbox" id="checkbox01" />
+                            <label for="checkbox01"></label>
+                        </div>
                     </div>
-                    <div class="input-group link-input-wrap flex has-error">
-                        <img src="../../../img/corp/icons/link.png" alt="" />
-                        <input type="text" name="generate-link" class="input-blue" />
-                        <p class="alert-error">Заполните, пожалуйста, поле</p>
+                </h4>
+<!--&lt;!&ndash;                <form action="">&ndash;&gt;-->
+<!--                    <div class="input-group">-->
+<!--&lt;!&ndash;                        <input type="submit" value="Сгенерировать ссылку" class="blue-gradient-background box-shadow" />&ndash;&gt;-->
+<!--                        <a href="#" class="blue-gradient-background box-shadow">Сгенерировать ссылку</a>-->
+<!--                    </div>-->
+<!--                    <div class="input-group link-input-wrap flex">-->
+<!--                        <img src="../../../img/corp/icons/link.png" alt="" />-->
+<!--                        <input type="text" name="generate-link" class="input-blue" value="https://example.com" />-->
+<!--&lt;!&ndash;                        <p class="alert-error">Заполните, пожалуйста, поле</p>&ndash;&gt;-->
+<!--                        <p class="link-copied">Ссылка скопирована</p>-->
+<!--                    </div>-->
+<!--&lt;!&ndash;                </form>&ndash;&gt;-->
+                <div class="link-btn-wrapper">
+                    <a class="link-btn" href="#">Сгенерировать ссылку</a>
+                </div>
+                <div class="link-container">
+                    <div class="link-field" type="text">
+                        <i class="copy-link" onclick="copyElementText('heading')" onmouseout="outFunc()"></i>
+                        <span class="generated-link" id="heading">https://www.google.com</span>
+                        <div class="informMessage">
+                            <i>Ваша ссылка скопирована в буфер обмена</i>
+                        </div>
                     </div>
-                </form>
+                </div>
             </div>
 
-            <div class="ui-ux_design-content mt-50">
-                <h4 class="title">Назначить курс</h4>
+            <div class="ui-ux_design-content mt-50 assign-test-show">
+                <h4 class="title">Назначить тест</h4>
                 <div class="test-members-designate-sort">
                     <label class="test-radio">
                         <input type="checkbox" name="test-sort01" />
@@ -233,10 +249,15 @@
             </div>
 
 
-            <div class="table-wrap mt-50 ui-ux_design-content">
+            <div class="table-wrap mt-50 ui-ux_design-content assign-test-show">
                 <div class="custom-table test-member-table">
                     <div class="custom-table__header flex j-s-b">
-                        <div class="custom-table__col">ФИО</div>
+                        <div class="custom-table__col">
+                            <label class="test-radio">
+                                <input type="checkbox" name="check-all" class="check-all" />
+                                <div class="test-radio__answer"><span class="answer">ФИО</span></div>
+                            </label>
+                        </div>
                         <div class="custom-table__col">Email</div>
                         <div class="custom-table__col">Регион</div>
                         <div class="custom-table__col">Локация</div>
@@ -288,7 +309,7 @@
                     </div>
                 </div>
             </div>
-            <a href="#" class="a-btn blue-gradient-background box-shadow save-table">Назначить курс</a>
+            <a href="#" class="a-btn blue-gradient-background box-shadow save-table assign-test-show">Назначить тест</a>
 
 
         </div><!-- /Content -->
@@ -299,6 +320,7 @@
 <script src="../../../script/libs/jquery.custom-select.js"></script>
 <script src="../../../script/inner.js"></script>
 <script src="../../../script/resp-menu.js"></script>
+<script src="../../../script/copy-link.js"></script>
 <script src="../../../script/common.js"></script>
 <script>
     jQuery(function ($) {

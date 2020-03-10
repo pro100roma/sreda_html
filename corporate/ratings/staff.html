@@ -379,6 +379,16 @@
                 </div>
             </div>
 
+            <div class="more-content">
+                <a href="#">+ Показать ещё 50</a>
+            </div>
+            <div class="pag-nav">
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <span>...</span>
+                <a href="#">21</a>
+            </div>
         </div>
 
 
@@ -429,6 +439,14 @@
         // Configuration options go here
         options: {
             maintainAspectRatio: false,
+            tooltips: {
+                mode: 'index',
+                intersect: false,
+            },
+            hover: {
+                mode: 'nearest',
+                intersect: true
+            },
             scales: {
                 yAxes: [{
                     stacked: true,

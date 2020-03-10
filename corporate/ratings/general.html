@@ -176,7 +176,19 @@
             <div class="charts-wrap flex f-w j-s-b">
                 <div class="chart-wrap chart01-wrap box-shadow">
                     <h3 class="title"><a href="region.html">Индекс активности по всем курсам</a></h3>
-                    <canvas id="chart01"></canvas>
+<!--                    <div class="chartWrapper">-->
+<!--                        <canvas id="chart01" width="800" height="240"></canvas>-->
+<!--                    </div>-->
+                    <div class="chartWrapper">
+                        <div class="chartAreaWrapper">
+                            <div class="chartAreaWrapper2">
+                                <canvas id="chart01" height="240" width="1200"></canvas>
+                            </div>
+                        </div>
+                        <canvas id="axis01" height="240" width="0"></canvas>
+                    </div>
+
+
                 </div>
                 <div class="chart-wrap chart02-wrap box-shadow">
                     <h3 class="title">Общие результаты тестирования</h3>
@@ -287,7 +299,6 @@
 <!--        crossorigin="anonymous"></script>-->
 
 <script src="../../script/common.js"></script>
-
 <script>
     jQuery(function ($) {
         $(document).ready(function () {
@@ -295,50 +306,160 @@
                 search: true
             });
             $('.cust-select-wrap select').customSelect();
-
         });
+
     });
 
     //Chart
-    var ctx01 = document.getElementById('chart01').getContext('2d');
+    //var ctx01 = document.getElementById('chart01').getContext('2d');
     var ctx04 = document.getElementById('chart04').getContext('2d');
 
-    var chart01 = new Chart(ctx01, {
-        // The type of chart we want to create
-        type: 'bar',
+    // var chart01 = new Chart(ctx01, {
+    //     // The type of chart we want to create
+    //     type: 'bar',
+    //
+    //     // The data for our dataset
+    //     data: {
+    //         labels: ['Мск', 'Питер', 'Орел', 'Ижевск', 'Самара', 'Казань', 'Перьм', 'Ек-бг', 'Омск'],
+    //         datasets: [{
+    //             label: '',
+    //             backgroundColor: '#3fc4d7',
+    //             data: [35, 10, 15, 20, 20, 40, 40, 25, 30],
+    //         }],
+    //     },
+    //
+    //     // Configuration options go here
+    //     options: {
+    //         responsive: false,
+    //         maintainAspectRatio: false,
+    //         legend: {
+    //             display: false
+    //         },
+    //         scales: {
+    //             yAxes: [{
+    //                 stacked: true,
+    //                 gridLines: {
+    //                     display: false,
+    //                 },
+    //                 ticks: {
+    //                     //display:false, // hide main x-axis line
+    //                 },
+    //             }],
+    //             xAxes: [{
+    //                 gridLines: {
+    //                     display: false,
+    //                     drawBorder: false,
+    //                 },
+    //                 barThickness: 25,
+    //             }]
+    //         },
+    //     }
+    // });
+    //function chartFit() {
+    //     let chartCanvas = document.getElementById('chart01'),
+    //         chart01BarThickness = chart01.options.scales.xAxes[0].barThickness,
+    //         chart01DataLength = chart01.data.labels.length;
+    //     chartCanvas.width = (chart01BarThickness + 15) * chart01DataLength + 100;
+    //}
 
-        // The data for our dataset
-        data: {
-            labels: ['Мск', 'Питер', 'Орел', 'Ижевск', 'Самара', 'Казань', 'Перьм', 'Ек-бг', 'Омск'],
+    $(document).ready(function () {
+
+        function addData(numData, chart) {
+            for (var i = 0; i < numData; i++) {
+                //chart.data.datasets[0].data.push(Math.random() * 100);
+                //chart.data.labels.push("Label" + i);
+                var newwidth = $('.chartAreaWrapper2').width() + 60;
+                $('.chartAreaWrapper2').width(newwidth);
+            }
+        }
+
+        var chartData = {
+            labels: ['Мск', 'Питер', 'Орел', 'Ижевск', 'Самара', 'Казань', 'Перьм', 'Ек-бг', 'Омск', 'Мск', 'Питер'],
             datasets: [{
                 label: '',
                 backgroundColor: '#3fc4d7',
-                data: [35, 10, 15, 20, 20, 40, 40, 25, 30, 5, 10],
+                data: [35, 10, 15, 20, 20, 40, 40, 25, 30, 35, 10],
             }],
-        },
+        };
 
-        // Configuration options go here
-        options: {
-            scales: {
-                yAxes: [{
-                    stacked: true,
-                    gridLines: {
-                        display: false,
+
+
+        $(function () {
+            var rectangleSet = false;
+
+            var canvasTest = $('#chart01');
+            var chartTest = new Chart(canvasTest, {
+                type: 'bar',
+                data: chartData,
+                maintainAspectRatio: false,
+                responsive: true,
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    legend: {
+                        display: false
                     },
-                    ticks: {
-                        //display:false, // hide main x-axis line
+                    scales: {
+                        yAxes: [{
+                            stacked: true,
+                            gridLines: {
+                                display: false,
+                            },
+                            ticks: {
+                                display:false, // hide main x-axis line
+                            },
+                        }],
+                        xAxes: [{
+                            gridLines: {
+                                display: false,
+                                drawBorder: false,
+                            },
+                            barThickness: 25,
+                        }]
                     },
-                }],
-                xAxes: [{
-                    gridLines: {
-                        display: false,
-                        drawBorder: false,
-                    },
-                    barThickness: 25,
-                }]
-            }
-        }
+                    animation: {
+                        onComplete: function () {
+                            if (!rectangleSet) {
+                                var scale = window.devicePixelRatio;
+
+                                var sourceCanvas = chartTest.chart.canvas;
+                                var copyWidth = chartTest.scales['y-axis-0'].width - 10;
+                                var copyHeight = chartTest.scales['y-axis-0'].height + chartTest.scales['y-axis-0'].top + 10;
+
+                                var targetCtx = document.getElementById("axis01").getContext("2d");
+
+                                targetCtx.scale(scale, scale);
+                                targetCtx.canvas.width = copyWidth * scale;
+                                targetCtx.canvas.height = copyHeight * scale;
+
+                                targetCtx.canvas.style.width = `${copyWidth}px`;
+                                targetCtx.canvas.style.height = `${copyHeight}px`;
+                                targetCtx.drawImage(sourceCanvas, 0, 0, copyWidth * scale, copyHeight * scale, 0, 0, copyWidth * scale, copyHeight * scale);
+
+                                var sourceCtx = sourceCanvas.getContext('2d');
+
+                                // Normalize coordinate system to use css pixels.
+
+                                sourceCtx.clearRect(0, 0, copyWidth * scale, copyHeight * scale);
+                                rectangleSet = true;
+                            }
+                        },
+                        onProgress: function () {
+                            if (rectangleSet === true) {
+                                var copyWidth = chartTest.scales['y-axis-0'].width;
+                                var copyHeight = chartTest.scales['y-axis-0'].height + chartTest.scales['y-axis-0'].top + 10;
+
+                                var sourceCtx = chartTest.chart.canvas.getContext('2d');
+                                sourceCtx.clearRect(0, 0, copyWidth, copyHeight);
+                            }
+                        }
+                    }
+                }
+            });
+            addData(4, chartTest);
+        });
     });
+
 
     var chart04 = new Chart(ctx04, {
         // The type of chart we want to create
@@ -357,6 +478,17 @@
 
         // Configuration options go here
         options: {
+            legend: {
+                display: false
+            },
+            tooltips: {
+                mode: 'index',
+                intersect: false,
+            },
+            hover: {
+                mode: 'nearest',
+                intersect: true
+            },
             scales: {
                 yAxes: [{
                     stacked: true,
@@ -373,7 +505,9 @@
             }
         }
     });
+
 </script>
+
 
 </body>
 </html>

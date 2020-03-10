@@ -4004,6 +4004,67 @@ body {
     outline: none;
     font-size: 16px; }
 
+.select2-container {
+  width: 260px; }
+
+.select2-container.select2-container--default .select2-selection--multiple:after {
+  content: '';
+  border: 8px solid transparent;
+  border-top: 8px solid #49cadc;
+  top: 10px;
+  position: absolute;
+  right: 0px; }
+
+.select2-container--default.select2-container--focus .select2-selection--multiple,
+.select2-container--default .select2-selection--multiple {
+  border: none;
+  border-bottom: 1px solid #000;
+  border-radius: 0; }
+  .select2-container--default.select2-container--focus .select2-selection--multiple .select2-selection__choice,
+  .select2-container--default .select2-selection--multiple .select2-selection__choice {
+    border: none;
+    background: none; }
+    .select2-container--default.select2-container--focus .select2-selection--multiple .select2-selection__choice .select2-selection__choice__remove,
+    .select2-container--default .select2-selection--multiple .select2-selection__choice .select2-selection__choice__remove {
+      color: #3ec5d9;
+      line-height: 10px;
+      vertical-align: top; }
+
+.select2-results__options {
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  padding: 10px 16px;
+  background: #fff; }
+
+.select2-dropdown {
+  border: none; }
+
+.select2-results__option {
+  font-size: 14px;
+  color: #000000;
+  background: none;
+  position: relative; }
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background: #eee;
+  color: #000000; }
+
+.select2-container--default .select2-results__option[aria-selected=true] {
+  color: #000000;
+  background: none; }
+
+.select2-container--default .select2-results__option[aria-selected=true]:after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  background: #3ec5d9;
+  right: 0;
+  border-radius: 50%;
+  right: 0;
+  display: inline-block;
+  vertical-align: middle; }
+
 @media (max-width: 1769px) {
   body #papa main#main .card-container .card {
     width: calc( 33.333333% - 30px ); } }

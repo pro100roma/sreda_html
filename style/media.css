@@ -1261,6 +1261,7 @@
 
   .tools-title.title {
     padding-right: 0;
+    padding-left: 0;
     overflow: visible;
     margin-top: 60px;
     height: auto; }

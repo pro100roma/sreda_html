@@ -113,13 +113,20 @@ jQuery(function ($) {
         });
 
         //Constructor content test name click
-        $('.test-edit .test-edit__name').click(function() {
+        $('.test-edit .test-edit__name').click(function(e) {
+            e.preventDefault();
             $(this).toggleClass('active');
             if($(this).siblings('.test-edit__descr').is(':visible')) {
-                $(this).siblings('.test-edit__descr').fadeOut(300);
+                $(this).siblings('.test-edit__descr').hide();
             } else {
-                $(this).siblings('.test-edit__descr').fadeIn(300);
+                $(this).siblings('.test-edit__descr').show();
             }
+            // if($(this).parents('.custom-table__row').find('.test-radio').is(':visible')) {
+            //     $(this).parents('.custom-table__row').find('.test-radio').fadeOut(300);
+            // } else {
+            //     $(this).parents('.custom-table__row').find('.test-radio').fadeIn(300);
+            // }
+            $(this).parents('.custom-table__row').find('.custom-table__cell:nth-of-type(3)').toggleClass('opened');
         });
 
         //Regular webinar
@@ -289,6 +296,65 @@ jQuery(function ($) {
         $('.title .hover-info').mouseleave(function() {
             $(this).siblings('.hover-info-text').fadeOut(300);
         });
+
+        $('.min_res-output_link').click(function(e) {
+            if($(this).siblings('.min_res-wrap').is(':visible')) {
+                $(this).siblings('.min_res-wrap').fadeOut(300);
+            } else {
+                $(this).siblings('.min_res-wrap').fadeIn(300);
+            }
+        });
+
+        $(document).on('click', function(e) {
+            let targ = e.target;
+            if(targ.classList.contains('min_res-output_link') || targ.classList.contains('min_res-wrap') || targ.classList.contains('test-min_res')) {
+                console.log('1');
+            } else {
+                $('.min_res-wrap').fadeOut(300);
+            }
+
+        });
+        //Input range
+        $('#min_res').change(function() {
+            $('.min_res-output').text($(this).val() + '%');
+            $('.min_res-output_link').text($(this).val() + '%');
+        });
+
+        //Textarea symbols count
+        $('textarea').keyup(function() {
+            let characterCount = $(this).val().length,
+                currentCount = $(this).parent('.input-group').find('.current-count');
+
+            currentCount.text(characterCount);
+        });
+
+        //Check all table's checkboxes
+        $('.check-all').change(function() {
+            $('.custom-table').find('.custom-table__body input[type="checkbox"]').prop('checked', $(this).is(':checked'));
+        });
+
+        //Test after webinar checkbox change
+        $('.webinar-test-wrap').on('change', 'input[type="checkbox"]', function() {
+            if($(this).is(':checked')) {
+                $(this).parents('.webinar-test-wrap').find('.test-alert').fadeIn(300);
+
+                setTimeout(function() {
+                    $('.test-alert').fadeOut(300);
+                }, 2000);
+            }
+        });
+
+        //Generate link change
+        $('.generate-link-wrap .tools-title input[type="checkbox"]').change(function() {
+            if($(this).is(':checked')) {
+                $('.link-btn-wrapper, .link-container').slideDown(300);
+                $('.assign-test-show').slideUp(300);
+            } else {
+                $('.link-btn-wrapper, .link-container').slideUp(300);
+                $('.assign-test-show').slideDown(300);
+            }
+        });
+
 
 
         //Media queries
