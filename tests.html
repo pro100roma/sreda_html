@@ -8,6 +8,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/i-style/style.css">
+    <link rel="stylesheet" href="style/roman.css">
     <link rel="stylesheet" href="style/media.css">
     <!-- Styles -->
     <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
@@ -102,37 +103,32 @@
         </div>
         <!--  Top Buttons Container End  -->
 
-        <!-- Filters Select Start -->
-        <div class="filters-wrapper flex f-w">
-            <div class="filter custom-select-filter">
+        <!-- Filters Selcet Start -->
+        <div class="filters-wrapper test-members-designate-sort flex f-w">
+            <div class="filter cust-select-wrap custom-select-filter">
                 <div class="custom-select-wrapper">
                     <select>
-                        <option value="0">Вид работы</option>
-                        <option value="1">Тест</option>
-                        <option value="2">Домашнее задание</option>
+                        <option value="1">Вид работы</option>
+                        <option value="2">Тест</option>
+                        <option value="3">Домашнее задание</option>
                     </select>
                 </div>
             </div>
-            <div class="filter custom-select-filter">
+            <div class="filter cust-select-wrap custom-select-filter">
                 <div class="custom-select-wrapper">
                     <select>
-                        <option value="12">Категория обучения</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
+                        <option value="1">Категория обучения</option>
+                        <option value="2">Категория 2</option>
+                        <option value="3">Категория 3</option>
                     </select>
                 </div>
             </div>
-            <div class="filter custom-select-filter">
+            <div class="filter cust-select-wrap custom-select-filter">
                 <div class="custom-select-wrapper">
                     <select>
-                        <option value="0">Статус теста/ДЗ</option>
-                        <option value="1">Пройдено</option>
-                        <option value="2">Не пройдено</option>
+                        <option value="1">Статус теста/ДЗ</option>
+                        <option value="2">Пройдено</option>
+                        <option value="3">Не пройдено</option>
                     </select>
                 </div>
             </div>
@@ -145,7 +141,7 @@
                 </select>
             </div>
         </div>
-        <!--  Filters Select End  -->
+        <!--  Filters Selcet End  -->
         <!-- card-container Start -->
         <div class="card-container flex f-w">
 
@@ -500,12 +496,16 @@
 </div>
 
 <script src="script/libs/jquery.custom-select.js"></script>
-<script src="script/libs/customSelect.js"></script>
 <script src="script/inner.js"></script>
 <script src="script/resp-menu.js"></script>
 <script>
-    $('.select-search select').customSelect({
-        search: true
+    jQuery(function ($) {
+        $(document).ready(function () {
+            $('.select-search select').customSelect({
+                search: true
+            });
+            $('.custom-select-filter select').customSelect();
+        });
     });
 </script>
 

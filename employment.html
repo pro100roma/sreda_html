@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/i-style/style.css">
     <link rel="stylesheet" href="style/media.css">
+    <link rel="stylesheet" href="style/roman.css">
     <link rel="stylesheet" href="style/libs/owl.carousel.min.css">
     <!-- Styles -->
     <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
@@ -101,51 +102,43 @@
         <!--  Top Buttons Container End  -->
 
         <!-- Filters Select Start -->
-        <div class="filters-wrapper flex f-w">
-            <div class="filter custom-select-filter">
+        <div class="filters-wrapper test-members-designate-sort flex f-w">
+            <div class="filter cust-select-wrap custom-select-filter">
                 <div class="custom-select-wrapper">
                     <select>
-                        <option value="12">Уровень должности</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
+                        <option value="1">Уровень должности</option>
+                        <option value="2">1</option>
+                        <option value="3">1</option>
+                        <option value="4">1</option>
+                        <option value="5">1</option>
                     </select>
                 </div>
             </div>
-            <div class="filter custom-select-filter">
+            <div class="filter cust-select-wrap custom-select-filter">
                 <div class="custom-select-wrapper">
                     <select>
-                        <option value="12">Специализация</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
+                        <option value="1">Специализация</option>
+                        <option value="2">1</option>
+                        <option value="3">1</option>
+                        <option value="4">1</option>
+                        <option value="5">1</option>
                     </select>
                 </div>
             </div>
-            <div class="filter custom-select-filter">
+            <div class="filter cust-select-wrap custom-select-filter">
                 <div class="custom-select-wrapper">
                     <select>
-                        <option value="12">Местонахождение </option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
+                        <option value="1">Местонахождение</option>
+                        <option value="2">1</option>
+                        <option value="3">1</option>
+                        <option value="4">1</option>
+                        <option value="5">1</option>
                     </select>
                 </div>
             </div>
         </div>
         <!--  Filters Select End  -->
+
         <!-- card-container Start -->
         <div class="card-container flex f-w">
 
@@ -601,8 +594,20 @@
 </div>
 
 <script src="script/libs/owl.carousel.min.js"></script>
-<script src="script/libs/customSelect.js"></script>
+<script src="script/libs/jquery.custom-select.js"></script>
 <script src="script/inner.js"></script>
 <script src="script/resp-menu.js"></script>
+
+<script>
+    jQuery(function ($) {
+        $(document).ready(function () {
+            $('.select-search select').customSelect({
+                search: true
+            });
+            $('.custom-select-filter select').customSelect();
+        });
+    });
+</script>
+
 </body>
 </html>

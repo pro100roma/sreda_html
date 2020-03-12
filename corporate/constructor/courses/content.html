@@ -558,30 +558,53 @@
                                             <div class="custom-table__cell">
                                                 <label class="test-radio">
                                                     <input type="radio" name="test03" />
-                                                    <div class="test-radio__answer"></div><input type="text" class="answer input-shdw" value="Введите вариант ответа"/><input class="scores input-shdw" type="text" value="0"/>
+                                                    <div class="test-radio__answer"></div>
+                                                    <label id="test-label_01-01">
+                                                        <input type="text" class="answer input-shdw" value="Введите вариант ответа"/>
+                                                    </label>
+                                                    <input class="scores input-shdw" type="text" value="0"/>
                                                 </label>
+
                                                 <label class="test-radio">
                                                     <input type="radio" name="test03" />
-                                                    <div class="test-radio__answer"></div><input type="text" class="answer input-shdw" value="Введите вариант ответа"/><input class="scores input-shdw" type="text" value="100"/>
+                                                    <div class="test-radio__answer"></div>
+                                                    <label id="test-label_01-02">
+                                                        <input type="text" class="answer input-shdw" value="Введите вариант ответа"/>
+                                                    </label>
+                                                    <input class="scores input-shdw" type="text" value="100"/>
                                                 </label>
+
                                                 <label class="test-radio">
                                                     <input type="radio" name="test03" />
-                                                    <div class="test-radio__answer"></div><input type="text" class="answer input-shdw" value="Другое"/><input class="scores input-shdw" type="text" value="0"/>
+                                                    <div class="test-radio__answer"></div>
+                                                    <label id="test-label_01-03">
+                                                        <input type="text" class="answer input-shdw" value="Другое"/>
+                                                    </label>
+                                                    <input class="scores input-shdw" type="text" value="0"/>
                                                 </label>
 
                                                 <a href="#" class="circle-add add-answer">+</a>
                                             </div>
                                             <div class="custom-table__cell"></div>
                                             <div class="custom-table__cell">
-                                                <a href="#" title="Edit">
-                                                    <img src="../../../img/corp/icons/download-arrow_blue.png" alt="Edit">
-                                                </a>
-        <!--                                        <form class="upload-container" method="POST" action="">-->
-        <!--                                            <div>-->
-        <!--                                                <input id="file-input" type="file" name="file">-->
-        <!--                                                <label for="file-input">Загрузить фото<img class="upload-image" src="../img/corp/icons/download-arrow_blue.png"></label>-->
-        <!--                                            </div>-->
-        <!--                                        </form>-->
+                                                <div class="upload-answer">
+                                                    <div class="input-group">
+                                                        <input id="test-answer_01-01" type="file" name="file" class="test-answer">
+                                                        <label for="test-answer_01-01"><img class="upload-image" src="../../../img/corp/icons/download-arrow_blue.png" /></label>
+                                                    </div>
+                                                </div>
+                                                <div class="upload-answer">
+                                                    <div class="input-group">
+                                                        <input id="test-answer_01-02" type="file" name="file" class="test-answer">
+                                                        <label for="test-answer_01-02"><img class="upload-image" src="../../../img/corp/icons/download-arrow_blue.png" /></label>
+                                                    </div>
+                                                </div>
+                                                <div class="upload-answer">
+                                                    <div class="input-group">
+                                                        <input id="test-answer_01-03" type="file" name="file" class="test-answer">
+                                                        <label for="test-answer_01-03"><img class="upload-image" src="../../../img/corp/icons/download-arrow_blue.png" /></label>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
 
@@ -641,12 +664,12 @@
                                             </div>
                                             <div class="custom-table__cell">
                                                 <div class="input-group test-scale">
-                                                    <span>От 1</span>
+                                                    <span>От <input type="number" min="1" max="10" value="1"/></span>
                                                     <input type="text" class="input-shdw answer" placeholder="Подпись (необязательно)"/>
                                                     <input class="scores input-shdw" type="text" value="0"/>
                                                 </div>
                                                 <div class="input-group test-scale">
-                                                    <span>До 5</span>
+                                                    <span>До <input type="number" min="1" max="10" value="10"/></span>
                                                     <input type="text" class="input-shdw answer" placeholder="Подпись (необязательно)"/>
                                                     <input class="scores input-shdw" type="text" value="10"/>
                                                 </div>
@@ -678,20 +701,37 @@
                                             <div class="custom-table__cell">
                                                 <label class="test-radio">
                                                     <input type="checkbox" name="test04" />
-                                                    <div class="test-radio__answer"></div><input type="text" class="answer input-shdw" value="Введите вариант ответа"/><input class="scores input-shdw" type="text" value="0"/>
+                                                    <div class="test-radio__answer"></div>
+                                                    <label id="test-label_02-01">
+                                                        <input type="text" class="answer input-shdw" value="Введите вариант ответа"/>
+                                                    </label>
+                                                    <input class="scores input-shdw" type="text" value="0"/>
                                                 </label>
                                                 <label class="test-radio">
                                                     <input type="checkbox" name="test04" />
-                                                    <div class="test-radio__answer"></div><input type="text" class="answer input-shdw" value="Введите вариант ответа"/><input class="scores input-shdw" type="text" value="100"/>
+                                                    <div class="test-radio__answer"></div>
+                                                    <label id="test-label_02-02">
+                                                        <input type="text" class="answer input-shdw" value="Введите вариант ответа"/>
+                                                    </label>
+                                                    <input class="scores input-shdw" type="text" value="100"/>
                                                 </label>
 
                                                 <a href="#" class="circle-add add-answer">+</a>
                                             </div>
                                             <div class="custom-table__cell"></div>
                                             <div class="custom-table__cell">
-                                                <a href="#" title="Edit">
-                                                    <img src="../../../img/corp/icons/download-arrow_blue.png" alt="Edit">
-                                                </a>
+                                                <div class="upload-answer">
+                                                    <div class="input-group">
+                                                        <input id="test-answer_02-01" type="file" name="file" class="test-answer">
+                                                        <label for="test-answer_02-01"><img class="upload-image" src="../../../img/corp/icons/download-arrow_blue.png" /></label>
+                                                    </div>
+                                                </div>
+                                                <div class="upload-answer">
+                                                    <div class="input-group">
+                                                        <input id="test-answer_02-02" type="file" name="file" class="test-answer">
+                                                        <label for="test-answer_02-02"><img class="upload-image" src="../../../img/corp/icons/download-arrow_blue.png" /></label>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
 
@@ -717,16 +757,21 @@
                                             </div>
                                             <div class="custom-table__cell">
                                                 <div class="input-group">
-                                                    <input type="text" class="input-shdw answer" value="15+ символов"/>
+                                                    <label id="test-label_03-01">
+                                                        <input type="text" class="input-shdw answer" value="15+ символов"/>
+                                                    </label>
                                                 </div>
 
                                                 <a href="#" class="circle-add add-answer">+</a>
                                             </div>
                                             <div class="custom-table__cell"></div>
                                             <div class="custom-table__cell">
-                                                <a href="#" title="Edit">
-                                                    <img src="../../../img/corp/icons/download-arrow_blue.png" alt="Edit">
-                                                </a>
+                                                <div class="upload-answer">
+                                                    <div class="input-group">
+                                                        <input id="test-answer_03-01" type="file" name="file" class="test-answer">
+                                                        <label for="test-answer_03-01"><img class="upload-image" src="../../../img/corp/icons/download-arrow_blue.png" /></label>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
 
@@ -759,6 +804,17 @@
         $(document).ready(function () {
             $('.vac-test__descr select').customSelect();
             $('.custom-table__edit-row select').customSelect();
+
+            //Upload image as test answer
+            $('.test-answer').change(function() {
+                let elemId = $(this).attr('id'),
+                    arr = elemId.split("_"),
+                    answerNum = arr[1];
+
+                if (this.files[0]) { // если выбрали файл
+                    $('#test-label_'+ answerNum +' .answer').val(this.files[0].name);
+                }
+            });
         });
     });
 </script>

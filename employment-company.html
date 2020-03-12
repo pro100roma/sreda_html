@@ -8,6 +8,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/i-style/style.css">
+    <link rel="stylesheet" href="style/roman.css">
     <link rel="stylesheet" href="style/media.css">
     <!-- Styles -->
     <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
@@ -84,24 +85,30 @@
 
         <!-- Top Buttons Container Start -->
         <div class="top-buttons-wrappper flex f-w">
-            <a href="" class="a-btn box-shadow">
+            <a href="#" class="a-btn box-shadow">
                 Данные
             </a>
-            <a href="" class="a-btn box-shadow">
+            <a href="#" class="a-btn box-shadow">
                 Сертификаты
             </a>
-            <a href="" class="a-btn box-shadow blue-gradient-background">
+            <a href="#" class="a-btn box-shadow blue-gradient-background">
                 Трудоустройство
             </a>
         </div>
         <!--  Top Buttons Container End  -->
 
-        <!-- Filters Select Start -->
-        <div class="filters-wrapper flex f-w">
-            <div class="filter custom-select-filter">
+        <!-- Filters Selcet Start -->
+        <div class="filters-wrapper test-members-designate-sort flex f-w">
+            <div class="filter cust-select-wrap custom-select-filter">
+                <label class="test-radio">
+                    <input type="checkbox" name="test-sort01" />
+                    <div class="test-radio__answer"><span class="answer">Популярность</span></div>
+                </label>
+            </div>
+            <div class="filter cust-select-wrap custom-select-filter">
                 <div class="custom-select-wrapper">
                     <select>
-                        <option value="12">Уровень должности</option>
+                        <option value="12">Категория</option>
                         <option value="12">1</option>
                         <option value="12">1</option>
                         <option value="12">1</option>
@@ -112,64 +119,29 @@
                     </select>
                 </div>
             </div>
-            <div class="filter custom-select-filter">
+            <div class="filter cust-select-wrap custom-select-filter">
                 <div class="custom-select-wrapper">
                     <select>
-                        <option value="12">Специализация</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
+                        <option value="0">Уровень пользователя</option>
+                        <option value="1">Junior</option>
+                        <option value="2">Middle</option>
+                        <option value="3">PRO</option>
                     </select>
                 </div>
             </div>
-            <div class="filter custom-select-filter">
+            <div class="filter cust-select-wrap custom-select-filter">
                 <div class="custom-select-wrapper">
                     <select>
-                        <option value="12">Местонахождение </option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
-                    </select>
-                </div>
-            </div>
-            <div class="filter custom-select-filter">
-                <div class="custom-select-wrapper">
-                    <select>
-                        <option value="12">Уровень пользователя</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
-                    </select>
-                </div>
-            </div>
-            <div class="filter custom-select-filter">
-                <div class="custom-select-wrapper">
-                    <select>
-                        <option value="12">Наличие сертификата</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
+                        <option value="0">Наличие сертификата</option>
+                        <option value="1">Платный сертификат</option>
+                        <option value="2">Бесплатный сертификат</option>
+                        <option value="3">Без сертификата</option>
                     </select>
                 </div>
             </div>
         </div>
-        <!--  Filters Select End  -->
+        <!--  Filters Selcet End  -->
+
         <div class="big-company-name">
             <p class="big-company-name_text">
                 КОМПАНИЯ VASIL KISIL
@@ -505,8 +477,19 @@
     </main>
 </div>
 
-<script src="script/libs/customSelect.js"></script>
+<script src="script/libs/jquery.custom-select.js"></script>
 <script src="script/inner.js"></script>
 <script src="script/resp-menu.js"></script>
+<script>
+    jQuery(function ($) {
+        $(document).ready(function () {
+            $('.select-search select').customSelect({
+                search: true
+            });
+            $('.custom-select-filter select').customSelect();
+        });
+    });
+</script>
+
 </body>
 </html>

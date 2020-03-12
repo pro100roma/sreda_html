@@ -121,13 +121,10 @@ jQuery(function ($) {
             } else {
                 $(this).siblings('.test-edit__descr').show();
             }
-            // if($(this).parents('.custom-table__row').find('.test-radio').is(':visible')) {
-            //     $(this).parents('.custom-table__row').find('.test-radio').fadeOut(300);
-            // } else {
-            //     $(this).parents('.custom-table__row').find('.test-radio').fadeIn(300);
-            // }
             $(this).parents('.custom-table__row').find('.custom-table__cell:nth-of-type(3)').toggleClass('opened');
+            $(this).parents('.custom-table__row').find('.custom-table__cell:nth-of-type(3)').toggleClass('closed');
         });
+        $('.test-edit .test-edit__name').parents('.custom-table__row').find('.custom-table__cell:nth-of-type(3)').addClass('closed');
 
         //Regular webinar
         $('input[name=regular-webinar-checkbox]').change(function() {
@@ -191,10 +188,6 @@ jQuery(function ($) {
                 $(this).parents('.owl-item').addClass('disabled');
             }
         });
-
-        // $('.webinar-member-table .custom-table__header .custom-table__col:nth-of-type(1) input[type=checkbox]').change(function() {
-        //     $(this).parents('.webinar-member-table').find('.test-radio input[type=checkbox]').attr('checked', true);
-        // });
 
         //Copy click
         $('.copy').click(function(e) {
@@ -354,7 +347,6 @@ jQuery(function ($) {
                 $('.assign-test-show').slideDown(300);
             }
         });
-
 
 
         //Media queries

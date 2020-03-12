@@ -401,7 +401,8 @@
         margin: 5px 0;
         font-style: italic;
         border: none;
-        font-size: 14px; }
+        font-size: 14px;
+        text-align: left; }
   .ui-ux_design-content .design-content__row input {
     font-style: italic;
     color: #49cadc;
@@ -767,7 +768,8 @@ input.input-shdw {
       margin: 5px 0;
       font-style: italic;
       border: none;
-      font-size: 14px; }
+      font-size: 14px;
+      text-align: left; }
 
 .test-edit {
   -webkit-box-shadow: none;
@@ -835,20 +837,26 @@ input.input-shdw {
   .test-edit .custom-table__row .custom-table__cell:nth-of-type(3) {
     flex-basis: 40%;
     text-align: left; }
-    .test-edit .custom-table__row .custom-table__cell:nth-of-type(3) .test-radio {
-      display: none; }
     .test-edit .custom-table__row .custom-table__cell:nth-of-type(3) .add-answer {
       display: none; }
   .test-edit .custom-table__row .custom-table__cell:nth-of-type(3).opened .test-radio {
     display: block; }
   .test-edit .custom-table__row .custom-table__cell:nth-of-type(3).opened .add-answer {
     display: block; }
+  .test-edit .custom-table__row .custom-table__cell:nth-of-type(3).closed .test-radio {
+    display: none; }
+  .test-edit .custom-table__row .custom-table__cell:nth-of-type(3).closed .add-answer {
+    display: none; }
   .test-edit .custom-table__row .custom-table__cell:nth-of-type(4) {
     flex-basis: 0; }
   .test-edit .custom-table__row .custom-table__cell:nth-of-type(5) {
     flex-basis: 15%; }
     .test-edit .custom-table__row .custom-table__cell:nth-of-type(5) a {
       margin: 0 5px; }
+    .test-edit .custom-table__row .custom-table__cell:nth-of-type(5) .upload-answer {
+      margin-bottom: 10px;
+      display: block;
+      height: 22px; }
     .test-edit .custom-table__row .custom-table__cell:nth-of-type(5) img {
       width: 18px; }
 
@@ -3018,5 +3026,28 @@ form .design-content__row .btn-submit {
       font-size: 13px;
       right: -140px;
       bottom: 18px; }
+
+.upload-answer {
+  width: 20px;
+  margin: 0 auto 10px; }
+  .upload-answer div {
+    position: relative;
+    z-index: 1; }
+  .upload-answer input[type=file] {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    position: absolute;
+    z-index: -10; }
+  .upload-answer label {
+    font-weight: 300;
+    display: table;
+    margin: 0 auto;
+    width: 20px;
+    text-align: center;
+    color: #3fc6d9;
+    height: 22px;
+    position: relative;
+    font-size: 12px; }
 
 /*# sourceMappingURL=roman.css.map */

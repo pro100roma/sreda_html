@@ -495,6 +495,7 @@
                     font-style: italic;
                     border: none;
                     font-size: 14px;
+                    text-align: left;
                 }
             }
         }
@@ -904,6 +905,7 @@ input.input-shdw {
                 font-style: italic;
                 border: none;
                 font-size: 14px;
+                text-align: left;
             }
         }
     }
@@ -992,9 +994,6 @@ input.input-shdw {
         .custom-table__cell:nth-of-type(3) {
             flex-basis: 40%;
             text-align: left;
-            .test-radio {
-                display: none;
-            }
             .add-answer {
                 display: none;
             }
@@ -1007,6 +1006,14 @@ input.input-shdw {
                 display: block;
             }
         }
+        .custom-table__cell:nth-of-type(3).closed {
+            .test-radio {
+                display: none;
+            }
+            .add-answer {
+                display: none;
+            }
+        }
         .custom-table__cell:nth-of-type(4) {
             flex-basis: 0;
         }
@@ -1014,6 +1021,11 @@ input.input-shdw {
             flex-basis: 15%;
             a {
                 margin: 0 5px;
+            }
+            .upload-answer {
+                margin-bottom: 10px;
+                display: block;
+                height: 22px;
             }
             img {
                 width: 18px;
@@ -3751,6 +3763,40 @@ form .design-content__row .btn-submit {
         }
     }
 }
+
+.upload-answer {
+    width: 20px;
+    margin: 0 auto 10px;
+    div {
+        position: relative;
+        z-index: 1;
+    }
+    input[type=file] {
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        position: absolute;
+        z-index: -10;
+    }
+    label {
+        font-weight: 300;
+        display: table;
+        margin: 0 auto;
+        width: 20px;
+        text-align: center;
+        color: #3fc6d9;
+        height: 22px;
+        position: relative;
+        font-size: 12px;
+        img {
+
+        }
+    }
+}
+
+
+
+
 
 
 

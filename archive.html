@@ -8,6 +8,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/i-style/style.css">
+    <link rel="stylesheet" href="style/roman.css">
     <link rel="stylesheet" href="style/media.css">
     <!-- Styles -->
     <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
@@ -103,17 +104,14 @@
         <!--  Top Buttons Conrainer End  -->
 
         <!-- Filters Selcet Start -->
-        <div class="filters-wrapper flex f-w">
-            <div class="filter custom-select-filter">
-                <div class="custom-select-wrapper">
-                    <select>
-                        <option value="0">Популярность</option>
-                        <option value="1">По возрастанию</option>
-                        <option value="2">По убыванию</option>
-                    </select>
-                </div>
+        <div class="filters-wrapper test-members-designate-sort flex f-w">
+            <div class="filter cust-select-wrap custom-select-filter">
+                <label class="test-radio">
+                    <input type="checkbox" name="test-sort01" />
+                    <div class="test-radio__answer"><span class="answer">Популярность</span></div>
+                </label>
             </div>
-            <div class="filter custom-select-filter">
+            <div class="filter cust-select-wrap custom-select-filter">
                 <div class="custom-select-wrapper">
                     <select>
                         <option value="12">Категория</option>
@@ -127,14 +125,11 @@
                     </select>
                 </div>
             </div>
-            <div class="filter custom-select-filter">
-                <div class="custom-select-wrapper">
-                    <select>
-                        <option value="0">Цена</option>
-                        <option value="1">По возрастанию</option>
-                        <option value="2">По убыванию</option>
-                    </select>
-                </div>
+            <div class="filter cust-select-wrap custom-select-filter">
+                <label class="test-radio">
+                    <input type="checkbox" name="test-sort02" />
+                    <div class="test-radio__answer"><span class="answer">Цена</span></div>
+                </label>
             </div>
             <div class="filter select-search">
                 <select>
@@ -144,21 +139,13 @@
                     <option value="3">Елена Цисарь</option>
                 </select>
             </div>
-            <div class="filter custom-select-filter">
-                <div class="custom-select-wrapper">
-                    <select>
-                        <option value="12">Длительность</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
-                        <option value="12">1</option>
-                    </select>
-                </div>
+            <div class="filter cust-select-wrap custom-select-filter">
+                <label class="test-radio">
+                    <input type="checkbox" name="test-sort03" />
+                    <div class="test-radio__answer"><span class="answer">Длительность</span></div>
+                </label>
             </div>
-            <div class="filter custom-select-filter">
+            <div class="filter cust-select-wrap custom-select-filter">
                 <div class="custom-select-wrapper">
                     <select>
                         <option value="0">Уровень пользователя</option>
@@ -168,7 +155,7 @@
                     </select>
                 </div>
             </div>
-            <div class="filter custom-select-filter">
+            <div class="filter cust-select-wrap custom-select-filter">
                 <div class="custom-select-wrapper">
                     <select>
                         <option value="0">Наличие сертификата</option>
@@ -438,12 +425,16 @@
 </div>
 
 <script src="script/libs/jquery.custom-select.js"></script>
-<script src="script/libs/customSelect.js"></script>
 <script src="script/inner.js"></script>
 <script src="script/resp-menu.js"></script>
 <script>
-    $('.select-search select').customSelect({
-        search: true
+    jQuery(function ($) {
+        $(document).ready(function () {
+            $('.select-search select').customSelect({
+                search: true
+            });
+            $('.custom-select-filter select').customSelect();
+        });
     });
 </script>
 

@@ -3995,7 +3995,8 @@ body {
     display: block;
     padding: 0;
     margin: 10px 0;
-    font-style: italic; }
+    font-style: italic;
+    text-align: left; }
   .select-search .custom-select__dropdown input,
   .cust-select-wrap .custom-select__dropdown input {
     width: 100%;
