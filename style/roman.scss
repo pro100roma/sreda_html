@@ -2293,6 +2293,7 @@ textarea {
     #papa header#header {
         box-shadow: none;
         background: none;
+        position: relative;
     }
     #papa header#header .logo {
         background: transparent;
@@ -2353,7 +2354,11 @@ textarea {
         .test-radio__answer .answer {
             font-size: 16px;
             font-weight: 600;
+            flex-basis: auto;
         }
+    }
+    .corp_reg-input-group {
+        display: none;
     }
     .captcha-wrap {
         img {
@@ -3312,9 +3317,18 @@ form .design-content__row .btn-submit {
     }
 }
 
-.course-setting-wrap form {
-    width: 100%;
-    align-items: flex-start;
+.course-setting-wrap {
+    form {
+        width: 100%;
+        align-items: flex-start;
+    }
+    .design-content__webinar-name .input-group  {
+        width: 100%;
+        input {
+            width: 100%;
+        }
+    }
+
 }
 .course-description-block {
     width: 70%;
@@ -3324,7 +3338,7 @@ form .design-content__row .btn-submit {
 .course-description-block {
     textarea {
         margin: 0 0 30px;
-        height: 420px;
+        height: 310px;
     }
     #course-start input,
     #course-end input {
@@ -3788,13 +3802,18 @@ form .design-content__row .btn-submit {
         height: 22px;
         position: relative;
         font-size: 12px;
-        img {
-
-        }
     }
 }
 
-
+.ui-ux_design-content .design-content__row.min-res-wrap {
+    display: table;
+    font-style: normal;
+    font-weight: 400;
+    margin: 10px 0 0;
+}
+.test-certification {
+    display: none;
+}
 
 
 

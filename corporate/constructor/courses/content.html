@@ -363,7 +363,23 @@
                             <div class="input-group">
                                 <textarea placeholder="Введите информацию"></textarea>
                             </div>
-                            <p class="hw-notice">Крайний срок подачи 10 дней</p>
+                            <div class="vac-test__descr">
+                                <p class="hw-notice">Крайний срок подачи
+                                    <select>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                    дней
+                                </p>
+                            </div>
                             <div class="blck-chk-wrap course-hw-chk">
                                 <label class="test-radio">
                                     <input type="checkbox" name="hw01" />
@@ -378,7 +394,23 @@
                                     <div class="test-radio__answer"><span class="answer">ДЗ предусматривает обратную связь</span></div>
                                 </label>
                             </div>
-                            <p class="hw-notice">Срок обратной связи 10 дней</p>
+                            <div class="vac-test__descr">
+                                <p class="hw-notice">Срок обратной связи
+                                    <select>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                    дней
+                                </p>
+                            </div>
                             
                         </div>
                     </div>
@@ -413,15 +445,17 @@
                                             <div class="test-radio__answer"><span class="answer">Перемешать ответы</span></div>
                                         </label>
                                     </div>
-                                    <p>Минимальный результат прохождения
-                                        <select>
-                                            <option value="0">50%</option>
-                                            <option value="1">60%</option>
-                                            <option value="2">70%</option>
-                                            <option value="3">80%</option>
-                                            <option value="4">90%</option>
-                                        </select>
-                                    </p>
+                                    <div class="ui-ux_design-content">
+                                        <div class="design-content__row">
+                                            <div class="design-content__row min-res-wrap">Минимальный результат прохождения
+                                                <a href="#" class="min_res-output_link">50%</a>
+                                                <div class="min_res-wrap box-shadow">
+                                                    <div class="min_res-output">50%</div>
+                                                    <input type="range" min="1" max="100" value="50" class="test-min_res" id="min_res">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <p>Количество повторных попыток
                                         <select>
                                             <option value="0">0</option>
@@ -430,12 +464,14 @@
                                             <option value="3">3</option>
                                             <option value="4">4</option>
                                             <option value="5">5</option>
+                                            <option value="6">Без ограничений</option>
                                         </select>
                                     </p>
                                     <p>Подача теста
                                         <select>
                                             <option value="0">Все вопросы</option>
-                                            <option value="1">Часть вопросов</option>
+                                            <option value="1">Вопрос за вопросом</option>
+                                            <option value="2">Раздел за разделом</option>
                                         </select>
                                     </p>
                                 </div>
@@ -804,6 +840,7 @@
         $(document).ready(function () {
             $('.vac-test__descr select').customSelect();
             $('.custom-table__edit-row select').customSelect();
+            $('.hw-notice select').customSelect();
 
             //Upload image as test answer
             $('.test-answer').change(function() {

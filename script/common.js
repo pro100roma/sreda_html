@@ -103,6 +103,7 @@ jQuery(function ($) {
                 $(this).parents('.tools-title').siblings('.vac-settings__block-content').fadeIn(300);
             }
         });
+
         //Constructor content social links checkboxes
         $('.vac-socials__row input[type=checkbox]').change(function() {
             if($(this).parents('.vac-socials__row').find('.input-group').is(':visible')) {
@@ -346,6 +347,41 @@ jQuery(function ($) {
                 $('.link-btn-wrapper, .link-container').slideUp(300);
                 $('.assign-test-show').slideDown(300);
             }
+        });
+
+        //Corp reg checkbox
+        $('input[name=corp_reg]').change(function() {
+             if($(this).is(':checked')) {
+                 $('.corp_reg-input-group').fadeIn(300);
+             } else {
+                 $('.corp_reg-input-group').fadeOut(300);
+             }
+        });
+
+        //Course constructor certificate
+        $('.cert-type-wrap select').change(function() {
+            if($(this).val() == 0) {
+                $('.course-certification').show();
+                $('.test-certification').hide();
+            } else {
+                $('.course-certification').hide();
+                $('.test-certification').show();
+            }
+        });
+
+        //Certificate tools title
+        $('.cert-title.tools-title .vac-tools input').change(function() {
+
+            if($(this).is(':checked')) {
+                if($('.cert-type-wrap select').val() == 0) {
+                    $('.course-certification').show();
+                    $('.test-certification').hide();
+                } else {
+                    $('.course-certification').hide();
+                    $('.test-certification').show();
+                }
+            }
+
         });
 
 

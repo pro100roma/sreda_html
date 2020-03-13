@@ -156,13 +156,6 @@
                             </div>
                             <div class="design-content__row flex">
                                 <img src="../../../img/corp/icons/brain-tech.png" alt="Head">
-<!--                                <div class="dropdown-mul-1">-->
-<!--                                    <select style="display:none" multiple>-->
-<!--                                        <option value="Junior">Junior</option>-->
-<!--                                        <option value="Middle">Middle</option>-->
-<!--                                        <option value="Pro">Pro</option>-->
-<!--                                    </select>-->
-<!--                                </div>-->
                                 <select class="js-example-basic-multiple" name="level[]" multiple="multiple">
                                     <option value="junior">Junior</option>
                                     <option value="middle">Middle</option>
@@ -175,19 +168,6 @@
                             </div>
                             <div class="design-content__row flex">
                                 <img src="../../../img/corp/icons/calendar.png" alt="Calendar">
-<!--                                <div class="dropdown-mul-1">-->
-<!--                                    <select style="display:none" multiple placeholder="Select">-->
-<!--                                        <option value="Понедельник">Понедельник</option>-->
-<!--                                        <option value="Вторник">Вторник</option>-->
-<!--                                        <option value="Среда">Среда</option>-->
-<!--                                        <option value="Четверг">Четверг</option>-->
-<!--                                        <option value="Пятница">Пятница</option>-->
-<!--                                        <option value="Суббота">Суббота</option>-->
-<!--                                        <option value="Восресенье">Восресенье</option>-->
-<!--                                        <option value="Произвольно">Произвольно</option>-->
-<!--                                        <option value="Ежедневно">Ежедневно</option>-->
-<!--                                    </select>-->
-<!--                                </div>-->
                                 <select class="js-example-basic-multiple" name="period[]" multiple="multiple">
                                     <option value="Понедельник">Понедельник</option>
                                     <option value="Вторник">Вторник</option>
@@ -220,6 +200,14 @@
                         <div class="max-file-size-alert box-shadow">Минимальный размер изображения 550х300px</div>
                     </div>
                     <div class="course-description-block">
+                        <div class="ui-ux_design_title">
+                            <div class="design-content__row design-content__webinar-name">
+                                <div class="input-group">
+                                    <input type="text" value="UI/UX design" class="has-error input-shdw" placeholder="Название"/>
+                                    <p class="alert-error">Заполните, пожалуйста, поле..</p>
+                                </div>
+                            </div>
+                        </div>
                         <div class="input-group">
                             <textarea placeholder="Описание"></textarea>
                             <h6 class="the-count"><span class="current-count">0</span> <span class="max-count">/ 300 </span></h6>
@@ -228,16 +216,13 @@
                             <div class="multiselect-wrap">
                                 <div class="profile-item experience">
                                     <p class="profile-item-name">Категории:</p>
-                                    <div class="dropdown-mul-1">
-                                        <select style="display:none"  name="" id="" multiple placeholder="Select">
-                                            <option value="CSMS">CSMS</option>
-                                            <option value="Сервис">Сервис</option>
-                                            <option value="Customer Loyalty">Customer Loyalty</option>
-                                            <option value="Customer">Customer</option>
-                                            <option value="Customer Experience">Customer Experience</option>
-                                            <option value="Вебинары">Вебинары</option>
-                                        </select>
-                                    </div>
+                                    <select class="js-example-basic-multiple" name="period[]" multiple="multiple">
+                                        <option value="Сервис">Сервис</option>
+                                        <option value="CSMS">CSMS</option>
+                                        <option value="Customer Loyalty">Customer Loyalty</option>
+                                        <option value="Customer">Customer</option>
+                                        <option value="Customer Experience">Customer Experience</option>
+                                    </select>
                                 </div>
                             </div>
 
@@ -268,6 +253,7 @@
                                     <select>
                                         <option value="0">Активный</option>
                                         <option value="1">Завершен</option>
+                                        <option value="2">Скрытый</option>
                                     </select>
                                 </div>
                                 <div class="design-content__row history">Изменена: <span>20.04.2019 в 16:41</span><!--<img src="../../../img/corp/icons/history.png" alt="History" />--></div>
